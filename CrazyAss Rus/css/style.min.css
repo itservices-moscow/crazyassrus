@@ -2666,13 +2666,11 @@ a {
 }
 
 .modal__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    cursor:pointer
+    bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
 }
 
 .modal__content {
@@ -2826,7 +2824,18 @@ a {
     display: flex;
     flex-direction:column
 }
-
+.password-control {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
 .modal__form-item:not(:last-of-type) {
     margin:0 0 21px
 }
@@ -3183,7 +3192,7 @@ a {
     width: auto;
     height: auto;
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .product__size span {
     display: block;
@@ -3219,10 +3228,14 @@ a {
         padding: 0 48px;
     }
     .massega-cookie {
-        padding: 0 48px;
+        padding: 0 0px;
     }
 }
-
+@media (min-width: 1440px){
+    .shop__fore-btn {
+        right: 10%;
+    }
+}
 .shop__fore-btn {
     min-width: 48px;
     height: 48px;
@@ -3246,8 +3259,7 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    animation: show 1s;
-    animation-fill-mode: forwards;
+    animation: show easy;
 }
 @keyframes show {
   0% {
@@ -3266,33 +3278,35 @@ a {
     transform: scaleX(0);
   }
 }
-.shop__fore-btn:hover svg {
-    width: 24px;
-}
-.shop__fore-btn:hover img {
-    display: block;
-}
+
 .shop__fore-btn .link {
     text-decoration: underline;
 }
-@media (min-width: 1440px) {
+
+@media (max-width: 1980px) {
     .shop__fore-btn  {
-        right: 12%;
+        right: 15%;
     }
 }
-@media (max-width: 1640px) {
+
+@media (max-width: 1680px) {
     .shop__fore-btn  {
-        right: 2%;
+        right: 9.5%;
+    }
+}
+@media (max-width: 1580px) {
+    .shop__fore-btn  {
+        right: 5.5%;
     }
 }
 @media (max-width: 1440px) {
     .shop__fore-btn  {
-        right: 0%;
+        right: 3.2%;
     }
 }
 @media (max-width: 1380px) {
     .shop__fore-btn  {
-        right: 0%;
+        right: 2%;
     }
 }
 .shop__fore-btn:hover span{
@@ -3388,9 +3402,9 @@ a {
     width: 42px;
 }
 .shop__button-rows .shop__product-number {
-    width: 34%;
+    width: 38%;
     display: flex;
-    margin-left: 20px;
+    margin-left: 28px;
 }
 .shop__item-price span{
     color: #1C1C1C;
@@ -4558,6 +4572,9 @@ border: 1px solid #D4D4D4;
   z-index: 2;
   width: 100%;
 }
+.select-dropdown__list.active .select-dropdown__button::after {
+    transform: rotate(180deg);
+}
 .select-dropdown__list.active {
   opacity: 1;
   pointer-events: auto;
@@ -4748,9 +4765,12 @@ line-height: 17px;
     color: #1C1C1C;
 }
 .modal__subcrube .order__politik {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     align-items: center;
     font-weight: 300;
+}
+.modal__subcrube .order__politik:nth-of-type(4) {
+    margin-bottom: 32px;
 }
 .modal__subcrube .order__politik label {
     margin-bottom: 0px;
@@ -5031,6 +5051,9 @@ border: 1px solid #D4D4D4;
 .mysubcribe-item__edit-check:hover svg path {
     fill: #FFFFFF;
 }
+.mysubcribe-item__edit-check:hover svg  {
+    fill: #FFFFFF;
+}
 .mysubcribe-item__edit {
     width: 28px;
     height: 28px;
@@ -5047,6 +5070,10 @@ border: 1px solid #D4D4D4;
 .mysubcribe-item__edit:hover svg {
     position: relative;
     z-index: 2;
+    margin-top: 5px;
+    margin-left: 5px;
+    fill: #FFFFFF;
+    display: block;
 }
 .mysubcribe-item__edit:hover svg path{
     fill: #FFFFFF;
@@ -5558,6 +5585,16 @@ border: 1px solid #D4D4D4;
     text-decoration-line: underline;
     text-transform: uppercase;
 }
+.myorder-item .myorder-contacts__item-value a {
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    color: #1C1C1C;
+    line-height: 17px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
 .myorder-products__title {
     font-style: normal;
     font-weight: 400;
@@ -5591,6 +5628,9 @@ border: 1px solid #D4D4D4;
 }
 .myorder__product-title {
     width: 100%;
+}
+.faq__list .myorder__product-title {
+    line-height: 17px;
 }
 .product-title {
     font-style: normal;
@@ -5810,7 +5850,12 @@ border: 1px solid #D4D4D4;
     padding: 16px 18px;
     font-size:14px
 }
-
+.order__button svg path {
+    fill: #FFFFFF;
+}
+.order__button:hover svg path {
+    fill: #111111;
+}
 .order__img-content {
     position: absolute;
     top: 50%;
@@ -6196,7 +6241,7 @@ line-height: 20px;
 .contact-tabs .order__form-item--30:last-child {
     margin-right: 0px;
 }
-.massega-cookie {
+.massega__block {
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -6205,13 +6250,12 @@ line-height: 20px;
     background: rgba(202, 202, 202, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 20px 48px;
+    padding: 20px 0px;
 }
 .massega-cookie__container {
-     display: flex;
-       flex-direction: row;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
 }

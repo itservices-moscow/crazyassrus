@@ -1305,15 +1305,28 @@ $('.cart__product-plus').click(function () {
 $('.shop__product-minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
+    //count = count < 1 ? 1 : count;
+
     $input.val(count);
     $input.change();
+    //console.log($input.val());
+    if($input.val() == 0){
+        $('.shop__buttons').removeClass('shop__button-rows');
+      }
     return false;
+    
 });
 $('.shop__product-plus').click(function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
+    return false;
+});
+
+
+$('.select-dropdown__button').click(function () {
+    $('.select-dropdown__button').toggleClass('active');
+   
     return false;
 });
 
@@ -1515,6 +1528,29 @@ accordionTitles.forEach((accordionTitle) => {
         }
     });
 });
+
+function show_hide_password(target){
+    var input = document.getElementById('password-input');
+    if (input.getAttribute('type') == 'password') {
+        target.classList.add('view');
+        input.setAttribute('type', 'text');
+    } else {
+        target.classList.remove('view');
+        input.setAttribute('type', 'password');
+    }
+    return false;
+}
+function show_hide_password2(target){
+    var input = document.getElementById('password-input2');
+    if (input.getAttribute('type') == 'password') {
+        target.classList.add('view');
+        input.setAttribute('type', 'text');
+    } else {
+        target.classList.remove('view');
+        input.setAttribute('type', 'password');
+    }
+    return false;
+}
 // const inner = document.querySelectorALL(".inner");
 // const left = document.querySelectorALL(".left");
 // left.addEventListener("mousemove", handleMousemove, false);
