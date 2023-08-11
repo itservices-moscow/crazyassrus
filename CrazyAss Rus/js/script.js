@@ -1011,7 +1011,7 @@ async function handleFormSubmit(e) {
     }).then((e => {
         if (!e.ok)
             throw new Error("Form submission failed");
-        modals.open("modal-success.html")
+        modals.open("modal-success")
     })).catch((e => {
         throw new Error("Error submitting form:", e)
     }))
@@ -1073,7 +1073,7 @@ fullScreenButtons.forEach((e => e.addEventListener("click", (e => {
     s.onload = () => {
         modalContent.innerHTML = "",
         modalContent.appendChild(s),
-        modals.open("modal-img.html")
+        modals.open("modal-img")
     }
 }))));
 const prevBtns = document.querySelectorAll(".btn-prev");
