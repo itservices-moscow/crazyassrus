@@ -1,9 +1,9 @@
 const header = document.querySelector(".main-header"),
     navToggle = document.querySelector(".main-header__toggle");
 header.classList.remove("main-header--no-js"),
-navToggle.addEventListener("click", (() => {
-    header.classList.contains("main-header--opened") ? header.classList.remove("main-header--opened") : header.classList.add("main-header--opened")
-}));
+    navToggle.addEventListener("click", (() => {
+        header.classList.contains("main-header--opened") ? header.classList.remove("main-header--opened") : header.classList.add("main-header--opened")
+    }));
 const mainNavLinkElements = document.querySelectorAll(".main-nav__link");
 mainNavLinkElements.forEach((e => {
     e.addEventListener("click", (() => {
@@ -15,12 +15,12 @@ const lookbookSlider = document.querySelector(".lookbook__slider"),
     initLookbookSlider = () => {
         let e;
         const t = () => {
-                let e;
-                e || (e = setTimeout((function() {
-                    e = null,
+            let e;
+            e || (e = setTimeout((function () {
+                e = null,
                     s()
-                }), 100))
-            },
+            }), 100))
+        },
             s = () => {
                 !0 === breakpoint.matches ? void 0 !== e && e.destroy(!0, !0) : !1 === breakpoint.matches && lookbookSlider && (e = new Swiper(lookbookSlider, {
                     slidesPerView: "auto",
@@ -29,7 +29,7 @@ const lookbookSlider = document.querySelector(".lookbook__slider"),
                 }))
             };
         breakpoint.addListener(t),
-        t()
+            t()
     };
 initLookbookSlider();
 const prodSlider = document.querySelector(".prod__slider"),
@@ -37,12 +37,12 @@ const prodSlider = document.querySelector(".prod__slider"),
     initProdSlider = () => {
         let e;
         const t = () => {
-                let e;
-                e || (e = setTimeout((function() {
-                    e = null,
+            let e;
+            e || (e = setTimeout((function () {
+                e = null,
                     s()
-                }), 100))
-            },
+            }), 100))
+        },
             s = () => {
                 !0 === breakpoint2.matches ? void 0 !== e && e.destroy(!0, !0) : !1 === breakpoint2.matches && prodSlider && (e = new Swiper(prodSlider, {
                     slidesPerView: "auto",
@@ -51,7 +51,7 @@ const prodSlider = document.querySelector(".prod__slider"),
                 }))
             };
         breakpoint2.addListener(t),
-        t()
+            t()
     };
 initProdSlider();
 let OrdersProdSlider = document.querySelector(".myorder__product__slider"),
@@ -59,12 +59,12 @@ let OrdersProdSlider = document.querySelector(".myorder__product__slider"),
     initOrdersProdSlider = () => {
         let e;
         const t = () => {
-                let e;
-                e || (e = setTimeout((function() {
-                    e = null,
+            let e;
+            e || (e = setTimeout((function () {
+                e = null,
                     s()
-                }), 100))
-            },
+            }), 100))
+        },
             s = () => {
                 !0 === breakpoint3.matches ? void 0 !== e && e.destroy(!0, !0) : !1 === breakpoint3.matches && OrdersProdSlider && (e = new Swiper(OrdersProdSlider, {
                     slidesPerView: "auto",
@@ -73,7 +73,7 @@ let OrdersProdSlider = document.querySelector(".myorder__product__slider"),
                 }))
             };
         breakpoint3.addListener(t),
-        t()
+            t()
     };
 initOrdersProdSlider();
 const sliderReviewsElement = document.querySelector(".reviews__slider");
@@ -122,38 +122,34 @@ if (sliderPromoElement) {
             type: "bullets",
             clickable: true
         }
-    }).on("slideChange", (function() {
+    }).on("slideChange", (function () {
         const e = document.querySelector(".promo__pagination"),
             t = e.querySelectorAll(".swiper-pagination-bullet"),
             s = e.querySelector(".swiper-pagination-bullet-active");
         for (let e = 0; e < t.length; e++)
             t[e].dataset.id = e;
         1 == s.dataset.id && (t[0].style.backgroundColor = "#1c1c1c", t[0].style.borderColor = "#1c1c1c"),
-        2 == s.dataset.id && (t[0].style.backgroundColor = "#1c1c1c", t[1].style.backgroundColor = "#1c1c1c", t[0].style.borderColor = "#1c1c1c", t[1].style.borderColor = "#1c1c1c"),
-        0 == s.dataset.id && (t[1].style.backgroundColor = "transparent", t[1].style.borderColor = "#d4d4d4", t[0].style.backgroundColor = "transparent", t[0].style.borderColor = "#d4d4d4")
+            2 == s.dataset.id && (t[0].style.backgroundColor = "#1c1c1c", t[1].style.backgroundColor = "#1c1c1c", t[0].style.borderColor = "#1c1c1c", t[1].style.borderColor = "#1c1c1c"),
+            0 == s.dataset.id && (t[1].style.backgroundColor = "transparent", t[1].style.borderColor = "#d4d4d4", t[0].style.backgroundColor = "transparent", t[0].style.borderColor = "#d4d4d4")
     }))
 }
 class Tabs {
-    constructor()
-    {
+    constructor() {
         this._windowWidth = window.innerWidth,
-        this._documentClickHandler = this._documentClickHandler.bind(this),
-        this._init()
+            this._documentClickHandler = this._documentClickHandler.bind(this),
+            this._init()
     }
-    _init()
-    {
+    _init() {
         this._initAllTabs(),
-        document.addEventListener("click", this._documentClickHandler)
+            document.addEventListener("click", this._documentClickHandler)
     }
-    _resizeObserver()
-    {
+    _resizeObserver() {
         return new ResizeObserver((e => {
             for (let t of e)
                 t.target.classList.contains("is-active") && this._updateTabHeight()
         }))
     }
-    _documentClickHandler(e)
-    {
+    _documentClickHandler(e) {
         const t = e.target;
         if (!t.closest('[data-tabs="control"]'))
             return;
@@ -161,108 +157,96 @@ class Tabs {
         const s = t.closest('[data-tabs="control"]');
         this.openTab(s)
     }
-    _initAllTabs()
-    {
+    _initAllTabs() {
         const e = document.querySelectorAll('[data-tabs="parent"]'),
             t = document.querySelectorAll('[data-tabs="element"].for-load');
         e.forEach((e => {
             this._initTab(e)
         })),
-        t.forEach((e => {
-            e.classList.remove("for-load")
-        }))
+            t.forEach((e => {
+                e.classList.remove("for-load")
+            }))
     }
-    _removeAllActiveClasses(e, t)
-    {
+    _removeAllActiveClasses(e, t) {
         t.forEach((e => {
             e.classList.remove("is-active")
         })),
-        e.forEach(((e, t) => {
-            e.classList.remove("is-active"),
-            e.setAttribute("data-index", t)
-        }))
+            e.forEach(((e, t) => {
+                e.classList.remove("is-active"),
+                    e.setAttribute("data-index", t)
+            }))
     }
-    _setTabStartState(e, t, s, a, i, o)
-    {
+    _setTabStartState(e, t, s, a, i, o) {
         const n = this._returnActiveIndex(i),
             l = "max" === t ? this._returnMaxHeight(s) : s[n].offsetHeight;
         this._removeAllActiveClasses(i, s),
-        e.classList.add("no-transition"),
-        i[n].classList.add("is-active"),
-        s[n].classList.add("is-active"),
-        "unset" !== t && (a.style.height = `${l}px`),
-        setTimeout((() => {
-            o && e.classList.remove("no-transition")
-        }), o)
+            e.classList.add("no-transition"),
+            i[n].classList.add("is-active"),
+            s[n].classList.add("is-active"),
+            "unset" !== t && (a.style.height = `${l}px`),
+            setTimeout((() => {
+                o && e.classList.remove("no-transition")
+            }), o)
     }
-    _returnActiveIndex(e)
-    {
+    _returnActiveIndex(e) {
         let t = 0,
             s = !0;
         return e.forEach(((e, a) => {
             e.classList.contains("is-active") && s && (t = a, s = !1)
         })), t
     }
-    _returnMaxHeight(e)
-    {
+    _returnMaxHeight(e) {
         let t = [];
         return e.forEach((e => {
             t.push(e.offsetHeight)
         })), t.sort(((e, t) => e - t)), t[t.length - 1]
     }
-    _returnScopeList(e, t)
-    {
+    _returnScopeList(e, t) {
         const s = [];
         return e.forEach((e => {
             e.closest('[data-tabs="parent"]') === t && s.push(e)
         })), s
     }
-    _returnScopeChild(e, t)
-    {
+    _returnScopeChild(e, t) {
         let s;
         return e.forEach((e => {
             e.closest('[data-tabs="parent"]') === t && (s = e)
         })), s
     }
-    _updateTabHeight()
-    {
+    _updateTabHeight() {
         document.querySelectorAll('[data-tabs="element"].is-active').forEach((e => {
             let t = !1;
             e.closest('[data-tabs="parent"]').closest('[data-tabs="element"]') && (t = !0),
-            this._setTabElementHeight(e, t)
+                this._setTabElementHeight(e, t)
         }))
     }
-    _setTabElementHeight(e, t)
-    {
+    _setTabElementHeight(e, t) {
         const s = e.closest('[data-tabs="parent"]'),
             a = s.dataset.height,
             i = this._returnScopeChild(s.querySelectorAll('[data-tabs="content"]'), s),
             o = this._returnScopeList(s.querySelectorAll('[data-tabs="element"]'), s);
         t || s.classList.add("no-transition"),
-        i.style.height = "max" === a ? `${this._returnMaxHeight(o)}px` : "unset" === a ? null : `${this._returnScopeChild(s.querySelectorAll('[data-tabs="element"].is-active'), s).offsetHeight}px`,
-        setTimeout((() => s.classList.remove("no-transition")))
+            i.style.height = "max" === a ? `${this._returnMaxHeight(o)}px` : "unset" === a ? null : `${this._returnScopeChild(s.querySelectorAll('[data-tabs="element"].is-active'), s).offsetHeight}px`,
+            setTimeout((() => s.classList.remove("no-transition")))
     }
-    _initTab(e)
-    {
+    _initTab(e) {
         const t = e.dataset.height,
             s = e.dataset.delay ? e.dataset.delay : 0,
             a = e.querySelector('[data-tabs="content"]'),
             i = this._returnScopeList(e.querySelectorAll('[data-tabs="control"]'), e),
             o = this._returnScopeList(e.querySelectorAll('[data-tabs="element"]'), e);
         this._setTabStartState(e, t, o, a, i, s),
-        "unset" !== t && o.forEach((e => {
-            this._resizeObserver().observe(e)
-        })),
-        setTimeout((() => {
-            e.classList.remove("no-transition-global")
-        }))
+            "unset" !== t && o.forEach((e => {
+                this._resizeObserver().observe(e)
+            })),
+            setTimeout((() => {
+                e.classList.remove("no-transition-global")
+            }))
     }
-    reInit()
-    {
+    reInit() {
         this._initAllTabs()
     }
-    openTab(e)
-    {
+    openTab(e) {
         const t = e.dataset.index,
             s = e.closest('[data-tabs="parent"]');
         if (e.classList.contains("is-active") || s.classList.contains("no-action"))
@@ -276,50 +260,47 @@ class Tabs {
             c = o.offsetHeight,
             d = n[t].offsetHeight;
         s.classList.add("no-action"),
-        document.activeElement.blur(),
-        l && l.classList.remove("is-active"),
-        r && r.classList.remove("is-active"),
-        c > d ? setTimeout((() => {
-            "max" !== i && "unset" !== i && (o.style.height = d + "px"),
-            e.classList.add("is-active"),
-            n[t].classList.add("is-active"),
-            s.classList.remove("no-action")
-        }), a) : ("max" !== i && "unset" !== i && (o.style.height = d + "px"), setTimeout((() => {
-            e.classList.add("is-active"),
-            n[t].classList.add("is-active"),
-            s.classList.remove("no-action")
-        }), a))
+            document.activeElement.blur(),
+            l && l.classList.remove("is-active"),
+            r && r.classList.remove("is-active"),
+            c > d ? setTimeout((() => {
+                "max" !== i && "unset" !== i && (o.style.height = d + "px"),
+                    e.classList.add("is-active"),
+                    n[t].classList.add("is-active"),
+                    s.classList.remove("no-action")
+            }), a) : ("max" !== i && "unset" !== i && (o.style.height = d + "px"), setTimeout((() => {
+                e.classList.add("is-active"),
+                    n[t].classList.add("is-active"),
+                    s.classList.remove("no-action")
+            }), a))
     }
 }
 let tabs;
 const initTabs = () => {
-        tabs = new Tabs,
+    tabs = new Tabs,
         window.tabs = tabs
-    },
+},
     control = document.querySelector(".faq__link");
 window.addEventListener("DOMContentLoaded", (() => {
     window.addEventListener("load", (() => {
         tabs = new Tabs,
-        window.tabs = tabs
+            window.tabs = tabs
     }))
 }));
 class Accordions {
-    constructor()
-    {
+    constructor() {
         this._openHeight = 0,
-        this._windowWidth = window.innerWidth,
-        this._documentClickHandler = this._documentClickHandler.bind(this),
-        this._windowResizeHandler = this._windowResizeHandler.bind(this),
-        this._init()
+            this._windowWidth = window.innerWidth,
+            this._documentClickHandler = this._documentClickHandler.bind(this),
+            this._windowResizeHandler = this._windowResizeHandler.bind(this),
+            this._init()
     }
-    _init()
-    {
+    _init() {
         this.fullUpdate(),
-        document.addEventListener("click", this._documentClickHandler),
-        window.addEventListener("resize", this._windowResizeHandler)
+            document.addEventListener("click", this._documentClickHandler),
+            window.addEventListener("resize", this._windowResizeHandler)
     }
-    _documentClickHandler(e)
-    {
+    _documentClickHandler(e) {
         const t = e.target;
         if (!t.closest('[data-accordion="button"]'))
             return;
@@ -330,18 +311,15 @@ class Accordions {
         const a = t.closest('[data-accordion="element"]');
         a.classList.contains("is-active") ? this.closeAccordion(a) : this.openAccordion(a)
     }
-    _windowResizeHandler()
-    {
+    _windowResizeHandler() {
         this._windowWidth !== window.innerWidth && (this._windowWidth = window.innerWidth, this.updateAccordionsHeight())
     }
-    closeAllAccordion(e)
-    {
+    closeAllAccordion(e) {
         e.querySelectorAll('[data-accordion="element"]').forEach((t => {
             t.closest('[data-accordion="parent"]') === e && this.closeAccordion(t)
         }))
     }
-    updateAccordionsHeight(e=null)
-    {
+    updateAccordionsHeight(e = null) {
         if (e) {
             const t = e.querySelector('[data-accordion="content"]');
             return t.style.transition = "none", t.style.maxHeight = `${t.scrollHeight}px`, void setTimeout((() => {
@@ -361,29 +339,26 @@ class Accordions {
             }))) : t.style.maxHeight = "100%"
         }))
     }
-    fullUpdate(e=null, t=!1)
-    {
+    fullUpdate(e = null, t = !1) {
         let s;
         s = e ? e.querySelectorAll('[data-accordion="element"].is-active') : document.querySelectorAll('[data-accordion="element"].is-active'),
-        s.forEach((e => {
-            e.querySelector('[data-accordion="parent"]') || this.openAccordion(e, t)
-        })),
-        this.updateAccordionsHeight()
+            s.forEach((e => {
+                e.querySelector('[data-accordion="parent"]') || this.openAccordion(e, t)
+            })),
+            this.updateAccordionsHeight()
     }
-    openAccordion(e, t=!0)
-    {
+    openAccordion(e, t = !0) {
         const s = e.closest('[data-accordion="parent"]'),
             a = e.querySelector('[data-accordion="content"]');
         this._openHeight += a.scrollHeight,
-        s.hasAttribute("data-single") && this.closeAllAccordion(s),
-        e.classList.add("is-active"),
-        t ? a.style.maxHeight = `${this._openHeight}px` : (a.style.transition = "none", a.style.maxHeight = `${this._openHeight}px`, setTimeout((() => {
-            a.style.transition = null
-        }))),
-        s.closest('[data-accordion="element"]') ? this.openAccordion(s.closest('[data-accordion="element"]'), t) : this._openHeight = 0
+            s.hasAttribute("data-single") && this.closeAllAccordion(s),
+            e.classList.add("is-active"),
+            t ? a.style.maxHeight = `${this._openHeight}px` : (a.style.transition = "none", a.style.maxHeight = `${this._openHeight}px`, setTimeout((() => {
+                a.style.transition = null
+            }))),
+            s.closest('[data-accordion="element"]') ? this.openAccordion(s.closest('[data-accordion="element"]'), t) : this._openHeight = 0
     }
-    closeAccordion(e, t=!0)
-    {
+    closeAccordion(e, t = !0) {
         const s = e.querySelector('[data-accordion="content"]');
         s && (e.classList.remove("is-active"), t ? s.style.maxHeight = "0" : (s.style.transition = "none", s.style.maxHeight = "0", setTimeout((() => {
             s.style.transition = null
@@ -393,27 +368,25 @@ class Accordions {
 let accordions;
 const initAccordions = () => {
     accordions = new Accordions,
-    window.accordions = accordions
+        window.accordions = accordions
 };
 window.addEventListener("DOMContentLoaded", (() => {
     window.addEventListener("load", (() => {
         accordions = new Accordions,
-        window.accordions = accordions
+            window.accordions = accordions
     }))
 }));
 const iosChecker = () => ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || navigator.userAgent.includes("Mac") && "ontouchend" in document,
     SELECTORS = ["a[href]", "area[href]", 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', "select:not([disabled]):not([aria-hidden])", "textarea:not([disabled]):not([aria-hidden])", "button:not([disabled]):not([aria-hidden])", "iframe", "object", "embed", "[contenteditable]", '[tabindex]:not([tabindex^="-"])'];
 class FocusLock {
-    constructor()
-    {
+    constructor() {
         this._lockedSelector = null,
-        this._focusableElements = null,
-        this._endElement = null,
-        this._selectors = SELECTORS,
-        this._documentKeydownHandler = this._documentKeydownHandler.bind(this)
+            this._focusableElements = null,
+            this._endElement = null,
+            this._selectors = SELECTORS,
+            this._documentKeydownHandler = this._documentKeydownHandler.bind(this)
     }
-    _documentKeydownHandler(e)
-    {
+    _documentKeydownHandler(e) {
         const t = document.activeElement;
         if ("Tab" === e.key) {
             if (!this._focusableElements.length)
@@ -424,185 +397,165 @@ class FocusLock {
                 return e.preventDefault(), void this._focusableElements[0].focus()
         }
         "Tab" !== e.key || e.shiftKey || t !== this._focusableElements[this._focusableElements.length - 1] || (e.preventDefault(), this._focusableElements[0].focus()),
-        "Tab" === e.key && e.shiftKey && t === this._focusableElements[0] && (e.preventDefault(), this._focusableElements[this._focusableElements.length - 1].focus())
+            "Tab" === e.key && e.shiftKey && t === this._focusableElements[0] && (e.preventDefault(), this._focusableElements[this._focusableElements.length - 1].focus())
     }
-    lock(e, t=!0)
-    {
+    lock(e, t = !0) {
         this.unlock(),
-        this._lockedSelector = e;
+            this._lockedSelector = e;
         const s = document.querySelector(this._lockedSelector);
         if (!s)
             return;
         this._focusableElements = s.querySelectorAll(this._selectors),
-        this._endElement = document.activeElement;
+            this._endElement = document.activeElement;
         const a = s.querySelector("[data-focus]") || this._focusableElements[0];
         this._endElement && this._endElement.blur(),
-        a && t && a.focus(),
-        document.addEventListener("keydown", this._documentKeydownHandler)
+            a && t && a.focus(),
+            document.addEventListener("keydown", this._documentKeydownHandler)
     }
-    unlock(e=!0)
-    {
+    unlock(e = !0) {
         this._endElement && e && this._endElement.focus(),
-        this._lockedSelector = null,
-        this._focusableElements = null,
-        this._endElement = null,
-        document.removeEventListener("keydown", this._documentKeydownHandler)
+            this._lockedSelector = null,
+            this._focusableElements = null,
+            this._endElement = null,
+            document.removeEventListener("keydown", this._documentKeydownHandler)
     }
 }
 window.focusLock = new FocusLock;
 class ScrollLock {
-    constructor()
-    {
+    constructor() {
         this._iosChecker = iosChecker,
-        this._lockClass = this._iosChecker() ? "scroll-lock-ios" : "scroll-lock",
-        this._scrollTop = null,
-        this._fixedBlockElements = document.querySelectorAll("[data-fix-block]")
+            this._lockClass = this._iosChecker() ? "scroll-lock-ios" : "scroll-lock",
+            this._scrollTop = null,
+            this._fixedBlockElements = document.querySelectorAll("[data-fix-block]")
     }
-    _getScrollbarWidth()
-    {
+    _getScrollbarWidth() {
         return window.innerWidth - document.documentElement.clientWidth
     }
-    _getBodyScrollTop()
-    {
+    _getBodyScrollTop() {
         return self.pageYOffset || document.documentElement && document.documentElement.ScrollTop || document.body && document.body.scrollTop
     }
-    disableScrolling()
-    {
+    disableScrolling() {
         this._scrollTop = document.body.dataset.scroll = document.body.dataset.scroll ? document.body.dataset.scroll : this._getBodyScrollTop(),
-        this._getScrollbarWidth() && (document.body.style.paddingRight = `${this._getScrollbarWidth()}px`, this._fixedBlockElements.forEach((e => {
-            e.style.paddingRight = `${this._getScrollbarWidth()}px`
-        }))),
-        document.body.style.top = `-${this._scrollTop}px`,
-        document.body.classList.add(this._lockClass)
+            this._getScrollbarWidth() && (document.body.style.paddingRight = `${this._getScrollbarWidth()}px`, this._fixedBlockElements.forEach((e => {
+                e.style.paddingRight = `${this._getScrollbarWidth()}px`
+            }))),
+            document.body.style.top = `-${this._scrollTop}px`,
+            document.body.classList.add(this._lockClass)
     }
-    enableScrolling()
-    {
+    enableScrolling() {
         document.body.classList.remove(this._lockClass),
-        window.scrollTo(0, +document.body.dataset.scroll),
-        document.body.style.paddingRight = null,
-        document.body.style.top = null,
-        this._fixedBlockElements.forEach((e => {
-            e.style.paddingRight = null
-        })),
-        document.body.removeAttribute("data-scroll"),
-        this._scrollTop = null
+            window.scrollTo(0, +document.body.dataset.scroll),
+            document.body.style.paddingRight = null,
+            document.body.style.top = null,
+            this._fixedBlockElements.forEach((e => {
+                e.style.paddingRight = null
+            })),
+            document.body.removeAttribute("data-scroll"),
+            this._scrollTop = null
     }
 }
 window.scrollLock = new ScrollLock;
 class Modals {
-    constructor(e={})
-    {
+    constructor(e = {}) {
         this._scrollLock = new ScrollLock,
-        this._focusLock = new FocusLock,
-        this._modalOpenElements = document.querySelectorAll("[data-open-modal]"),
-        this._stackModalElements = [],
-        this._openedModalElement = null,
-        this._modalName = null,
-        this._enableScrolling = !0,
-        this._settingKey = "default",
-        this._settings = e,
-        this._preventDefault = this._settings[this._settingKey].preventDefault,
-        this._stopPlay = this._settings[this._settingKey].stopPlay,
-        this._lockFocus = this._settings[this._settingKey].lockFocus,
-        this._startFocus = this._settings[this._settingKey].startFocus,
-        this._focusBack = this._settings[this._settingKey].focusBack,
-        this._eventTimeout = this._settings[this._settingKey].eventTimeout,
-        this._resetScrollPos = this._settings[this._settingKey].resetScrollPos,
-        this._openCallback = this._settings[this._settingKey].openCallback,
-        this._closeCallback = this._settings[this._settingKey].closeCallback,
-        this._documentKeydownHandler = this._documentKeydownHandler.bind(this),
-        this._documentClickHandler = this._documentClickHandler.bind(this),
-        this._modalClickHandler = this._modalClickHandler.bind(this),
-        this._init()
+            this._focusLock = new FocusLock,
+            this._modalOpenElements = document.querySelectorAll("[data-open-modal]"),
+            this._stackModalElements = [],
+            this._openedModalElement = null,
+            this._modalName = null,
+            this._enableScrolling = !0,
+            this._settingKey = "default",
+            this._settings = e,
+            this._preventDefault = this._settings[this._settingKey].preventDefault,
+            this._stopPlay = this._settings[this._settingKey].stopPlay,
+            this._lockFocus = this._settings[this._settingKey].lockFocus,
+            this._startFocus = this._settings[this._settingKey].startFocus,
+            this._focusBack = this._settings[this._settingKey].focusBack,
+            this._eventTimeout = this._settings[this._settingKey].eventTimeout,
+            this._resetScrollPos = this._settings[this._settingKey].resetScrollPos,
+            this._openCallback = this._settings[this._settingKey].openCallback,
+            this._closeCallback = this._settings[this._settingKey].closeCallback,
+            this._documentKeydownHandler = this._documentKeydownHandler.bind(this),
+            this._documentClickHandler = this._documentClickHandler.bind(this),
+            this._modalClickHandler = this._modalClickHandler.bind(this),
+            this._init()
     }
-    _init()
-    {
+    _init() {
         this._modalOpenElements.length && document.addEventListener("click", this._documentClickHandler)
     }
-    _setSettings(e=this._settingKey)
-    {
+    _setSettings(e = this._settingKey) {
         this._settings[e] && (this._preventDefault = "boolean" == typeof this._settings[e].preventDefault ? this._settings[e].preventDefault : this._settings[this._settingKey].preventDefault, this._stopPlay = "boolean" == typeof this._settings[e].stopPlay ? this._settings[e].stopPlay : this._settings[this._settingKey].stopPlay, this._lockFocus = "boolean" == typeof this._settings[e].lockFocus ? this._settings[e].lockFocus : this._settings[this._settingKey].lockFocus, this._startFocus = "boolean" == typeof this._settings[e].startFocus ? this._settings[e].startFocus : this._settings[this._settingKey].startFocus, this._focusBack = "boolean" == typeof this._settings[e].lockFocus ? this._settings[e].focusBack : this._settings[this._settingKey].focusBack, this._resetScrollPos = "boolean" == typeof this._settings[e].resetScrollPos ? this._settings[e].resetScrollPos : this._settings[this._settingKey].resetScrollPos, this._eventTimeout = "number" == typeof this._settings[e].eventTimeout ? this._settings[e].eventTimeout : this._settings[this._settingKey].eventTimeout, this._openCallback = this._settings[e].openCallback || this._settings[this._settingKey].openCallback, this._closeCallback = this._settings[e].closeCallback || this._settings[this._settingKey].closeCallback)
     }
-    _documentClickHandler(e)
-    {
+    _documentClickHandler(e) {
         const t = e.target;
         t.closest("[data-open-modal]") && (e.preventDefault(), this._modalName = t.closest("[data-open-modal]").dataset.openModal, this._modalName && this.open())
     }
-    _documentKeydownHandler(e)
-    {
+    _documentKeydownHandler(e) {
         ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), this.close(document.querySelector(".modal.is-active").dataset.modal))
     }
-    _modalClickHandler(e)
-    {
+    _modalClickHandler(e) {
         const t = e.target;
         t.closest("[data-close-modal]") && (t.closest('[data-close-modal="back"]') ? this.back() : (this.close(t.closest("[data-modal]").dataset.modal), this._stackModalElements = []))
     }
-    _addListeners(e)
-    {
+    _addListeners(e) {
         e.addEventListener("click", this._modalClickHandler),
-        document.addEventListener("keydown", this._documentKeydownHandler)
+            document.addEventListener("keydown", this._documentKeydownHandler)
     }
-    _removeListeners(e)
-    {
+    _removeListeners(e) {
         e.removeEventListener("click", this._modalClickHandler),
-        document.removeEventListener("keydown", this._documentKeydownHandler)
+            document.removeEventListener("keydown", this._documentKeydownHandler)
     }
-    _stopInteractive(e)
-    {
+    _stopInteractive(e) {
         this._stopPlay && (e.querySelectorAll("video, audio").forEach((e => e.pause())), e.querySelectorAll("[data-iframe]").forEach((e => {
             e.querySelector("iframe").contentWindow.postMessage('{"event": "command", "func": "pauseVideo", "args": ""}', "*")
         })))
     }
-    _autoPlay(e)
-    {
+    _autoPlay(e) {
         e.querySelectorAll("[data-iframe]").forEach((e => {
             e.closest("[data-auto-play]") && e.querySelector("iframe").contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*")
         }))
     }
-    open(e=this._modalName)
-    {
+    open(e = this._modalName) {
         const t = document.querySelector(`[data-modal="${e}"]`);
         t && !t.classList.contains("is-active") && (document.removeEventListener("click", this._documentClickHandler), this._openedModalElement = document.querySelector(".modal.is-active"), this._openedModalElement && (this._enableScrolling = !1, this.close(this._openedModalElement.dataset.modal)), this._setSettings(e), t.classList.add("is-active"), e !== this._stackModalElements[this._stackModalElements.length - 1] && this._stackModalElements.push(e), this._openedModalElement || this._scrollLock.disableScrolling(), this._openCallback && this._openCallback(), this._lockFocus && this._focusLock.lock(".modal.is-active", this._startFocus), this._resetScrollPos && t.scrollTo(0, 0), setTimeout((() => {
             this._addListeners(t),
-            this._autoPlay(t),
-            document.addEventListener("click", this._documentClickHandler)
+                this._autoPlay(t),
+                document.addEventListener("click", this._documentClickHandler)
         }), this._eventTimeout))
     }
-    back()
-    {
+    back() {
         if (!this._stackModalElements.length)
             return;
         const e = this._stackModalElements[this._stackModalElements.length - 1],
             t = this._stackModalElements[this._stackModalElements.length - 2];
         1 === this._stackModalElements.length && (this._stackModalElements = []),
-        t && (this._stackModalElements.pop(), this.open(t)),
-        this.close(e)
+            t && (this._stackModalElements.pop(), this.open(t)),
+            this.close(e)
     }
-    close(e=this._modalName)
-    {
+    close(e = this._modalName) {
         const t = document.querySelector(`[data-modal="${e}"]`);
         document.removeEventListener("click", this._documentClickHandler),
-        t && t.classList.contains("is-active") && (this._lockFocus && this._focusLock.unlock(this._focusBack), t.classList.remove("is-active"), this._removeListeners(t), this._stopInteractive(t), this._closeCallback && this._closeCallback(), this._enableScrolling && setTimeout((() => {
-            this._scrollLock.enableScrolling()
-        }), this._eventTimeout), setTimeout((() => {
-            document.addEventListener("click", this._documentClickHandler)
-        }), this._eventTimeout), this._setSettings("default"), this._enableScrolling = !0)
+            t && t.classList.contains("is-active") && (this._lockFocus && this._focusLock.unlock(this._focusBack), t.classList.remove("is-active"), this._removeListeners(t), this._stopInteractive(t), this._closeCallback && this._closeCallback(), this._enableScrolling && setTimeout((() => {
+                this._scrollLock.enableScrolling()
+            }), this._eventTimeout), setTimeout((() => {
+                document.addEventListener("click", this._documentClickHandler)
+            }), this._eventTimeout), this._setSettings("default"), this._enableScrolling = !0)
     }
 }
 let modals;
 const settings = {
-        default: {
-            preventDefault: !0,
-            stopPlay: !0,
-            lockFocus: !0,
-            startFocus: !0,
-            focusBack: !0,
-            resetScrollPos: !1,
-            eventTimeout: 400,
-            openCallback: !1,
-            closeCallback: !1
-        }
-    },
+    default: {
+        preventDefault: !0,
+        stopPlay: !0,
+        lockFocus: !0,
+        startFocus: !0,
+        focusBack: !0,
+        resetScrollPos: !1,
+        eventTimeout: 400,
+        openCallback: !1,
+        closeCallback: !1
+    }
+},
     initModals = () => {
         const e = document.querySelectorAll(".modal");
         e.length && e.forEach((e => {
@@ -610,8 +563,8 @@ const settings = {
                 e.classList.remove("modal--preload")
             }), 100)
         })),
-        modals = new Modals(settings),
-        window.modals = modals
+            modals = new Modals(settings),
+            window.modals = modals
     };
 window.addEventListener("DOMContentLoaded", (() => {
     window.addEventListener("load", (() => {
@@ -619,9 +572,9 @@ window.addEventListener("DOMContentLoaded", (() => {
     }))
 }));
 const baseSuccessCallback = e => {
-        e.preventDefault(),
+    e.preventDefault(),
         handleFormSubmit(e)
-    },
+},
     baseErrorCallback = e => {
         e.preventDefault()
     },
@@ -634,62 +587,58 @@ const baseSuccessCallback = e => {
         }
     };
 class Message {
-    constructor()
-    {
+    constructor() {
         this._baseErrorText = "This field is required"
     }
-    _messageTemplate(e, t)
-    {
+    _messageTemplate(e, t) {
         return `<span class="input-message ${"valid" === t ? "is-valid" : "is-invalid"}">${e}</span>`
     }
-    removeMessage(e)
-    {
+    removeMessage(e) {
         const t = e.querySelector(".input-message");
         t && t.remove()
     }
-    renderMessage(e, t, s)
-    {
+    renderMessage(e, t, s) {
         this.removeMessage(e),
-        e.insertAdjacentHTML("beforeend", this._messageTemplate(t, s))
+            e.insertAdjacentHTML("beforeend", this._messageTemplate(t, s))
     }
 }
 const setLimitationError = e => {
-        console.error(`Переданный формат ограничения(data-limitation="${e}") - не поддерживается. Проверьте корректность введённых значений.`)
-    },
+    console.error(`Переданный формат ограничения(data-limitation="${e}") - не поддерживается. Проверьте корректность введённых значений.`)
+},
     getLimitationsRegEx = e => {
         switch (e) {
-        case "digit":
-            return /[^\d]/g;
-        case "name":
-            return /[^a-zA-Zа-яёА-ЯЁ\-\s]/g;
-        case "letters":
-            return /[^a-zA-Zа-яёА-ЯЁ\s]/g;
-        case "letters-and-digit":
-            return /[^a-zA-Zа-яёА-ЯЁ\s\d]/g;
-        case "cyrillic":
-            return /[^а-яёА-ЯЁ\s]/g;
-        case "latin":
-            return /[^a-zA-Z\s]/g;
-        default:
-            return setLimitationError(e)
+            case "digit":
+                return /[^\d]/g;
+            case "name":
+                return /[^a-zA-Zа-яёА-ЯЁ\-\s]/g;
+            case "letters":
+                return /[^a-zA-Zа-яёА-ЯЁ\s]/g;
+            case "letters-and-digit":
+                return /[^a-zA-Zа-яёА-ЯЁ\s\d]/g;
+            case "cyrillic":
+                return /[^а-яёА-ЯЁ\s]/g;
+            case "latin":
+                return /[^a-zA-Z\s]/g;
+            default:
+                return setLimitationError(e)
         }
     },
     getMatrixLimitationsRegEx = e => {
         switch (e) {
-        case "digit":
-            return /[^\d]/g;
-        case "name":
-            return /[^\а-яё\А-ЯЁ\a-z\A-Z\-]]/g;
-        case "letters":
-            return /[^\а-яё\А-ЯЁ\a-z\A-Z]/g;
-        case "letters-and-digit":
-            return /[^\а-яё\А-ЯЁ\a-z\A-Z\d]/g;
-        case "cyrillic":
-            return /[^\а-яё\А-ЯЁ]/g;
-        case "latin":
-            return /[^\a-z\A-Z]/g;
-        default:
-            return !1
+            case "digit":
+                return /[^\d]/g;
+            case "name":
+                return /[^\а-яё\А-ЯЁ\a-z\A-Z\-]]/g;
+            case "letters":
+                return /[^\а-яё\А-ЯЁ\a-z\A-Z]/g;
+            case "letters-and-digit":
+                return /[^\а-яё\А-ЯЁ\a-z\A-Z\d]/g;
+            case "cyrillic":
+                return /[^\а-яё\А-ЯЁ]/g;
+            case "latin":
+                return /[^\a-z\A-Z]/g;
+            default:
+                return !1
         }
     },
     matrixReplace = (e, t, s) => {
@@ -701,7 +650,7 @@ const setLimitationError = e => {
         let i = e.value.replace(s, ""),
             o = 0;
         a.length >= i.length && (i = a),
-        e.value = t.replace(/./g, (e => /[_\^]/.test(e) && o < i.length ? i.charAt(o++) : o >= i.length ? "" : e))
+            e.value = t.replace(/./g, (e => /[_\^]/.test(e) && o < i.length ? i.charAt(o++) : o >= i.length ? "" : e))
     },
     getMailRegEx = () => /[a-zA-Zа-яёА-ЯЁ0-9]{1}([a-zA-Zа-яёА-ЯЁ0-9\-_\.]{1,})?@[a-zA-Zа-яёА-ЯЁ0-9\-]{1}([a-zA-Zа-яёА-ЯЁ0-9.\-]{1,})?[a-zA-Zа-яёА-ЯЁ0-9\-]{1}\.[a-zA-Zа-яёА-ЯЁ]{2,6}/,
     baseCountryCode = "+",
@@ -713,183 +662,162 @@ const setLimitationError = e => {
         let a = 0,
             i = e.target.value.replace(/\D/g, "");
         s.length >= i.length && (i = s),
-        e.target.value = t.replace(/./g, (e => /[_\d]/.test(e) && a < i.length ? i.charAt(a++) : a >= i.length ? "" : e))
+            e.target.value = t.replace(/./g, (e => /[_\d]/.test(e) && a < i.length ? i.charAt(a++) : a >= i.length ? "" : e))
     },
-    onPhoneInputFocus = ({target: e}) => {
+    onPhoneInputFocus = ({ target: e }) => {
         e.value || (e.value = "+"),
-        e.addEventListener("input", onPhoneInputInput),
-        e.addEventListener("blur", onPhoneInputBlur),
-        e.addEventListener("keydown", onPhoneInputKeydown),
-        e.addEventListener("paste", onPhoneInputPaste),
-        e.addEventListener("click", onPhoneInputClick)
+            e.addEventListener("input", onPhoneInputInput),
+            e.addEventListener("blur", onPhoneInputBlur),
+            e.addEventListener("keydown", onPhoneInputKeydown),
+            e.addEventListener("paste", onPhoneInputPaste),
+            e.addEventListener("click", onPhoneInputClick)
     },
     onPhoneInputClick = e => {
         e.target.selectionStart < 4 && (e.preventDefault(), e.target.setSelectionRange(3, 3))
     },
     onPhoneInputPaste = e => {
         e.target.setSelectionRange(0, 0),
-        e.target.selectionStart || setTimeout((() => {
-            e.target.value.startsWith("+7") || (e.target.value.startsWith("+8") ? e.target.value = `+7 ${e.target.value.slice(3)}` : e.target.value = "")
-        }))
+            e.target.selectionStart || setTimeout((() => {
+                e.target.value.startsWith("+7") || (e.target.value.startsWith("+8") ? e.target.value = `+7 ${e.target.value.slice(3)}` : e.target.value = "")
+            }))
     },
     onPhoneInputKeydown = e => {
         e.target.selectionStart < 4 && (37 === e.keyCode || 13 === e.keyCode) && (e.preventDefault(), e.target.setSelectionRange(3, 3))
     },
-    onPhoneInputBlur = ({target: e}) => {
+    onPhoneInputBlur = ({ target: e }) => {
         if ("+" === e.value) {
             const t = e.closest('[data-validate-type="phone"]');
             if (e.value = "", !t.hasAttribute("data-required")) {
                 t.classList.remove("is-valid"),
-                t.classList.remove("is-invalid");
+                    t.classList.remove("is-invalid");
                 const e = t.querySelector(".input-message");
                 e && e.remove()
             }
             t.classList.remove("not-empty"),
-            e.removeEventListener("input", onPhoneInputInput),
-            e.removeEventListener("blur", onPhoneInputBlur),
-            e.removeEventListener("keydown", onPhoneInputKeydown),
-            e.removeEventListener("paste", onPhoneInputPaste),
-            e.removeEventListener("click", onPhoneInputClick)
+                e.removeEventListener("input", onPhoneInputInput),
+                e.removeEventListener("blur", onPhoneInputBlur),
+                e.removeEventListener("keydown", onPhoneInputKeydown),
+                e.removeEventListener("paste", onPhoneInputPaste),
+                e.removeEventListener("click", onPhoneInputClick)
         }
     },
     initPhoneInput = e => {
         const t = e.querySelector("input");
         e.dataset.phoneLength = phoneLength,
-        t.addEventListener("focus", onPhoneInputFocus)
+            t.addEventListener("focus", onPhoneInputFocus)
     };
 class Validator {
-    constructor()
-    {
+    constructor() {
         this._getLimitationsRegEx = getLimitationsRegEx,
-        this._getMatrixLimitationsRegEx = getMatrixLimitationsRegEx,
-        this._getMailRegEx = getMailRegEx,
-        this._matrixReplace = matrixReplace,
-        this._message = new Message
+            this._getMatrixLimitationsRegEx = getMatrixLimitationsRegEx,
+            this._getMailRegEx = getMailRegEx,
+            this._matrixReplace = matrixReplace,
+            this._message = new Message
     }
-    _renderMessage(e, t, s)
-    {
+    _renderMessage(e, t, s) {
         (t.hasAttribute("data-required") || s.value) && (e ? t.hasAttribute("data-message-success") ? this._message.renderMessage(t, t.dataset.messageSuccess, "valid") : this._message.removeMessage(t) : (t.classList.add("is-invalid"), s.classList.add("error"), t.hasAttribute("data-message-base") && !s.value ? this._message.renderMessage(t, t.dataset.messageBase, "invalid") : t.hasAttribute("data-message-extra") && s.value ? this._message.renderMessage(t, t.dataset.messageExtra, "invalid") : !t.hasAttribute("data-message-extra") && t.hasAttribute("data-message-base") && s.value ? this._message.renderMessage(t, t.dataset.messageBase, "invalid") : this._message.removeMessage(t)))
     }
-    _setItemValidState(e, t)
-    {
+    _setItemValidState(e, t) {
         (e.hasAttribute("data-required") || t.value) && (e.classList.add("is-valid"), e.classList.remove("is-invalid"), t.setAttribute("aria-invalid", "false"), this._message.removeMessage(e))
     }
-    _setItemInvalidState(e, t)
-    {
+    _setItemInvalidState(e, t) {
         (e.hasAttribute("data-required") || t.value) && (e.classList.remove("is-valid"), t.setAttribute("aria-invalid", "true"))
     }
-    _simpleLimitation(e, t)
-    {
+    _simpleLimitation(e, t) {
         e.value = e.value.replace(this._getLimitationsRegEx(t), "")
     }
-    _matrixLimitation(e, t, s)
-    {
+    _matrixLimitation(e, t, s) {
         this._matrixReplace(e, t, s)
     }
-    _validateTextInput(e, t)
-    {
+    _validateTextInput(e, t) {
         let s = !0;
         return t.value.length >= (+t.getAttribute("minlength") || 1) ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _validateMatrixInput(e, t)
-    {
+    _validateMatrixInput(e, t) {
         let s = !0;
         return t.value.length === t.closest("[data-matrix]").dataset.matrix.length ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _validateEmailInput(e, t)
-    {
+    _validateEmailInput(e, t) {
         let s = !0;
         return new RegExp(this._getMailRegEx(), "").test(t.value) ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _validatePhoneInput(e, t)
-    {
+    _validatePhoneInput(e, t) {
         let s = !0;
         return t.value.length >= +e.dataset.phoneLength ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _validateCheckbox(e, t)
-    {
+    _validateCheckbox(e, t) {
         let s = !0;
         return t.checked ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _findSelectedOption(e)
-    {
+    _findSelectedOption(e) {
         let t = !1;
         return e.forEach((e => {
             e.value && e.selected && (t = !0)
         })), t
     }
-    _validateSelect(e, t)
-    {
+    _validateSelect(e, t) {
         const s = t.querySelectorAll("option"),
             a = e.querySelector(".custom-select__text");
         t.setAttribute("aria-invalid", "false");
         let i = !0;
         return this._findSelectedOption(s) ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), e.classList.remove("not-empty"), a.innerHTML = "", i = !1), i
     }
-    _returnCheckedElements(e)
-    {
+    _returnCheckedElements(e) {
         let t = !1;
         return e.forEach((e => {
             e.checked && (t = !0)
         })), t
     }
-    _removeGroupAria(e)
-    {
+    _removeGroupAria(e) {
         e.forEach((e => {
             e.checked ? (e.setAttribute("aria-required", !0), e.setAttribute("aria-invalid", !1)) : (e.removeAttribute("aria-required"), e.removeAttribute("aria-invalid"))
         }))
     }
-    _setGroupAria(e)
-    {
+    _setGroupAria(e) {
         e.forEach((e => {
             e.setAttribute("aria-required", !0),
-            e.setAttribute("aria-invalid", !0)
+                e.setAttribute("aria-invalid", !0)
         }))
     }
-    _validateToggleGroup(e)
-    {
+    _validateToggleGroup(e) {
         const t = e.querySelectorAll("input");
         let s = !0;
         return this._returnCheckedElements(t) ? (this._removeGroupAria(t), e.classList.remove("is-invalid"), e.classList.add("is-valid"), this._message.removeMessage(e)) : (this._setGroupAria(t), e.classList.remove("is-valid"), s = !1), s
     }
-    _customExample(e, t)
-    {
+    _customExample(e, t) {
         let s = !0;
         return t.value.length ? t.value.length < t.minLength ? (e.dataset.messageBase = `Осталось ввести ещё ${t.minLength - t.value.length} символов`, this._setItemInvalidState(e, t), s = !1) : t.value.length > t.minLength ? (e.dataset.messageBase = `Вы ввели ${t.value.length - t.minLength} лишних символов`, this._setItemInvalidState(e, t), s = !1) : (e.dataset.messageSuccess = "Поле заполнено корректно", this._setItemValidState(e, t), s = !0) : (e.dataset.messageBase = "Поле обязательно к заполнению", this._setItemInvalidState(e, t), s = !1), s
     }
-    _validateFile(e, t)
-    {
+    _validateFile(e, t) {
         let s = !0;
         const a = !e.dataset.maxSize || !t.files[0] || t.files[0].size < +e.dataset.maxSize;
         return t.value && a ? this._setItemValidState(e, t) : (this._setItemInvalidState(e, t), s = !1), s
     }
-    _validateInput(e, t, s)
-    {
+    _validateInput(e, t, s) {
         switch (e) {
-        case "text":
-            return this._validateTextInput(t, s);
-        case "matrix":
-            return this._validateMatrixInput(t, s);
-        case "email":
-            return this._validateEmailInput(t, s);
-        case "phone":
-            return this._validatePhoneInput(t, s);
-        case "checkbox":
-            return this._validateCheckbox(t, s);
-        case "select":
-            return this._validateSelect(t, s);
-        case "toggle-group":
-            return this._validateToggleGroup(t, s);
-        case "file":
-            return this._validateFile(t, s);
-        case "custom-example":
-            return this._customExample(t, s);
-        default:
-            return !1
+            case "text":
+                return this._validateTextInput(t, s);
+            case "matrix":
+                return this._validateMatrixInput(t, s);
+            case "email":
+                return this._validateEmailInput(t, s);
+            case "phone":
+                return this._validatePhoneInput(t, s);
+            case "checkbox":
+                return this._validateCheckbox(t, s);
+            case "select":
+                return this._validateSelect(t, s);
+            case "toggle-group":
+                return this._validateToggleGroup(t, s);
+            case "file":
+                return this._validateFile(t, s);
+            case "custom-example":
+                return this._customExample(t, s);
+            default:
+                return !1
         }
     }
-    validateFormElement(e, t=!1)
-    {
+    validateFormElement(e, t = !1) {
         const s = e.closest("[data-validate-type]");
         if (!s)
             return;
@@ -898,108 +826,95 @@ class Validator {
         }
         const a = s.hasAttribute("data-on-input-validate");
         s.hasAttribute("data-limitation") && this._simpleLimitation(e, s.dataset.limitation),
-        "matrix" === s.dataset.validateType && this._matrixLimitation(e, s.dataset.matrix, this._getMatrixLimitationsRegEx(s.dataset.matrixLimitation));
+            "matrix" === s.dataset.validateType && this._matrixLimitation(e, s.dataset.matrix, this._getMatrixLimitationsRegEx(s.dataset.matrixLimitation));
         const i = this._validateInput(s.dataset.validateType, s, e);
         (a || t) && this._renderMessage(i, s, e)
     }
-    _fullValidate(e)
-    {
+    _fullValidate(e) {
         let t = !0;
         return e.forEach((e => {
             const s = e.querySelector("input") || e.querySelector("select") || e.querySelector("textarea");
             this.validateFormElement(s, !0),
-            e.classList.contains("is-invalid") && (t = !1)
+                e.classList.contains("is-invalid") && (t = !1)
         })), t
     }
-    validateForm(e)
-    {
+    validateForm(e) {
         const t = e.querySelectorAll("[data-validate-type]");
         return this._fullValidate(t)
     }
 }
 class Form {
-    constructor()
-    {
+    constructor() {
         this._validator = new Validator,
-        this._initPhoneInput = initPhoneInput,
-        this._callbacks = callbacks
+            this._initPhoneInput = initPhoneInput,
+            this._callbacks = callbacks
     }
-    _resetSelect(e)
-    {
+    _resetSelect(e) {
         const t = e.querySelector("select"),
             s = t.options.selectedIndex,
             a = t.options[s],
             i = e.querySelector(".custom-select__text"),
             o = e.querySelectorAll(".custom-select__item");
         i.textContent = a.textContent,
-        o.forEach(((e, t) => {
-            t !== s - 1 ? e.setAttribute("aria-selected", "false") : e.setAttribute("aria-selected", "true")
-        })),
-        t.value || (e.classList.remove("not-empty"), e.classList.remove("is-valid"))
+            o.forEach(((e, t) => {
+                t !== s - 1 ? e.setAttribute("aria-selected", "false") : e.setAttribute("aria-selected", "true")
+            })),
+            t.value || (e.classList.remove("not-empty"), e.classList.remove("is-valid"))
     }
-    _resetSelects(e)
-    {
+    _resetSelects(e) {
         e.querySelectorAll("[data-select]").forEach((e => {
             this._resetSelect(e)
         }))
     }
-    reset(e)
-    {
+    reset(e) {
         e.reset(),
-        e.querySelectorAll(".is-invalid").forEach((e => e.classList.remove("is-invalid"))),
-        e.querySelectorAll(".is-valid").forEach((e => e.classList.remove("is-valid"))),
-        e.querySelectorAll(".input-message").forEach((e => e.remove())),
-        setTimeout((() => {
-            this._resetSelects(e)
-        }))
+            e.querySelectorAll(".is-invalid").forEach((e => e.classList.remove("is-invalid"))),
+            e.querySelectorAll(".is-valid").forEach((e => e.classList.remove("is-valid"))),
+            e.querySelectorAll(".input-message").forEach((e => e.remove())),
+            setTimeout((() => {
+                this._resetSelects(e)
+            }))
     }
-    initPhoneInput(e)
-    {
+    initPhoneInput(e) {
         this._initPhoneInput(e)
     }
-    validateForm(e)
-    {
+    validateForm(e) {
         return this._validator.validateForm(e)
     }
-    validateFormElement(e)
-    {
+    validateFormElement(e) {
         return this._validator.validateFormElement(e)
     }
-    _onFormSubmit(e, t=null)
-    {
+    _onFormSubmit(e, t = null) {
         if (this.validateForm(e.target) && t)
             return this._callbacks[t].successCallback(e), void (this._callbacks[t].reset && setTimeout((() => {
                 this.reset(e.target)
             }), this._callbacks[t].resetTimeout ? this._callbacks[t].resetTimeout : 500));
         this.validateForm(e.target) || !t || this._callbacks[t].errorCallback(e)
     }
-    _onFormInput(e)
-    {
+    _onFormInput(e) {
         this.validateFormElement(e)
     }
-    _initValidate(e)
-    {
+    _initValidate(e) {
         const t = e.querySelector("form");
         if (!t)
             return;
         t.querySelectorAll('[data-validate-type="phone"]').forEach((e => this._initPhoneInput(e)));
         const s = e.dataset.callback;
         t.noValidate = !0,
-        t.addEventListener("submit", (e => {
-            e.preventDefault(),
-            this._onFormSubmit(e, s)
-        })),
-        t.addEventListener("input", (e => {
-            this._onFormInput(e.target)
-        })),
-        t.addEventListener("reset", (e => {
-            this.reset(e.target)
-        }))
+            t.addEventListener("submit", (e => {
+                e.preventDefault(),
+                    this._onFormSubmit(e, s)
+            })),
+            t.addEventListener("input", (e => {
+                this._onFormInput(e.target)
+            })),
+            t.addEventListener("reset", (e => {
+                this.reset(e.target)
+            }))
     }
-    init()
-    {
+    init() {
         this._validateParent = document.querySelectorAll("[data-form-validate]"),
-        this._validateParent.length && this._validateParent.forEach((e => this._initValidate(e)))
+            this._validateParent.length && this._validateParent.forEach((e => this._initValidate(e)))
     }
 }
 async function handleFormSubmit(e) {
@@ -1023,11 +938,13 @@ window.addEventListener("DOMContentLoaded", (() => {
     window.addEventListener("load", (() => {
         const e = new Form;
         window.form = e,
-        e.init()
+            e.init()
     }))
 }));
 const subscribeForm = document.querySelector(".modal__form");
-subscribeForm.addEventListener("submit", handleFormSubmit);
+if (subscribeForm) {
+    subscribeForm.addEventListener("submit", handleFormSubmit);
+}
 const scrollStepsElements = document.querySelectorAll('[data-name="steps"]'),
     stepsElement = document.querySelector(".steps"),
     scrollLookbookElements = document.querySelectorAll('[data-name="lookbook"]'),
@@ -1037,30 +954,30 @@ const scrollStepsElements = document.querySelectorAll('[data-name="steps"]'),
 scrollStepsElements.forEach((e => {
     e.addEventListener("click", (e => {
         e.preventDefault(),
-        stepsElement.scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        })
+            stepsElement.scrollIntoView({
+                block: "start",
+                behavior: "smooth"
+            })
     }))
 })),
-scrollLookbookElements.forEach((e => {
-    e.addEventListener("click", (e => {
-        e.preventDefault(),
-        lookbookElement.scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        })
-    }))
-})),
-scrollReviewsElements.forEach((e => {
-    e.addEventListener("click", (e => {
-        e.preventDefault(),
-        reviewsElement.scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        })
-    }))
-}));
+    scrollLookbookElements.forEach((e => {
+        e.addEventListener("click", (e => {
+            e.preventDefault(),
+                lookbookElement.scrollIntoView({
+                    block: "start",
+                    behavior: "smooth"
+                })
+        }))
+    })),
+    scrollReviewsElements.forEach((e => {
+        e.addEventListener("click", (e => {
+            e.preventDefault(),
+                reviewsElement.scrollIntoView({
+                    block: "start",
+                    behavior: "smooth"
+                })
+        }))
+    }));
 const fullScreenButtons = document.querySelectorAll(".lookbook__fullscreen"),
     modalContent = document.querySelector(".modal__img");
 fullScreenButtons.forEach((e => e.addEventListener("click", (e => {
@@ -1068,13 +985,13 @@ fullScreenButtons.forEach((e => e.addEventListener("click", (e => {
     const t = `img/lookbook-${e.target.dataset.id}-desktop@1x.png`,
         s = new Image;
     s.src = t,
-    s.style.minWidth = "294px",
-    s.style.minHeight = "291px",
-    s.onload = () => {
-        modalContent.innerHTML = "",
-        modalContent.appendChild(s),
-        modals.open("modal-img")
-    }
+        s.style.minWidth = "294px",
+        s.style.minHeight = "291px",
+        s.onload = () => {
+            modalContent.innerHTML = "",
+                modalContent.appendChild(s),
+                modals.open("modal-img")
+        }
 }))));
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
@@ -1085,206 +1002,205 @@ const progressSteps = document.querySelectorAll(".progress-step");
 let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    formStepsNum++;
-    updateFormSteps();
-    updateProgressbar();
-  });
+    btn.addEventListener("click", () => {
+        formStepsNum++;
+        updateFormSteps();
+        updateProgressbar();
+    });
 });
 
 prevBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    formStepsNum--;
-    updateFormSteps();
-    updateProgressbar();
-  });
+    btn.addEventListener("click", () => {
+        formStepsNum--;
+        updateFormSteps();
+        updateProgressbar();
+    });
 });
 
 function updateFormSteps() {
-  formSteps.forEach((formStep) => {
-    formStep.classList.contains("form-step-active") &&
-    formStep.classList.remove("form-step-active");
-  });
+    formSteps.forEach((formStep) => {
+        formStep.classList.contains("form-step-active") &&
+            formStep.classList.remove("form-step-active");
+    });
 
-  formSteps[formStepsNum].classList.add("form-step-active");
+    formSteps[formStepsNum].classList.add("form-step-active");
 }
 
 function updateProgressbar() {
-  progressSteps.forEach((progressStep, idx) => {
-    if (idx < formStepsNum + 1) {
-      progressStep.classList.add("progress-step-active");
-    } else {
-      progressStep.classList.remove("progress-step-active");
-    }
-  });
+    progressSteps.forEach((progressStep, idx) => {
+        if (idx < formStepsNum + 1) {
+            progressStep.classList.add("progress-step-active");
+        } else {
+            progressStep.classList.remove("progress-step-active");
+        }
+    });
 
-  const progressActive = document.querySelectorAll(".progress-step-active");
+    const progressActive = document.querySelectorAll(".progress-step-active");
 
-  progress.style.width =
-    ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+    progress.style.width =
+        ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
-$(document).ready(function(){
+$(document).ready(function () {
     $('.mysubcribe-contact__history').click(function () {
         var $block = $('.mysubcribe-contacts__item').parent().find('.mysubcribe__history-block');
-        $block.slideToggle(300); 
-        $(this).toggleClass('active'); 
+        $block.slideToggle(300);
+        $(this).toggleClass('active');
         return false;
     });
 
-    $('.order__punkt-item .punkt-item__add').click(function(){
+    $('.order__punkt-item .punkt-item__add').click(function () {
         $('.order__punkt-item .punkt-item__add').removeClass('bg');
         $(this).addClass('bg');
     })
 
 
-    $('#list').click(function(event){event.preventDefault();
-        $('#products .shop__item').addClass('list-group-item');
-        $('#products .shop__item').removeClass('grid-group-item');
-        $('#list').addClass('active');
-        $('#grid').removeClass('active');
-    });
-    $('#grid').click(function(event){event.preventDefault();
-        $('#products .shop__item').addClass('grid-group-item');
-        $('#products .shop__item').removeClass('list-group-item');
-        $('#list').removeClass('active');
-        $('#grid').addClass('active');
-    });
-    $('.cookie--btn').click(function(){
+    // $('#list').click(function (event) {
+    //     event.preventDefault();
+    //     $('#products .shop__item').addClass('list-group-item');
+    //     $('#products .shop__item').removeClass('grid-group-item');
+    //     $('#list').addClass('active');
+    //     $('#grid').removeClass('active');
+    // });
+    // $('#grid').click(function (event) {
+    //     event.preventDefault();
+    //     $('#products .shop__item').addClass('grid-group-item');
+    //     $('#products .shop__item').removeClass('list-group-item');
+    //     $('#list').removeClass('active');
+    //     $('#grid').addClass('active');
+    // });
+    $('.cookie--btn').click(function () {
         $('.massega__block').fadeOut();
         //sets the coookie to five minutes if the popup is submited (whole numbers = days)
         //setCookie( 'popupCookie', 'submited', .0034722222 );
     });
-    $('.lookbook__item .shop__button').click(function(){
+    $('.lookbook__item .shop__button').click(function () {
         $('.modal-size').addClass('is-active');
         $('body').addClass('scroll-lock');
-            $(this).parents(".lookbook__item").find("shop__button").removeClass("shop__button-rows");
-            $(this).parents(".shop__buttons").addClass("shop__button-rows");
-            $(this).html('В корзину');
-        
+        $(this).parents(".lookbook__item").find("shop__button").removeClass("shop__button-rows");
+        $(this).parents(".shop__buttons").addClass("shop__button-rows");
+        $(this).html('В корзину');
+
         return false;
-    });  
-    $('.shop__item .shop__button').click(function(){
+    });
+    $('.shop__item .shop__button').click(function () {
         $('.modal-size').addClass('is-active');
         $('body').addClass('scroll-lock');
-            $(this).parents(".shop__item").find("shop__button").removeClass("shop__button-rows");
-            $(this).parents(".shop__buttons").addClass("shop__button-rows");
-            $(this).html('В корзину');
-        
+        $(this).parents(".shop__item").find("shop__button").removeClass("shop__button-rows");
+        $(this).parents(".shop__buttons").addClass("shop__button-rows");
+        $(this).html('В корзину');
+
         return false;
-    });  
-    $('.modals__button .shop__button').click(function(){
-            $(this).parents(".modals__button").find("shop__button").removeClass("shop__button-rows");
-            $(this).parents(".shop__buttons").addClass("shop__button-rows");
-            $(this).html('В корзину');
-        
+    });
+    $('.modals__button .shop__button').click(function () {
+        $(this).parents(".modals__button").find("shop__button").removeClass("shop__button-rows");
+        $(this).parents(".shop__buttons").addClass("shop__button-rows");
+        $(this).html('В корзину');
+
         return false;
-    });  
+    });
     $('.modal-size .product__size label').click(function () {
         $('.modal').removeClass('is-active');
         $('body').removeClass('scroll-lock');
     });
-    $('.mysubcribe-list .mysubcribe-item').each(function(i){
-       $(this).find('.mysubcribe-item__edit').click(function () {
-        $('.mysubcribe-item__edit').css("display", "none");
-        $('.mysubcribe-item_form-edit').css("display", "flex");
+    $('.mysubcribe-list .mysubcribe-item').each(function (i) {
+        $(this).find('.mysubcribe-item__edit').click(function () {
+            $('.mysubcribe-item__edit').css("display", "none");
+            $('.mysubcribe-item_form-edit').css("display", "flex");
+        });
+
+        $('.mysubcribe-item .mysubcribe-item__edit-check').click(function () {
+            $('.mysubcribe-item__edit').css("display", "flex");
+            $('.mysubcribe-item_form-edit').css("display", "none");
+        });
+        $('.mysubcribe-item #name-pod_v').on('input', function () {
+            var msg = $(this).val();
+            $(".mysubcribe-item #name-pod").text(msg);
+        });
     });
-    
-    $('.mysubcribe-item .mysubcribe-item__edit-check').click(function () {
-        $('.mysubcribe-item__edit').css("display", "flex");
-        $('.mysubcribe-item_form-edit').css("display", "none");
-    });
-    $('.mysubcribe-item #name-pod_v').on('input', function () {
-      var msg = $(this).val();
-      $(".mysubcribe-item #name-pod").text(msg);
-    });
-    });
-    
+
     //$(".mysuperimg").fancybox();
 
-    $('.shop__fore-btn').click(function () {
-         $('.shop__fore-btn').toggleClass('shop__fore-btn-a');  
-    });
-    $("#phone").inputmask({"mask": "+7 (999) 999-99-99"});
-    $("#phone-pop").inputmask({"mask": "+7 (999) 999-99-99"});
+    $("#phone").inputmask({ "mask": "+7 (999) 999-99-99" });
+    $("#phone-pop").inputmask({ "mask": "+7 (999) 999-99-99" });
 });
-$('[name=tab-freezing]').each(function(i,d){
-  var p = $(this).prop('checked');
-  if(p){
-    $('.freezing__container').eq(i)
-      .addClass('on');
-  }
+$('[name=tab-freezing]').each(function (i, d) {
+    var p = $(this).prop('checked');
+    if (p) {
+        $('.freezing__container').eq(i)
+            .addClass('on');
+    }
 });
 
-$('[name=tab-freezing]').on('change', function(){
-  var p = $(this).prop('checked');
-  var i = $('[name=tab-freezing]').index(this);
+$('[name=tab-freezing]').on('change', function () {
+    var p = $(this).prop('checked');
+    var i = $('[name=tab-freezing]').index(this);
 
-  $('.freezing__container').removeClass('on');
-  $('.freezing__container').eq(i).addClass('on');
+    $('.freezing__container').removeClass('on');
+    $('.freezing__container').eq(i).addClass('on');
 });
-$('[name=tab-d]').each(function(i,d){
-  var p = $(this).prop('checked');
-  if(p){
-    $('article').eq(i)
-      .addClass('on');
-  }
-});
-
-$('[name=tab-d]').on('change', function(){
-  var p = $(this).prop('checked');
-  var i = $('[name=tab-d]').index(this);
-
-  $('article').removeClass('on');
-  $('article').eq(i).addClass('on');
+$('[name=tab-d]').each(function (i, d) {
+    var p = $(this).prop('checked');
+    if (p) {
+        $('article').eq(i)
+            .addClass('on');
+    }
 });
 
-$('[name=tab-dp]').each(function(i,d){
-  var p = $(this).prop('checked');
-  if(p){
-    $('.delivery__containers').eq(i)
-      .addClass('on');
-  }
+$('[name=tab-d]').on('change', function () {
+    var p = $(this).prop('checked');
+    var i = $('[name=tab-d]').index(this);
+
+    $('article').removeClass('on');
+    $('article').eq(i).addClass('on');
 });
 
-$('[name=tab-dp]').on('change', function(){
-  var p = $(this).prop('checked');
-  var i = $('[name=tab-dp]').index(this);
+$('[name=tab-dp]').each(function (i, d) {
+    var p = $(this).prop('checked');
+    if (p) {
+        $('.delivery__containers').eq(i)
+            .addClass('on');
+    }
+});
 
-  $('.delivery__containers').removeClass('on');
-  $('.delivery__containers').eq(i).addClass('on');
+$('[name=tab-dp]').on('change', function () {
+    var p = $(this).prop('checked');
+    var i = $('[name=tab-dp]').index(this);
+
+    $('.delivery__containers').removeClass('on');
+    $('.delivery__containers').eq(i).addClass('on');
 });
 
 
-$('[name=tab-p]').each(function(i,d){
-  var p = $(this).prop('checked');
-  if(p){
-    $('.pay-content').eq(i)
-      .addClass('on');
-  }
+$('[name=tab-p]').each(function (i, d) {
+    var p = $(this).prop('checked');
+    if (p) {
+        $('.pay-content').eq(i)
+            .addClass('on');
+    }
 });
 
-$('[name=tab-p]').on('change', function(){
-  var p = $(this).prop('checked');
-  var i = $('[name=tab-p]').index(this);
+$('[name=tab-p]').on('change', function () {
+    var p = $(this).prop('checked');
+    var i = $('[name=tab-p]').index(this);
 
-  $('.pay-content').removeClass('on');
-  $('.pay-content').eq(i).addClass('on');
+    $('.pay-content').removeClass('on');
+    $('.pay-content').eq(i).addClass('on');
 });
 
-$('[name=tab-ppopup]').each(function(i,d){
-  var p = $(this).prop('checked');
-  if(p){
-    $('.pay-content__popup').eq(i)
-      .addClass('on');
-  }
+$('[name=tab-ppopup]').each(function (i, d) {
+    var p = $(this).prop('checked');
+    if (p) {
+        $('.pay-content__popup').eq(i)
+            .addClass('on');
+    }
 });
 
-$('[name=tab-ppopup]').on('change', function(){
-  var p = $(this).prop('checked');
-  var i = $('[name=tab-ppopup]').index(this);
+$('[name=tab-ppopup]').on('change', function () {
+    var p = $(this).prop('checked');
+    var i = $('[name=tab-ppopup]').index(this);
 
-  $('.pay-content__popup').removeClass('on');
-  $('.pay-content__popup').eq(i).addClass('on');
+    $('.pay-content__popup').removeClass('on');
+    $('.pay-content__popup').eq(i).addClass('on');
 });
 
 $('.cart__product-minus').click(function () {
@@ -1310,11 +1226,11 @@ $('.shop__product-minus').click(function () {
     $input.val(count);
     $input.change();
     //console.log($input.val());
-    if($input.val() == 0){
+    if ($input.val() == 0) {
         $('.shop__buttons').removeClass('shop__button-rows');
-      }
+    }
     return false;
-    
+
 });
 $('.shop__product-plus').click(function () {
     var $input = $(this).parent().find('input');
@@ -1326,7 +1242,7 @@ $('.shop__product-plus').click(function () {
 
 $('.select-dropdown__button').click(function () {
     $('.select-dropdown__button').toggleClass('active');
-   
+
     return false;
 });
 
@@ -1335,181 +1251,181 @@ const tabsPopup = document.querySelectorAll('[data-tab-target]')
 const tabContentsPopup = document.querySelectorAll('[data-tab-content]')
 
 tabsPopup.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContentsPopup.forEach(tabContent => {
-      tabContent.classList.remove('active')
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContentsPopup.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+        tabsPopup.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
     })
-    tabsPopup.forEach(tab => {
-      tab.classList.remove('active')
-    })
-    tab.classList.add('active')
-    target.classList.add('active')
-  })
 })
 
 
 document.addEventListener('DOMContentLoaded', createSelect, false);
-  function createSelect() {
+function createSelect() {
     var select = document.getElementsByTagName('select'),
-      liElement,
-      ulElement,
-      optionValue,
-      iElement,
-      optionText,
-      selectDropdown,
-      elementParentSpan;
+        liElement,
+        ulElement,
+        optionValue,
+        iElement,
+        optionText,
+        selectDropdown,
+        elementParentSpan;
 
     for (var select_i = 0, len = select.length; select_i < len; select_i++) {
-      //console.log('selects init');
+        //console.log('selects init');
 
-      select[select_i].style.display = 'none';
-      wrapElement(document.getElementById(select[select_i].id), document.createElement('div'), select_i, select[select_i].getAttribute('placeholder-text'));
+        select[select_i].style.display = 'none';
+        wrapElement(document.getElementById(select[select_i].id), document.createElement('div'), select_i, select[select_i].getAttribute('placeholder-text'));
 
-      for (var i = 0; i < select[select_i].options.length; i++) {
-        liElement = document.createElement("li");
-        optionValue = select[select_i].options[i].value;
-        optionText = document.createTextNode(select[select_i].options[i].text);
-        liElement.className = 'select-dropdown__list-item';
-        liElement.setAttribute('data-value', optionValue);
-        liElement.appendChild(optionText);
-        ulElement.appendChild(liElement);
+        for (var i = 0; i < select[select_i].options.length; i++) {
+            liElement = document.createElement("li");
+            optionValue = select[select_i].options[i].value;
+            optionText = document.createTextNode(select[select_i].options[i].text);
+            liElement.className = 'select-dropdown__list-item';
+            liElement.setAttribute('data-value', optionValue);
+            liElement.appendChild(optionText);
+            ulElement.appendChild(liElement);
 
-        liElement.addEventListener('click', function () {
-          displyUl(this);
-        }, false);
-      }
+            liElement.addEventListener('click', function () {
+                displyUl(this);
+            }, false);
+        }
     }
     function wrapElement(el, wrapper, i, placeholder) {
-      el.parentNode.insertBefore(wrapper, el);
-      wrapper.appendChild(el);
+        el.parentNode.insertBefore(wrapper, el);
+        wrapper.appendChild(el);
 
-      document.addEventListener('click', function (e) {
-        let clickInside = wrapper.contains(e.target);
-        if (!clickInside) {
-          let menu = wrapper.getElementsByClassName('select-dropdown__list');
-          menu[0].classList.remove('active');
-        }
-      });
+        document.addEventListener('click', function (e) {
+            let clickInside = wrapper.contains(e.target);
+            if (!clickInside) {
+                let menu = wrapper.getElementsByClassName('select-dropdown__list');
+                menu[0].classList.remove('active');
+            }
+        });
 
-      var buttonElement = document.createElement("button"),
-        spanElement = document.createElement("span"),
-        spanText = document.createTextNode(placeholder);
-      iElement = document.createElement("i");
-      ulElement = document.createElement("ul");
+        var buttonElement = document.createElement("button"),
+            spanElement = document.createElement("span"),
+            spanText = document.createTextNode(placeholder);
+        iElement = document.createElement("i");
+        ulElement = document.createElement("ul");
 
-      wrapper.className = 'select-dropdown select-dropdown--' + i;
-      buttonElement.className = 'select-dropdown__button select-dropdown__button--' + i;
-      buttonElement.setAttribute('data-value', '');
-      buttonElement.setAttribute('type', 'button');
-      spanElement.className = 'select-dropdown select-dropdown--' + i;
-      iElement.className = 'zmdi zmdi-chevron-down';
-      ulElement.className = 'select-dropdown__list select-dropdown__list--' + i;
-      ulElement.id = 'select-dropdown__list-' + i;
+        wrapper.className = 'select-dropdown select-dropdown--' + i;
+        buttonElement.className = 'select-dropdown__button select-dropdown__button--' + i;
+        buttonElement.setAttribute('data-value', '');
+        buttonElement.setAttribute('type', 'button');
+        spanElement.className = 'select-dropdown select-dropdown--' + i;
+        iElement.className = 'zmdi zmdi-chevron-down';
+        ulElement.className = 'select-dropdown__list select-dropdown__list--' + i;
+        ulElement.id = 'select-dropdown__list-' + i;
 
-      wrapper.appendChild(buttonElement);
-      spanElement.appendChild(spanText);
-      buttonElement.appendChild(spanElement);
-      buttonElement.appendChild(iElement);
-      wrapper.appendChild(ulElement);
+        wrapper.appendChild(buttonElement);
+        spanElement.appendChild(spanText);
+        buttonElement.appendChild(spanElement);
+        buttonElement.appendChild(iElement);
+        wrapper.appendChild(ulElement);
     }
 
     function displyUl(element) {
 
-      if (element.tagName == 'BUTTON') {
-        selectDropdown = element.parentNode.getElementsByTagName('ul');
-        //var labelWrapper = document.getElementsByClassName('js-label-wrapper');
-        for (var i = 0, len = selectDropdown.length; i < len; i++) {
-          selectDropdown[i].classList.toggle("active");
-          //var parentNode = $(selectDropdown[i]).closest('.js-label-wrapper');
-          //parentNode[0].classList.toggle("active");
+        if (element.tagName == 'BUTTON') {
+            selectDropdown = element.parentNode.getElementsByTagName('ul');
+            //var labelWrapper = document.getElementsByClassName('js-label-wrapper');
+            for (var i = 0, len = selectDropdown.length; i < len; i++) {
+                selectDropdown[i].classList.toggle("active");
+                //var parentNode = $(selectDropdown[i]).closest('.js-label-wrapper');
+                //parentNode[0].classList.toggle("active");
+            }
+        } else if (element.tagName == 'LI') {
+            var selectId = element.parentNode.parentNode.getElementsByTagName('select')[0];
+            selectElement(selectId.id, element.getAttribute('data-value'));
+            elementParentSpan = element.parentNode.parentNode.getElementsByTagName('span');
+            element.parentNode.classList.toggle("active");
+            elementParentSpan[0].textContent = element.textContent;
+            elementParentSpan[0].parentNode.setAttribute('data-value', element.getAttribute('data-value'));
         }
-      } else if (element.tagName == 'LI') {
-        var selectId = element.parentNode.parentNode.getElementsByTagName('select')[0];
-        selectElement(selectId.id, element.getAttribute('data-value'));
-        elementParentSpan = element.parentNode.parentNode.getElementsByTagName('span');
-        element.parentNode.classList.toggle("active");
-        elementParentSpan[0].textContent = element.textContent;
-        elementParentSpan[0].parentNode.setAttribute('data-value', element.getAttribute('data-value'));
-      }
 
     }
     function selectElement(id, valueToSelect) {
-      var element = document.getElementById(id);
-      element.value = valueToSelect;
-      element.setAttribute('selected', 'selected');
+        var element = document.getElementById(id);
+        element.value = valueToSelect;
+        element.setAttribute('selected', 'selected');
     }
     var buttonSelect = document.getElementsByClassName('select-dropdown__button');
     for (var i = 0, len = buttonSelect.length; i < len; i++) {
-      buttonSelect[i].addEventListener('click', function (e) {
-        e.preventDefault();
-        displyUl(this);
-      }, false);
+        buttonSelect[i].addEventListener('click', function (e) {
+            e.preventDefault();
+            displyUl(this);
+        }, false);
     }
-  }
+}
 
 class ItcSubmitForm {
 
-  static instances = [];
+    static instances = [];
 
-  static getOrCreateInstance(target, config) {
-    const elForm = typeof target === 'string' ? document.querySelector(target) : target;
-    const found = this.instances.find(el => el.target === elForm);
-    if (found) {
-      return found.instance;
+    static getOrCreateInstance(target, config) {
+        const elForm = typeof target === 'string' ? document.querySelector(target) : target;
+        const found = this.instances.find(el => el.target === elForm);
+        if (found) {
+            return found.instance;
+        }
+        const form = new this(elForm, config);
+        this.instances.push({ target: elForm, instance: form });
+        return this;
     }
-    const form = new this(elForm, config);
-    this.instances.push({target: elForm, instance: form});
-    return this;
-  }
 
-  constructor(target, config = {}) {
-    this._attach = {
-      index: 0,
-      maxItems: config['attachMaxItems'] || 5,
-      maxFileSize: config['attachMaxFileSize'] || 512, // максимальный размер файла
-      ext: config['attachExt'] || ['jpg', 'jpeg', 'bmp', 'gif', 'png'], // дефолтные допустимые расширения для файлов
-      items: []
-    };
-    this._isCheckValidationOnClient = config['isCheckValidationOnClient'] !== false;
-    this._elForm = target;
-    this._init();
-  }
+    constructor(target, config = {}) {
+        this._attach = {
+            index: 0,
+            maxItems: config['attachMaxItems'] || 5,
+            maxFileSize: config['attachMaxFileSize'] || 512, // максимальный размер файла
+            ext: config['attachExt'] || ['jpg', 'jpeg', 'bmp', 'gif', 'png'], // дефолтные допустимые расширения для файлов
+            items: []
+        };
+        this._isCheckValidationOnClient = config['isCheckValidationOnClient'] !== false;
+        this._elForm = target;
+        this._init();
+    }
 
-  // проверка расширения файла
-  static _checkExt(filename, ext) {
-    // расширение файла
-    const extFile = filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
-    // проверка на соответствие допустимому
-    return ext.indexOf(extFile.toLowerCase()) !== -1;
-  }
+    // проверка расширения файла
+    static _checkExt(filename, ext) {
+        // расширение файла
+        const extFile = filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
+        // проверка на соответствие допустимому
+        return ext.indexOf(extFile.toLowerCase()) !== -1;
+    }
 
-  // статический метод для получения шаблона form-attach__item
-  static _getAttachTemplate(id, file, target) {
-    const itemImg = target ? `<img class="form-attach__image" src="${target.result}" alt="${file.name}"></img>` : '';
-    return `<div class="form-attach__item" data-index="${id}" data-id="${id}">
+    // статический метод для получения шаблона form-attach__item
+    static _getAttachTemplate(id, file, target) {
+        const itemImg = target ? `<img class="form-attach__image" src="${target.result}" alt="${file.name}"></img>` : '';
+        return `<div class="form-attach__item" data-index="${id}" data-id="${id}">
       ${itemImg}
       <div class="form-attach__name">${file.name}</div>
       <div class="form-attach__size">${(file.size / 1024).toFixed(1)}Кб</div>
       <div class="form-attach__link" data-id="${id}">×</div>
     </div>`;
-  }
+    }
 
-  }
+}
 $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
 $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
-$('.acc-head').on('click', function() {
-    if($(this).hasClass('active')) {
-      $(this).siblings('.acc-content').slideUp();
-      $(this).removeClass('active');
+$('.acc-head').on('click', function () {
+    if ($(this).hasClass('active')) {
+        $(this).siblings('.acc-content').slideUp();
+        $(this).removeClass('active');
     }
     else {
-      $('.acc-content').slideUp();
-      $('.acc-head').removeClass('active');
-      $(this).siblings('.acc-content').slideToggle();
-      $(this).toggleClass('active');
+        $('.acc-content').slideUp();
+        $('.acc-head').removeClass('active');
+        $(this).siblings('.acc-content').slideToggle();
+        $(this).toggleClass('active');
     }
-});    
+});
 
 
 
@@ -1529,7 +1445,7 @@ accordionTitles.forEach((accordionTitle) => {
     });
 });
 
-function show_hide_password(target){
+function show_hide_password(target) {
     var input = document.getElementById('password-input');
     if (input.getAttribute('type') == 'password') {
         target.classList.add('view');
@@ -1540,7 +1456,7 @@ function show_hide_password(target){
     }
     return false;
 }
-function show_hide_password2(target){
+function show_hide_password2(target) {
     var input = document.getElementById('password-input2');
     if (input.getAttribute('type') == 'password') {
         target.classList.add('view');
@@ -1561,3 +1477,234 @@ function show_hide_password2(target){
 //   inner.style.transform = `translate(-${xAxis}%, -${yAxis}%)`;
 // }
 
+
+
+
+/* ПРАВКИ ОТ HandyF */
+
+// Clear input value
+
+const btn_clear = document.querySelectorAll('.btn-subscribe');
+
+btn_clear.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        e.target.parentNode.querySelector('.input').value = ""
+        if (validate_form) {
+            checkForm(e.target.closest('.validate__form'));
+        }
+    });
+})
+
+// Close size popup
+
+const modal__size = document.querySelector('.modal__size');
+const size_modal = document.querySelector('.modal-size');
+
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    if ((!target.closest('.modal__size')) && size_modal) {
+        size_modal.classList.remove('is-active');
+    }
+})
+
+// Active/INactive button
+
+const btn_freeze = document.querySelector('.btn-freeze');
+const select_items = document.querySelectorAll('.select-dropdown__list-item');
+
+if (document.querySelector('#normal-select-2')) {
+    // document.querySelector('.select-dropdown__list.select-dropdown__list--1.active').addEventListener('click', (e) => {
+    //     console.log(1);
+    // })
+
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.select-dropdown__list')) {
+            e.target.parentNode.parentNode.parentNode.querySelector('.btn-freeze').classList.add('active')
+            e.target.parentNode.parentNode.parentNode.querySelector('.btn-freeze').removeAttribute('disabled')
+        }
+
+        let btn = null;
+
+        if (e.target.closest('.select-dropdown__button')) {
+            btn = e.target.closest('.select-dropdown__button');
+            btn.classList.add('active')
+        } else {
+            if (document.querySelector('.select-dropdown__button.active')) {
+                document.querySelector('.select-dropdown__button.active').classList.remove('active')
+            }
+        }
+    })
+}
+
+
+// Active/INactive button
+
+let validate_form = document.querySelectorAll('.validate__form');
+console.log(validate_form);
+
+if (validate_form) {
+    
+    function checkForm(form) {
+        const formItems = form.querySelectorAll('[required]');
+        let allInputsFilled = true;
+    
+        formItems.forEach(input => {
+            if (input.value == "") {
+                allInputsFilled = false;
+            }
+        });
+    
+        if (allInputsFilled) {
+            form.querySelector('.btn-save').classList.add('active');
+            form.querySelector('.btn-save').removeAttribute('disabled', '')
+        } else {
+            form.querySelector('.btn-save').classList.remove('active');
+            form.querySelector('.btn-save').setAttribute('disabled', 'disabled')
+        }
+    }
+    
+    validate_form.forEach((form) => {
+        form.querySelectorAll('[required]').forEach((item) => {
+            console.log(item);
+            item.addEventListener('input', (e) => {
+                checkForm(form);
+            })
+        })
+    })
+}
+
+// remove Заказ в ПВЗ СДЭК
+
+if (document.querySelector('.delivery__tab2')) {
+    document.querySelector('.delivery__tab2').addEventListener('click', (e) => {
+        document.querySelector('#pvz-sdek').classList.remove('active')
+    })
+}
+
+if (document.querySelector('.delivery__tab1')) {
+    document.querySelector('.delivery__tab1').addEventListener('click', (e) => {
+        document.querySelector('#pvz-sdek').classList.add('active')
+    });
+}
+
+
+// pitch and zoom image 
+
+const options_zoom = {
+    click: "toggleZoom",
+    Toolbar: {
+        display: ["zoomIn", "zoomOut"],
+    },
+    maxScale: 4,
+    mouseMoveFactor: true,
+};
+
+// filter shop
+
+const size_filter_btn = document.querySelector('.shop__filter-btn');
+const size_filter_content = document.querySelector('.shop__filter-block-content');
+const size_filter_overlay = document.querySelector('.page-body');
+
+if (size_filter_content) {
+    size_filter_btn.addEventListener('click', (e) => {
+        size_filter_content.classList.add('active')
+        size_filter_overlay.classList.add('size-overlay')
+    });
+
+    size_filter_content.querySelectorAll('.shop__filter-block-content_size').forEach((item) => {
+        item.addEventListener('click', (e) => {
+            size_filter_content.classList.remove('active')
+            size_filter_overlay.classList.remove('size-overlay')
+        })
+    })
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.shop__filter-block-content') && !e.target.closest('.shop__filter-btn')) {
+            size_filter_content.classList.remove('active')
+            size_filter_overlay.classList.remove('size-overlay')
+        }
+    });
+}
+
+
+
+// progress bar mobile
+
+if (window.innerWidth <= 578) {
+    const progressbar_btn_next = document.querySelectorAll('.btn-for-progress');
+    const progressbar = document.querySelector('.progressbar');
+    const progressbar_btn_prev = document.querySelectorAll('.btn-for-progress-prev');
+
+    let progress_count = 0;
+    let progress_step = 200;
+
+    progressbar_btn_next.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            progress_count -= progress_step;
+            progressbar.style.cssText = `transform: translateX(${progress_count}px)`;
+        })
+    })
+
+    progressbar_btn_prev.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            progress_count += progress_step;
+            progressbar.style.cssText = `transform: translateX(${progress_count}px)`;
+        })
+    })
+}
+
+// remove first look loop zoomify
+
+const zoomify__loop = document.querySelectorAll('.f-panzoom');
+
+zoomify__loop.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        item.classList.remove('zoomify')
+    })
+
+    item.addEventListener('wheel', (e) => {
+        item.classList.remove('zoomify')
+    })
+
+    item.addEventListener('mouseleave', (e) => {
+        item.classList.add('zoomify')
+    })
+})
+
+// charity btn 
+
+const charity_btn = document.querySelector('.charity-btn');
+const container = document.querySelector('.promo__img');
+
+const charity = document.querySelector('.charity-btn');
+
+
+if (charity) {
+    charity.querySelector('.charity-btn__img').addEventListener('click', (e) => {
+        charity.classList.add('active');
+    });
+
+    charity.querySelector('.charity-btn__back').addEventListener('click', (e) => {
+        charity.classList.remove('active');
+    })
+
+    let pos = (window.innerWidth - container.width) / 2
+
+    for (let i = 0; i < 1; i++) {
+        charity_btn.style.right = `${pos}px`;
+    }
+
+    if (window.innerWidth <= 1440) {
+        charity_btn.style.right = `${pos}px`;
+        charity_btn.style.maxWidth = `${container.width}px`
+    }
+}
+
+// footer 
+
+const footer_mail = document.querySelector('.main-footer__contacts-link.button.button--primary');
+
+if (window.innerWidth <= 375) {
+    footer_mail.innerHTML = "HELLO@CRAZYASS.RU"
+} else {
+    footer_mail.innerHTML = "Написать Нам"
+}

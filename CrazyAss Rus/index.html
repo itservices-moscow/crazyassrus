@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,15 +31,17 @@
   <link rel="preload" href="fonts/getvoipgrotesque/getvoipgrotesque.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/floripa/floripa.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.css" />
 </head>
 
-<body class="page-body">
+<body class="page-body spec-container">
   <div class="modal__overlay"></div>
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="main-header__wrapper-top">
         <span class="main-header__logo">
-          <a href="index.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg" alt="Логотип Crazy Ass."></a>
+          <a href="index-2.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg"
+              alt="Логотип Crazy Ass."></a>
         </span>
         <button class="main-header__toggle" type="button">
           <span class="main-header__toggle-line"></span>
@@ -65,928 +68,980 @@
             <a class="main-nav__link" href="faq.html">FAQ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#" data-open-modal="modal-auth">личный кабинет</a>
+            <a class="main-nav__link" href="%e2%84%96.html" data-open-modal="modal-auth">личный кабинет</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="cart.html">корзина (0)</a>
           </li>
         </ul>
         <ul class="main-nav__contacts">
-            <li class="main-nav__contacts-item">
-                <a class="main-nav__contacts-link button button--primary" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
-            </li>
-            <li class="main-nav__contacts-item main-nav__contacts-item--icon">
-                <a class="main-nav__contacts-link main-nav__contacts-link--icon" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                        <path d="M39.0444 9.7503C38.4016 9.74156 37.7707 9.92358 37.2315 10.2734C36.6922 10.6232 36.2687 11.125 36.0147 11.7154C35.7606 12.3058 35.6873 12.9583 35.8041 13.5904C35.9209 14.2225 36.2224 14.8057 36.6707 15.2664C37.1189 15.7271 37.6937 16.0445 38.3224 16.1786C38.9511 16.3126 39.6054 16.2572 40.2025 16.0194C40.7997 15.7816 41.313 15.3721 41.6774 14.8426C42.0419 14.3132 42.2411 13.6875 42.25 13.0448V12.9558C42.2423 12.108 41.902 11.2972 41.3025 10.6977C40.703 10.0982 39.8922 9.75804 39.0444 9.7503Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M26 16.25C24.0716 16.25 22.1866 16.8218 20.5832 17.8932C18.9798 18.9645 17.7301 20.4873 16.9922 22.2688C16.2542 24.0504 16.0611 26.0108 16.4373 27.9021C16.8136 29.7934 17.7422 31.5307 19.1057 32.8943C20.4693 34.2578 22.2066 35.1864 24.0979 35.5627C25.9892 35.9389 27.9496 35.7458 29.7312 35.0078C31.5127 34.2699 33.0355 33.0202 34.1068 31.4168C35.1782 29.8134 35.75 27.9284 35.75 26C35.75 23.4141 34.7228 20.9342 32.8943 19.1057C31.0658 17.2772 28.5859 16.25 26 16.25Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        <rect x="0.5" y="0.5" width="51" height="51" rx="3.5" stroke="white" />
-                    </svg>
-                    <span class="visually-hidden">Go to Instagram</span>
-                </a>
-            </li>
-            <li class="main-footer__contacts-item main-footer__contacts-item--mail">
-                <a class="main-footer__contacts-link button button--primary"
-                   href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
-            </li>
-            <li class="main-footer__contacts-item">
-                <a class="main-footer__contacts-link button button--primary" href="#">написать нам</a>
-            </li>
-            <li class="main-footer__contacts-item main-footer__contacts-item--mail">
-                <a class="main-footer__contacts-link button button--primary"
-                   href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
-            </li>
-        </ul>
-        <a class="main-nav__button button button--primary" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
-      </nav>
-    </div>
-  </header>
-  <main class="page-main">
-        <button class="shop__fore-btn" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 16 26" fill="none">
-            <path d="M1.45628 12.8543C1.578 14.5597 2.12573 16.1741 3.89066 17.1026C2.00402 13.1881 3.32467 9.21282 6.32505 7.56809C6.03292 8.08397 5.60691 9.18854 6.23985 9.69834C8.89941 7.22822 9.73928 3.22869 9.48975 -0.012207C12.2467 2.79778 13.6099 6.79732 11.346 10.457C9.87925 12.8421 11.705 15.3123 13.3057 10.372C15.2836 12.9271 16.5738 16.5868 15.6853 19.9915C13.5308 27.7539 1.63277 28.0088 0.184312 20.6834C-0.308651 18.3043 0.239086 15.4943 1.45628 12.8543Z" fill="white"/>
-            </svg>
-            <span>10% от каждой покупки идёт на &nbsp;<a href="#" class="link">благотворительность</a></span>
-            <img class="r__close" src="img/r-close.svg" alt="alt">
-          </button>
-    
-    <section class="promo">
-      <div class="container">
-        
-        <div class="promo__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="promo__wrapper swiper-slide">
-              <div class="promo__picture-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/promo-bg-1-desktop@1x.webp 1x, img/promo-bg-1-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/promo-bg-mobile.webp 1x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/promo-bg-1-desktop@1x.png 1x, img/promo-bg-1-desktop@2x.png 2x">
-                  <img class="promo__img" width="327" height="340"
-                    src="img/promo-bg-mobile.png"
-                    alt="A set with boxers.">
-                </picture>
-              </div>
-              <div class="promo__text-wrapper">
-                <div class="promo__title-wrapper">
-                  <h1 class="promo__title" data-text="Monthly boxer short subscription">Подписка <br>на боксеры
-                  </h1>
-                </div>
-                <p class="promo__lead">Получайте каждый месяц новые боксеры <br>с уникальным принтом. Первый месяц всего 445 рублей!</p>
-                <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со скидкой</a>
-              </div>
-            </div>
-            <div class="promo__wrapper swiper-slide">
-              <div class="promo__picture-wrapper promo__picture-wrapper--dark">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/promo-bg-2-desktop@1x.webp 1x, img/promo-bg-2-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/promo-bg-2-mobile@1x.webp 1x, img/promo-bg-2-mobile@1x.webp 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/promo-bg-2-desktop@1x.png 1x, img/promo-bg-2-desktop@2x.png 2x">
-                  <img class="promo__img" width="327" height="340" src="img/promo-bg-2-mobile@1x.png"
-                    srcset="img/promo-bg-2-mobile@2x.png 2x" alt="A man in boxers.">
-                </picture>
-              </div>
-              <div class="promo__text-wrapper">
-                <div class="promo__title-wrapper">
-                  <h1 class="promo__title">Комфорт качество <br>стиль</h1>
-                </div>
-                <p class="promo__lead">Получайте каждый месяц новые боксеры<br> с уникальным принтом. Первый месяц всего 445 рублей!</p>
-                <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со скидкой</a>
-              </div>
-            </div>
-            <div class="promo__wrapper swiper-slide">
-              <div class="promo__picture-wrapper promo__picture-wrapper--light">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/promo-bg-3-desktop@1x.webp 1x, img/promo-bg-3-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/promo-bg-3-mobile@1x.webp 1x, img/promo-bg-3-mobile@1x.webp 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/promo-bg-3-desktop@1x.png 1x, img/promo-bg-3-desktop@2x.png 2x">
-                  <img class="promo__img" width="327" height="340" src="img/promo-bg-3-mobile@1x.png"
-                    srcset="img/promo-bg-3-mobile@2x.png 2x" alt="A man in boxers.">
-                </picture>
-              </div>
-              <div class="promo__text-wrapper">
-                <div class="promo__title-wrapper">
-                  <h1 class="promo__title">Mens’ lifes made easy!</h1>
-                </div>
-                <p class="promo__lead">Получайте каждый месяц новые боксеры <br> с уникальным принтом. Первый месяц всего 445 рублей!</p>
-                <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со скидкой</a>
-              </div>
-            </div>
-          </div>
-          <div class="promo__pagination swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <section class="steps">
-      <div class="container">
-        <h2 class="steps__title">как работает подписка</h2>
-        <ol class="steps__list">
-          <li class="steps__item steps__item--first">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/step-1-desktop@1x.webp 1x, img/step-1-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/step-1-mobile@1x.webp 1x, img/step-1-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/step-1-desktop@1x.png 1x, img/step-1-desktop@2x.png 2x">
-              <img class="steps__img" width="327" height="210" src="img/step-1-mobile@1x.png"
-                srcset="img/step-1-mobile@2x.png 2x" alt="A man is surfing net.">
-            </picture>
-            <p class="steps__description">Выберите подписку <br> на боксеры</p>
+          <li class="main-nav__contacts-item">
+            <a class="main-nav__contacts-link button button--primary" href="#" data-open-modal="modal-subcrube">Оформить
+              подписку</a>
           </li>
-          <li class="steps__item steps__item--second">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/step-2-desktop@1x.webp 1x, img/step-2-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/step-2-mobile@1x.webp 1x, img/step-2-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/step-2-desktop@1x.png 1x, img/step-2-desktop@2x.png 2x">
-              <img class="steps__img" width="327" height="210" src="img/step-2-mobile@1x.png"
-                srcset="img/step-2-mobile@2x.png 2x" alt="A man with a phone.">
-            </picture>
-            <p class="steps__description">Через несколько дней <br> приедут первые боксеры
-            </p>
-          </li>
-          <li class="steps__item steps__item--third">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/step-3-desktop@1x.webp 1x, img/step-3-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/step-3-mobile@1x.webp 1x, img/step-3-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/step-3-desktop@1x.png 1x, img/step-3-desktop@2x.png 2x">
-              <img class="steps__img" width="327" height="210" src="img/step-3-mobile@1x.png"
-                srcset="img/step-3-mobile@2x.png 2x" alt="Black boxers in a package.">
-            </picture>
-            <p class="steps__description">Ещё через месяц приедут новые!</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-    <section class="subscription">
-      <div class="container">
-        <h2 class="subscription__title">подписка на боксеры</h2>
-        <ul class="subscription__list">
-          <li class="subscription__item">
-            <div class="subscription__wrapper">
-              <h3 class="subscription__item-title subscription__item-title--design">Design</h3>
-              <p class="subscription__description">Боксеры с уникальным дизайнерским принтом</p>
-              <p class="subscription__proposal">445 <img src="img/rub.svg" alt="alt">/ <br>первый месяц
-               
-              </p>
-            </div>
-            <a class="subscription__button button" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/subscription-design-desktop@1x.webp 1x, img/subscription-design-desktop@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/subscription-design-mobile@1x.webp 1x, img/subscription-design-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/subscription-design-desktop@1x.png 1x, img/subscription-design-desktop@2x.png 2x">
-              <img class="subscription__img" width="158" height="231" src="img/subscription-design-mobile@1x.png"
-                srcset="img/subscription-design-mobile@2x.png 2x" alt="Design boxers in a package.">
-            </picture>
-          </li>
-          <li class="subscription__item">
-            <div class="subscription__wrapper">
-              <h3 class="subscription__item-title">Black</h3>
-              <p class="subscription__description">Однотонные боксеры с&nbsp; брендированной резинкой</p>
-              <p class="subscription__proposal">445 <img src="img/rub.svg" alt="alt">/ <br>первый месяц
-              
-              </p>
-            </div>
-            <a class="subscription__button button" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/subscription-black-desktop@1x.webp 1x, img/subscription-black-desktop@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/subscription-black-mobile@1x.webp 1x, img/subscription-black-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/subscription-black-desktop@1x.png 1x, img/subscription-black-desktop@2x.png 2x">
-              <img class="subscription__img" width="158" height="231" src="img/subscription-black-mobile@1x.png"
-                srcset="img/subscription-black-mobile@2x.png 2x" alt="Black boxers in a package.">
-            </picture>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <picture>
-          
-          <img class="advantages__img" width="621" height="580" src="img/anumation.png"
-             alt="Boxers.">
-        </picture>
-        <div class="advantages__line">
-          <div class="advantages__text">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--large-media">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--large-media">
-            <p>анотамическая форма</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-        </div>
-        <div class="advantages__line advantages__line--light">
-          <div class="advantages__text advantages__text--light">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--light">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--light">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--light">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--light">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--light advantages__text--large-media">
-            <p>дышащая ткань</p>
-            <img class="advantages__icon" src="img/f-p.svg" alt="alt">
-          </div>
-        </div>
-        <div class="advantages__line">
-          <div class="advantages__text">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--large-media">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-          <div class="advantages__text advantages__text--large-media">
-            <p>мягкая резинка</p>
-            <img class="advantages__icon" src="img/f-w.svg" alt="alt">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="prod">
-      <div class="container">
-        <div class="prod__title-top">
-           <h2 class="prod__title">производство</h2>
-            <div class="prod__detail"><a href="#">узнать подробнее <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-              <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
-              </svg></span> 
-                </a>
-            </div>
-        </div>
-        <div class="prod__slider-wrapper">
-          <div class="prod__slider swiper">
-            <div class="prod__list swiper-wrapper">
-              <div class="prod__item swiper-slide prod__item--first">
-                <picture>
-                  <img class="steps__img" src="img/step1.png"
-                     alt="A man is surfing net.">
-                </picture>
-                <p class="prod__description">Сами создаем <br> дизайн</p>
-              </div>
-              <div class="prod__item swiper-slide prod__item--second">
-              <picture>
-                 <img class="steps__img" src="img/step2.png"
-                   alt="A man is surfing net.">
-              </picture>
-              <p class="prod__description">Отшиваем <br> вручную
-              </p>
-            </div>
-            <div class="prod__item swiper-slide prod__item--third">
-              <picture>
-                 <img class="steps__img" src="img/step3.png"
-                   alt="A man is surfing net.">
-              </picture>
-              <p class="prod__description">Контролируем <br> качество</p>
-            </div>
-            <div class="prod__item swiper-slide prod__item--four">
-              <picture>
-                 <img class="steps__img" src="img/step4.png"
-                   alt="A man is surfing net.">
-              </picture>
-              <p class="prod__description">Упаковываем <br>и доставляем</p>
-            </div>
-          </div>
-        
-      </div>
-    </div>
-      <div class="prod-mob__detail"><a href="#">узнать подробнее<span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-      <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
-      </svg></span> 
-      </a></div>
-      </div>
-    </section>
-    <section class="cmi">
-      <div class="container">
-        <div class="cmi__banner">
-          <div class="cmi__banner-wrapper">
-            <div class="cmi__banner-title">
-              сми о нас
-            </div>
-            <div class="cmi__banner-text">
-             Увидел <a href="#">пост</a> Тимофея Москалева в соцсети, что&nbsp;ребята запустили сервис <a href="#">Crazy Ass</a> — трусы по&nbsp; подписке. Решил попробовать — супер!
-            </div>
-            <div class="cmi__banner-auth">
-              <a href="#"><img src="img/vc.svg" alt="alt"></a>
-            </div>
-          </div>
-          <div class="cmi__banner-img">
-            <img class="cmi__banner-img-mob" src="img/cmi-mob.png" alt="alt">
-            <img class="cmi__banner-img-decktop" src="img/cmi-img.png" alt="alt">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="lookbook" id="lookbook">
-      <div class="container">
-        <div class="lookbook__title-top">
-        <h2 class="lookbook__title">магазин</h2>
-      <div class="lookbook__detail"><a href="#">Смотреть ещё<span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-      <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
-      </svg></span> 
-      </a></div>
-      </div>
-      </div>
-      
-      
-      <div class="lookbook__wrapper">
-        <div class="lookbook__slider swiper">
-          <div class="lookbook__list swiper-wrapper">
-            <div class="lookbook__item swiper-slide">
-              <div class="lookbook__picture-wrapper" data-open-modal="modal-product">
-                <picture>
-                  <img width="293" height="290" src="img/pro1.png" alt="Tiger collection boxers." >
-                </picture>
-                <button class="lookbook__fullscreen" type="button" data-id="tiger">
-                  <svg class="lookbook__icon" width="25" height="25">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="lookbook__item-row">
-                <h3 class="lookbook__item-title">Tiger collectionn</h3>
-                <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
-              </div> 
-              <div class="shop__buttons">
-                <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
-                <div class="shop__product-number">
-                    <span class="shop__product-minus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                      <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                      <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                      </svg>
-                    </span>
-                    <input type="text" value="1"/>
-                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                    <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                    <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C"/>
-                    <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                    </svg></span>
-                  </div>
-              </div>
-            </div>
-            <div class="lookbook__item swiper-slide">
-              <div class="lookbook__picture-wrapper">
-                <picture>
-                  <img width="293" height="290" src="img/pro2.png" alt="Stickers collection boxers." data-open-modal="modal-product">
-                </picture>
-                <button class="lookbook__fullscreen" type="button" data-id="stickers">
-                  <svg class="lookbook__icon" width="25" height="25">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="lookbook__item-row">
-                <h3 class="lookbook__item-title">Stickers collection</h3>
-                <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
-              </div> 
-              <div class="shop__buttons">
-                <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
-<div class="shop__product-number">
-                    <span class="shop__product-minus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                      <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                      <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                      </svg>
-                    </span>
-                    <input type="text" value="1"/>
-                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                    <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                    <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C"/>
-                    <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                    </svg></span>
-                  </div>
-              </div>
-            </div>
-            <div class="lookbook__item swiper-slide">
-              <div class="lookbook__picture-wrapper">
-                <picture>
-                  <img width="293" height="290" src="img/pro3.png" alt="Space collection boxers." data-open-modal="modal-product">
-                </picture>
-                <button class="lookbook__fullscreen" type="button" data-id="space">
-                  <svg class="lookbook__icon" width="25" height="25">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="lookbook__item-row">
-                <h3 class="lookbook__item-title">Tribal collection</h3>
-                <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
-              </div> 
-              <div class="shop__buttons">
-                <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
-                 <div class="shop__product-number">
-                    <span class="shop__product-minus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                      <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                      <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                      </svg>
-                    </span>
-                    <input type="text" value="1"/>
-                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                    <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C"/>
-                    <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C"/>
-                    <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)" fill="#1C1C1C"/>
-                    </svg></span>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    
-    <section class="reviews" id="reviews">
-      <div class="container">
-        
-      
-      <h2 class="reviews__title">отзывы</h2>
-      <div class="reviews__top-line">
-      <div class="reviews__top">
-        <div class="review__top-logo">
-          <img src="img/yandex.svg" alt="alt">
-        </div>
-        <div class="reviews__rating">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <path d="M15 21.5875L20.1875 24.725C21.1375 25.3 22.3 24.45 22.05 23.375L20.675 17.475L25.2625 13.5C26.1 12.775 25.65 11.4 24.55 11.3125L18.5125 10.8L16.15 5.22495C15.725 4.21245 14.275 4.21245 13.85 5.22495L11.4875 10.7875L5.45 11.3C4.35 11.3875 3.9 12.7625 4.7375 13.4875L9.325 17.4625L7.95 23.3625C7.7 24.4375 8.8625 25.2875 9.8125 24.7125L15 21.5875Z" fill="#FED104"/>
-          </svg>
-          <span class="reviews__rating-value">4,9</span>
-        </div>
-      </div>
-       <div class="reviews__detail"><a href="#">Смотреть ещё на яндекс.маркете<span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-      <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
-      </svg></span> 
-      </a></div>
-      </div>
-      </div>
-      <div class="reviews__slider-wrapper">
-        <div class="reviews__slider swiper">
-          <div class="reviews__list swiper-wrapper">
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-1-desktop@1x.webp 1x, img/review-1-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-1-desktop@1x.png"
-                    srcset="img/review-1-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Виктор</h3>
-                  <span class="reviews__date">16 января 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Добрый день. Боксеры получил. Очень приятные на ощупь, отличный принт. В носке будут очень удобны. Спасибо большое вам. Будем ждать новые дизайны)</p>
-            </div>
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-2-desktop@1x.webp 1x, img/review-2-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-2-desktop@1x.png"
-                    srcset="img/review-2-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Александр</h3>
-                  <span class="reviews__date">10 января 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Отличные боксеры, приятные материалы, хорошо сидят, служба поддержки отвечает быстро, не пожалел что заказал.</p>
-            </div>
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-3-desktop@1x.webp 1x, img/review-3-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-3-desktop@1x.png"
-                    srcset="img/review-3-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Jericho</h3>
-                  <span class="reviews__date">5 января 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Очень доволен боксерами. Размер соответствует, а рисунок просто бомба!!!! Надеюсь, что в следующем месяце удивят новым дизайном! Спасибо!!!</p>
-            </div>
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-4-desktop@1x.webp 1x, img/review-4-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-4-desktop@1x.png"
-                    srcset="img/review-4-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Игорь</h3>
-                  <span class="reviews__date">5 января 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Свои боксеры получил уже через 2 дня на СДЭКе! Принт классный, но главное мегаудобные. Идеально подошел размер. Качество супер! Рекомендую однозначно</p>
-            </div>
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-5-desktop@1x.webp 1x, img/review-5-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-5-desktop@1x.png"
-                    srcset="img/review-5-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Igor Anatolievich</h3>
-                  <span class="reviews__date">15 января 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Satisfied as an elephant). The quality is decent, the unusual design and the
-                original pattern give a feeling of perfect individuality.</p>
-            </div>
-            <div class="reviews__item swiper-slide">
-              <div class="reviews__header">
-                <picture>
-                  <source type="image/webp" srcset="img/review-6-desktop@1x.webp 1x, img/review-6-desktop@2x.webp 2x">
-                  <img class="reviews__img" width="60" height="60" src="img/review-6-desktop@1x.png"
-                    srcset="img/review-6-desktop@2x.png 2x" alt="Author.">
-                </picture>
-                <div class="reviews__wrapper">
-                  <h3 class="reviews__author">Arseny B.</h3>
-                  <span class="reviews__date">5 декабря 2023</span>
-                </div>
-              </div>
-              <p class="reviews__text">Great panties, soft fabric is nice to the body, the material is soft and no
-                discomfort when wearing, then you can go to sports or dance</p>
-            </div>
-          </div>
-          <div class="reviews__pagination swiper-pagination"></div>
-        </div>
-      </div>
-      <div class="container">
-        
-      
-      <div class="prod-mob__detail"><a href="#">Смотреть ещё <br>на яндекс.маркетее<span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-      <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
-      </svg></span> 
-      </a></div>
-      <a class="btn__up" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
-          <path d="M2.9975 13L9.5 6.20108L16.0025 13L18 10.9069L9.5 2L1 10.9069L2.9975 13Z" fill="#1C1C1C" stroke="white" stroke-width="1.4"/>
-        </svg>
-      </a>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-  <div class="container">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__nav">
-        <span class="main-footer__logo">
-          <a href="index.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg" alt="Логотип Crazy Ass."></a>
-        </span>
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="shop.html">Магазин</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="lookbook.html">лукбук</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="faq.html">FAQ</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="production.html">Производство</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="lk.html">Личный кабинет</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="cart.html">Корзина (0)</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__right">
-        <ul class="main-footer__contacts">
-          <li class="main-footer__contacts-item main-footer__contacts-item--icon">
-            <a class="main-footer__contacts-link main-footer__contacts-link--icon" href="#">
+          <li class="main-nav__contacts-item main-nav__contacts-item--icon">
+            <a class="main-nav__contacts-link main-nav__contacts-link--icon" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-                <path d="M39.0444 9.7503C38.4016 9.74156 37.7707 9.92358 37.2315 10.2734C36.6922 10.6232 36.2687 11.125 36.0147 11.7154C35.7606 12.3058 35.6873 12.9583 35.8041 13.5904C35.9209 14.2225 36.2224 14.8057 36.6707 15.2664C37.1189 15.7271 37.6937 16.0445 38.3224 16.1786C38.9511 16.3126 39.6054 16.2572 40.2025 16.0194C40.7997 15.7816 41.313 15.3721 41.6774 14.8426C42.0419 14.3132 42.2411 13.6875 42.25 13.0448V12.9558C42.2423 12.108 41.902 11.2972 41.3025 10.6977C40.703 10.0982 39.8922 9.75804 39.0444 9.7503Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M26 16.25C24.0716 16.25 22.1866 16.8218 20.5832 17.8932C18.9798 18.9645 17.7301 20.4873 16.9922 22.2688C16.2542 24.0504 16.0611 26.0108 16.4373 27.9021C16.8136 29.7934 17.7422 31.5307 19.1057 32.8943C20.4693 34.2578 22.2066 35.1864 24.0979 35.5627C25.9892 35.9389 27.9496 35.7458 29.7312 35.0078C31.5127 34.2699 33.0355 33.0202 34.1068 31.4168C35.1782 29.8134 35.75 27.9284 35.75 26C35.75 23.4141 34.7228 20.9342 32.8943 19.1057C31.0658 17.2772 28.5859 16.25 26 16.25Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="0.5" y="0.5" width="51" height="51" rx="3.5" stroke="white"/>
+                <path
+                  d="M39.0444 9.7503C38.4016 9.74156 37.7707 9.92358 37.2315 10.2734C36.6922 10.6232 36.2687 11.125 36.0147 11.7154C35.7606 12.3058 35.6873 12.9583 35.8041 13.5904C35.9209 14.2225 36.2224 14.8057 36.6707 15.2664C37.1189 15.7271 37.6937 16.0445 38.3224 16.1786C38.9511 16.3126 39.6054 16.2572 40.2025 16.0194C40.7997 15.7816 41.313 15.3721 41.6774 14.8426C42.0419 14.3132 42.2411 13.6875 42.25 13.0448V12.9558C42.2423 12.108 41.902 11.2972 41.3025 10.6977C40.703 10.0982 39.8922 9.75804 39.0444 9.7503Z"
+                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M26 16.25C24.0716 16.25 22.1866 16.8218 20.5832 17.8932C18.9798 18.9645 17.7301 20.4873 16.9922 22.2688C16.2542 24.0504 16.0611 26.0108 16.4373 27.9021C16.8136 29.7934 17.7422 31.5307 19.1057 32.8943C20.4693 34.2578 22.2066 35.1864 24.0979 35.5627C25.9892 35.9389 27.9496 35.7458 29.7312 35.0078C31.5127 34.2699 33.0355 33.0202 34.1068 31.4168C35.1782 29.8134 35.75 27.9284 35.75 26C35.75 23.4141 34.7228 20.9342 32.8943 19.1057C31.0658 17.2772 28.5859 16.25 26 16.25Z"
+                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="0.5" y="0.5" width="51" height="51" rx="3.5" stroke="white" />
               </svg>
               <span class="visually-hidden">Go to Instagram</span>
             </a>
           </li>
-          <li class="main-footer__contacts-item main-footer__contacts-item--mail">
-            <a class="main-footer__contacts-link button button--primary"
-            href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
+          <li class="main-nav__contacts-item">
+            <a class="main-nav__contacts-link button button--primary"
+              href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
           </li>
-          <li class="main-footer__contacts-item">
-            <a class="main-footer__contacts-link button button--primary" href="#">написать нам</a>
-          </li>
-          <li class="main-footer__contacts-item main-footer__contacts-item--mail">
-            <a class="main-footer__contacts-link button button--primary"
-            href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
-          </li>
-
         </ul>
-        <div class="main-footer__contacts-item">
-          <a class="main-footer__contacts-email"
-          href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
-        </div>
-        <div class="main-footer__contacts-item">
-          ИП Москалев Тимофей Дмитриевич<br>123022, Москва, 2-ая Звенигородская 11 ОГРН ИП 321774600791769 <br> ИНН: 771475340879
-        </div>
-      </div>
-
+        <a class="main-nav__button button button--primary" href="#" data-open-modal="modal-subcrube">Оформить
+          подписку</a>
+      </nav>
     </div>
-    <div class="main-footer__copyright-wrapper">
-      <p class="main-footer__copyright">© All Rights Reserved.</p>
-      <div class="main-footer__bottom-menu">
-        <ul class="footer__bottom-menu">
-          <li><a href="#">публичная оферта</a></li>
-          <li><a href="#">пользовательское соглашение</a></li>
-          <li><a href="#">политика конфиденциальности</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-  <div class="modal modal--preload" data-modal="modal-form">
-    <div class="modal__wrapper">
-      <div class="modal__overlay"></div>
-        <div class="modal__content">
-          <h2 class="modal__title">Thanks for choosing to &nbsp; subscribe!</h2>
-          <p class="modal__text">Please leave us your<br> information and we'll get in<br> touch with you</p>
-          <div class="modal__form-wrapper" data-form-validate data-callback="base">
-            <form class="modal__form" action="#" method="post">
-              <div class="modal__form-item" data-validate-type="text" data-message-base="The field must be filled in"
-                data-message-extra="The field should have text format" data-required>
-                <label class="modal__form-label" for="name">Name</label>
-                <div class="modal__form-input-wrapper">
-                  <input class="modal__form-input input" type="text" id="name" name="name" placeholder="Enter your name"
-                    required>
-                  <button class="modal__button-reset" type="reset">
-                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                    <span class="visually-hidden">Сбросить значение</span>
-                  </button>
-                </div>
-              </div>
-              <div class="modal__form-item" data-on-input-validate data-validate-type="phone"
-                data-message-base="The field must be filled in"
-                data-message-extra="The field should have phone format" data-required>
-                <label class="modal__form-label" for="phone">Phone</label>
-                <div class="modal__form-input-wrapper">
-                  <input class="modal__form-input input" type="tel" id="phone" name="phone"
-                    placeholder="Enter your phone number" required>
-                  <button class="modal__button-reset" type="reset">
-                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                    <span class="visually-hidden">Сбросить значение</span>
-                  </button>
-                </div>
-              </div>
-              <div class="modal__form-item" data-validate-type="email" data-message-base="The field must be filled in"
-                data-message-extra="The field should have email format" data-required>
-                <label class="modal__form-label" for="mail">E-mail</label>
-                <div class="modal__form-input-wrapper">
-                  <input class="modal__form-input input" type="email" id="mail" name="mail"
-                    placeholder="Enter your E-mail">
-                  <button class="modal__button-reset" type="reset">
-                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                    <span class="visually-hidden">Сбросить значение</span>
-                  </button>
-                </div>
-              </div>
-              <button class="modal__button button button--accent" type="submit">Subscribe</button>
-              <button class="modal__close-btn" type="button" data-close-modal>
-                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                <span class="visually-hidden">Close the modal</span>
-              </button>
-            </form>
+  </header>
+  <main class="page-main">
+    <div class="container">
+      <div class="charity-btn">
+        <div class="charity-btn__container">
+          <div class="charity-btn__img">
+            <img src="img/charity.svg" alt="">
+          </div>
+          <p class="charity-btn__title">10% от каждой покупки идёт на благотворительность</p>
+          <div class="charity-btn__back">
+            <img src="img/arrow-right-icon.svg" alt="">
           </div>
         </div>
       </div>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="promo__wrapper swiper-slide">
+                <div class="promo__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/promo-bg-1-desktop@1x.webp 1x, img/promo-bg-1-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/promo-bg-mobile.webp 1x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/promo-bg-1-desktop@1x.png 1x, img/promo-bg-1-desktop@2x.png 2x">
+                    <img class="promo__img" width="327" height="340" src="img/promo-bg-mobile.png"
+                      alt="A set with boxers.">
+                  </picture>
+                </div>
+                <div class="promo__text-wrapper">
+                  <div class="promo__title-wrapper">
+                    <h1 class="promo__title" data-text="Monthly boxer short subscription">Подписка <br>на боксеры
+                    </h1>
+                  </div>
+                  <p class="promo__lead">Получайте каждый месяц новые боксеры <br>с уникальным принтом. Первый месяц всего
+                    445 рублей!</p>
+                  <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со
+                    скидкой</a>
+                </div>
+              </div>
+              <div class="promo__wrapper swiper-slide">
+                <div class="promo__picture-wrapper promo__picture-wrapper--dark">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/promo-bg-2-desktop@1x.webp 1x, img/promo-bg-2-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/promo-bg-2-mobile@1x.webp 1x, img/promo-bg-2-mobile@1x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/promo-bg-2-desktop@1x.png 1x, img/promo-bg-2-desktop@2x.png 2x">
+                    <img class="promo__img" width="327" height="340" src="img/promo-bg-2-mobile@1x.png"
+                      srcset="img/promo-bg-2-mobile@2x.png 2x" alt="A man in boxers.">
+                  </picture>
+                </div>
+                <div class="promo__text-wrapper">
+                  <div class="promo__title-wrapper">
+                    <h1 class="promo__title">Комфорт качество <br>стиль</h1>
+                  </div>
+                  <p class="promo__lead">Получайте каждый месяц новые боксеры<br> с уникальным принтом. Первый месяц всего
+                    445 рублей!</p>
+                  <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со
+                    скидкой</a>
+                </div>
+              </div>
+              <div class="promo__wrapper swiper-slide">
+                <div class="promo__picture-wrapper promo__picture-wrapper--light">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/promo-bg-3-desktop@1x.webp 1x, img/promo-bg-3-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/promo-bg-3-mobile@1x.webp 1x, img/promo-bg-3-mobile@1x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/promo-bg-3-desktop@1x.png 1x, img/promo-bg-3-desktop@2x.png 2x">
+                    <img class="promo__img" width="327" height="340" src="img/promo-bg-3-mobile@1x.png"
+                      srcset="img/promo-bg-3-mobile@2x.png 2x" alt="A man in boxers.">
+                  </picture>
+                </div>
+                <div class="promo__text-wrapper">
+                  <div class="promo__title-wrapper">
+                    <h1 class="promo__title">Mens’ lifes made easy!</h1>
+                  </div>
+                  <p class="promo__lead">Получайте каждый месяц новые боксеры <br> с уникальным принтом. Первый месяц
+                    всего 445 рублей!</p>
+                  <a class="promo__button button button--accent" href="#" data-open-modal="modal-subcrube">попробовать со
+                    скидкой</a>
+                </div>
+              </div>
+            </div>
+            <div class="promo__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">как работает подписка</h2>
+          <ol class="steps__list">
+            <li class="steps__item steps__item--first">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/step-1-desktop@1x.webp 1x, img/step-1-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/step-1-mobile@1x.webp 1x, img/step-1-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/step-1-desktop@1x.png 1x, img/step-1-desktop@2x.png 2x">
+                <img class="steps__img" width="327" height="210" src="img/step-1-mobile@1x.png"
+                  srcset="img/step-1-mobile@2x.png 2x" alt="A man is surfing net.">
+              </picture>
+              <p class="steps__description">Выберите подписку <br> на боксеры</p>
+            </li>
+            <li class="steps__item steps__item--second">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/step-2-desktop@1x.webp 1x, img/step-2-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/step-2-mobile@1x.webp 1x, img/step-2-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/step-2-desktop@1x.png 1x, img/step-2-desktop@2x.png 2x">
+                <img class="steps__img" width="327" height="210" src="img/step-2-mobile@1x.png"
+                  srcset="img/step-2-mobile@2x.png 2x" alt="A man with a phone.">
+              </picture>
+              <p class="steps__description">Через несколько дней <br> приедут первые боксеры
+              </p>
+            </li>
+            <li class="steps__item steps__item--third">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/step-3-desktop@1x.webp 1x, img/step-3-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/step-3-mobile@1x.webp 1x, img/step-3-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/step-3-desktop@1x.png 1x, img/step-3-desktop@2x.png 2x">
+                <img class="steps__img" width="327" height="210" src="img/step-3-mobile@1x.png"
+                  srcset="img/step-3-mobile@2x.png 2x" alt="Black boxers in a package.">
+              </picture>
+              <p class="steps__description">Ещё через месяц приедут новые!</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="container">
+          <h2 class="subscription__title">подписка на боксеры</h2>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <div class="subscription__wrapper">
+                <h3 class="subscription__item-title subscription__item-title--design">Design</h3>
+                <p class="subscription__description">Боксеры с уникальным дизайнерским принтом</p>
+                <p class="subscription__proposal">445 <img src="img/rub.svg" alt="alt">/ <br>первый месяц
+  
+                </p>
+              </div>
+              <a class="subscription__button button" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/subscription-design-desktop@1x.webp 1x, img/subscription-design-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/subscription-design-mobile@1x.webp 1x, img/subscription-design-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/subscription-design-desktop@1x.png 1x, img/subscription-design-desktop@2x.png 2x">
+                <img class="subscription__img" width="158" height="231" src="img/packed_pants.png"
+                  srcset="img/packed_pants.png" alt="Design boxers in a package.">
+              </picture>
+            </li>
+            <li class="subscription__item">
+              <div class="subscription__wrapper">
+                <h3 class="subscription__item-title">Black</h3>
+                <p class="subscription__description">Однотонные боксеры с&nbsp; брендированной резинкой</p>
+                <p class="subscription__proposal">445 <img src="img/rub.svg" alt="alt">/ <br>первый месяц
+  
+                </p>
+              </div>
+              <a class="subscription__button button" href="#" data-open-modal="modal-subcrube">Оформить подписку</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/subscription-black-desktop@1x.webp 1x, img/subscription-black-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/packed_pants.png, img/packed_pants.png">
+                <source media="(min-width: 1440px)"
+                  srcset="img/subscription-black-desktop@1x.png 1x, img/subscription-black-desktop@2x.png 2x">
+                <img class="subscription__img" width="158" height="231" src="img/packed_pants2.png"
+                  srcset="img/packed_pants2.png" alt="Black boxers in a package.">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <picture>
+  
+            <img class="advantages__img" width="621" height="580" src="img/anumation.png" alt="Boxers.">
+          </picture>
+          <div class="advantages__line">
+            <div class="advantages__text">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--large-media">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--large-media">
+              <p>анотамическая форма</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+          </div>
+          <div class="advantages__line advantages__line--light">
+            <div class="advantages__text advantages__text--light">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--light">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--light">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--light">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--light">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--light advantages__text--large-media">
+              <p>дышащая ткань</p>
+              <img class="advantages__icon" src="img/f-p.svg" alt="alt">
+            </div>
+          </div>
+          <div class="advantages__line">
+            <div class="advantages__text">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--large-media">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+            <div class="advantages__text advantages__text--large-media">
+              <p>мягкая резинка</p>
+              <img class="advantages__icon" src="img/f-w.svg" alt="alt">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prod">
+        <div class="container">
+          <div class="prod__title-top">
+            <h2 class="prod__title">производство</h2>
+            <div class="prod__detail"><a href="#">узнать подробнее <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                      fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
+                  </svg></span>
+              </a>
+            </div>
+          </div>
+          <div class="prod__slider-wrapper">
+            <div class="prod__slider swiper">
+              <div class="prod__list swiper-wrapper">
+                <div class="prod__item swiper-slide prod__item--first">
+                  <picture>
+                    <img class="steps__img" src="img/step1.png" alt="A man is surfing net.">
+                  </picture>
+                  <p class="prod__description">Сами создаем <br> дизайн</p>
+                </div>
+                <div class="prod__item swiper-slide prod__item--second">
+                  <picture>
+                    <img class="steps__img" src="img/step2.png" alt="A man is surfing net.">
+                  </picture>
+                  <p class="prod__description">Отшиваем <br> вручную
+                  </p>
+                </div>
+                <div class="prod__item swiper-slide prod__item--third">
+                  <picture>
+                    <img class="steps__img" src="img/step3.png" alt="A man is surfing net.">
+                  </picture>
+                  <p class="prod__description">Контролируем <br> качество</p>
+                </div>
+                <div class="prod__item swiper-slide prod__item--four">
+                  <picture>
+                    <img class="steps__img" src="img/step4.png" alt="A man is surfing net.">
+                  </picture>
+                  <p class="prod__description">Упаковываем <br>и доставляем</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="prod-mob__detail"><a href="#">узнать подробнее<span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                  <path
+                    d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                    fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
+                </svg></span>
+            </a></div>
+        </div>
+      </section>
+      <section class="cmi">
+        <div class="container">
+          <div class="cmi__banner">
+            <div class="cmi__banner-wrapper">
+              <div class="cmi__banner-title">
+                сми о нас
+              </div>
+              <div class="cmi__banner-text">
+                Увидел <a href="#">пост</a> Тимофея Москалева в соцсети, что&nbsp;ребята запустили сервис <a
+                  href="#">Crazy Ass</a> — трусы по&nbsp; подписке. Решил попробовать — супер!
+              </div>
+              <div class="cmi__banner-auth">
+                <a href="#"><img src="img/vc.svg" alt="alt"></a>
+              </div>
+            </div>
+            <div class="cmi__banner-img">
+              <img class="cmi__banner-img-mob" src="img/cmi-mob.png" alt="alt">
+              <img class="cmi__banner-img-decktop" src="img/cmi-img.png" alt="alt">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lookbook" id="lookbook">
+        <div class="container">
+          <div class="lookbook__title-top">
+            <h2 class="lookbook__title">магазин</h2>
+            <div class="lookbook__detail"><a href="#">Смотреть ещё<span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                      fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
+                  </svg></span>
+              </a></div>
+          </div>
+        </div>
+  
+  
+        <div class="lookbook__wrapper">
+          <div class="lookbook__slider swiper">
+            <div class="lookbook__list swiper-wrapper">
+              <div class="lookbook__item swiper-slide">
+                <div class="lookbook__picture-wrapper" data-open-modal="modal-product">
+                  <picture>
+                    <img width="293" height="290" src="img/pro1.png" alt="Tiger collection boxers.">
+                  </picture>
+                  <button class="lookbook__fullscreen" type="button" data-id="tiger">
+                    <svg class="lookbook__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="lookbook__item-row">
+                  <h3 class="lookbook__item-title">Tiger collectionn</h3>
+                  <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
+                </div>
+                <div class="shop__buttons">
+                  <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
+                  <div class="shop__product-number">
+                    <span class="shop__product-minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg>
+                    </span>
+                    <input type="text" value="1" />
+                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52"
+                        viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg></span>
+                  </div>
+                </div>
+              </div>
+              <div class="lookbook__item swiper-slide">
+                <div class="lookbook__picture-wrapper">
+                  <picture>
+                    <img width="293" height="290" src="img/pro2.png" alt="Stickers collection boxers."
+                      data-open-modal="modal-product">
+                  </picture>
+                  <button class="lookbook__fullscreen" type="button" data-id="stickers">
+                    <svg class="lookbook__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="lookbook__item-row">
+                  <h3 class="lookbook__item-title">Stickers collection</h3>
+                  <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
+                </div>
+                <div class="shop__buttons">
+                  <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
+                  <div class="shop__product-number">
+                    <span class="shop__product-minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg>
+                    </span>
+                    <input type="text" value="1" />
+                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52"
+                        viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg></span>
+                  </div>
+                </div>
+              </div>
+              <div class="lookbook__item swiper-slide">
+                <div class="lookbook__picture-wrapper">
+                  <picture>
+                    <img width="293" height="290" src="img/pro3.png" alt="Space collection boxers."
+                      data-open-modal="modal-product">
+                  </picture>
+                  <button class="lookbook__fullscreen" type="button" data-id="space">
+                    <svg class="lookbook__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="lookbook__item-row">
+                  <h3 class="lookbook__item-title">Tribal collection</h3>
+                  <div class="lookbook__item-price">999 <img src="img/rub.svg" alt="alt"></div>
+                </div>
+                <div class="shop__buttons">
+                  <a class="shop__button button button--accent" href="#" data-open-modal="modal-size">купить</a>
+                  <div class="shop__product-number">
+                    <span class="shop__product-minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg>
+                    </span>
+                    <input type="text" value="1" />
+                    <span class="shop__product-plus"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52"
+                        viewBox="0 0 52 52" fill="none">
+                        <rect x="0.5" y="0.5" width="51" height="51" fill="white" stroke="#1C1C1C" />
+                        <rect x="25.418" y="19" width="1.16667" height="14" fill="#1C1C1C" />
+                        <rect x="19" y="26.5834" width="1.16667" height="14" transform="rotate(-90 19 26.5834)"
+                          fill="#1C1C1C" />
+                      </svg></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+  
+  
+          <h2 class="reviews__title">отзывы</h2>
+          <div class="reviews__top-line">
+            <div class="reviews__top">
+              <div class="review__top-logo">
+                <img src="img/yandex.svg" alt="alt">
+              </div>
+              <div class="reviews__rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path
+                    d="M15 21.5875L20.1875 24.725C21.1375 25.3 22.3 24.45 22.05 23.375L20.675 17.475L25.2625 13.5C26.1 12.775 25.65 11.4 24.55 11.3125L18.5125 10.8L16.15 5.22495C15.725 4.21245 14.275 4.21245 13.85 5.22495L11.4875 10.7875L5.45 11.3C4.35 11.3875 3.9 12.7625 4.7375 13.4875L9.325 17.4625L7.95 23.3625C7.7 24.4375 8.8625 25.2875 9.8125 24.7125L15 21.5875Z"
+                    fill="#FED104" />
+                </svg>
+                <span class="reviews__rating-value">4,9</span>
+              </div>
+            </div>
+            <div class="reviews__detail"><a href="#">Смотреть ещё на яндекс.маркете<span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                      fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
+                  </svg></span>
+              </a></div>
+          </div>
+        </div>
+        <div class="reviews__slider-wrapper">
+          <div class="reviews__slider swiper">
+            <div class="reviews__list swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-1-desktop@1x.webp 1x, img/review-1-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-1-desktop@1x.png"
+                      srcset="img/review-1-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Виктор</h3>
+                    <span class="reviews__date">16 января 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Добрый день. Боксеры получил. Очень приятные на ощупь, отличный принт. В носке
+                  будут очень удобны. Спасибо большое вам. Будем ждать новые дизайны)</p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-2-desktop@1x.webp 1x, img/review-2-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-2-desktop@1x.png"
+                      srcset="img/review-2-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Александр</h3>
+                    <span class="reviews__date">10 января 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Отличные боксеры, приятные материалы, хорошо сидят, служба поддержки отвечает
+                  быстро, не пожалел что заказал.</p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-3-desktop@1x.webp 1x, img/review-3-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-3-desktop@1x.png"
+                      srcset="img/review-3-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Jericho</h3>
+                    <span class="reviews__date">5 января 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Очень доволен боксерами. Размер соответствует, а рисунок просто бомба!!!!
+                  Надеюсь, что в следующем месяце удивят новым дизайном! Спасибо!!!</p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-4-desktop@1x.webp 1x, img/review-4-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-4-desktop@1x.png"
+                      srcset="img/review-4-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Игорь</h3>
+                    <span class="reviews__date">5 января 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Свои боксеры получил уже через 2 дня на СДЭКе! Принт классный, но главное
+                  мегаудобные. Идеально подошел размер. Качество супер! Рекомендую однозначно</p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-5-desktop@1x.webp 1x, img/review-5-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-5-desktop@1x.png"
+                      srcset="img/review-5-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Igor Anatolievich</h3>
+                    <span class="reviews__date">15 января 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Satisfied as an elephant). The quality is decent, the unusual design and the
+                  original pattern give a feeling of perfect individuality.</p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__header">
+                  <picture>
+                    <source type="image/webp" srcset="img/review-6-desktop@1x.webp 1x, img/review-6-desktop@2x.webp 2x">
+                    <img class="reviews__img" width="60" height="60" src="img/review-6-desktop@1x.png"
+                      srcset="img/review-6-desktop@2x.png 2x" alt="Author.">
+                  </picture>
+                  <div class="reviews__wrapper">
+                    <h3 class="reviews__author">Arseny B.</h3>
+                    <span class="reviews__date">5 декабря 2023</span>
+                  </div>
+                </div>
+                <p class="reviews__text">Great panties, soft fabric is nice to the body, the material is soft and no
+                  discomfort when wearing, then you can go to sports or dance</p>
+              </div>
+            </div>
+            <div class="reviews__pagination swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="container">
+  
+  
+          <div class="prod-mob__detail"><a href="#">Смотреть ещё <br>на яндекс.маркетее<span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                  <path
+                    d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                    fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
+                </svg></span>
+            </a></div>
+          <a class="btn__up" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+              <path d="M2.9975 13L9.5 6.20108L16.0025 13L18 10.9069L9.5 2L1 10.9069L2.9975 13Z" fill="#1C1C1C"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </a>
+        </div>
+      </section>
     </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__nav">
+          <span class="main-footer__logo">
+            <a href="index-2.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg"
+                alt="Логотип Crazy Ass."></a>
+          </span>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="shop.html">Магазин</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="lookbook.html">лукбук</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="faq.html">FAQ</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="production.html">Производство</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="lk.html">Личный кабинет</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="cart.html">Корзина (0)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__right">
+          <ul class="main-footer__contacts">
+            <li class="main-footer__contacts-item main-footer__contacts-item--icon">
+              <a class="main-footer__contacts-link main-footer__contacts-link--icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                  <path
+                    d="M39.0444 9.7503C38.4016 9.74156 37.7707 9.92358 37.2315 10.2734C36.6922 10.6232 36.2687 11.125 36.0147 11.7154C35.7606 12.3058 35.6873 12.9583 35.8041 13.5904C35.9209 14.2225 36.2224 14.8057 36.6707 15.2664C37.1189 15.7271 37.6937 16.0445 38.3224 16.1786C38.9511 16.3126 39.6054 16.2572 40.2025 16.0194C40.7997 15.7816 41.313 15.3721 41.6774 14.8426C42.0419 14.3132 42.2411 13.6875 42.25 13.0448V12.9558C42.2423 12.108 41.902 11.2972 41.3025 10.6977C40.703 10.0982 39.8922 9.75804 39.0444 9.7503Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M26 16.25C24.0716 16.25 22.1866 16.8218 20.5832 17.8932C18.9798 18.9645 17.7301 20.4873 16.9922 22.2688C16.2542 24.0504 16.0611 26.0108 16.4373 27.9021C16.8136 29.7934 17.7422 31.5307 19.1057 32.8943C20.4693 34.2578 22.2066 35.1864 24.0979 35.5627C25.9892 35.9389 27.9496 35.7458 29.7312 35.0078C31.5127 34.2699 33.0355 33.0202 34.1068 31.4168C35.1782 29.8134 35.75 27.9284 35.75 26C35.75 23.4141 34.7228 20.9342 32.8943 19.1057C31.0658 17.2772 28.5859 16.25 26 16.25Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  <rect x="0.5" y="0.5" width="51" height="51" rx="3.5" stroke="white" />
+                </svg>
+                <span class="visually-hidden">Go to Instagram</span>
+              </a>
+            </li>
+
+            <li class="main-footer__contacts-item">
+              <a class="main-footer__contacts-link button button--primary"
+                href="mailto:HELLO@CRAZYASS.RU">HELLO@CRAZYASS.RU</a>
+            </li>
+
+
+          </ul>
+          <div class="main-footer__contacts-item">
+            <a class="main-footer__contacts-email" href="mailto:hello@crazyass.ru">Hello@crazyass.ru</a>
+          </div>
+          <div class="main-footer__contacts-item">
+            ИП Москалев Тимофей Дмитриевич<br>123022, Москва, 2-ая Звенигородская 11 ОГРН ИП 321774600791769 <br> ИНН:
+            771475340879
+          </div>
+        </div>
+
+      </div>
+      <div class="main-footer__copyright-wrapper">
+        <p class="main-footer__copyright">© All Rights Reserved.</p>
+        <div class="main-footer__bottom-menu">
+          <ul class="footer__bottom-menu">
+            <li><a href="#">публичная оферта</a></li>
+            <li><a href="#">пользовательское соглашение</a></li>
+            <li><a href="#">политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal modal--preload" data-modal="modal-form">
+    <div class="modal__wrapper">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <h2 class="modal__title">Thanks for choosing to &nbsp; subscribe!</h2>
+        <p class="modal__text">Please leave us your<br> information and we'll get in<br> touch with you</p>
+        <div class="modal__form-wrapper" data-form-validate data-callback="base">
+          <form class="modal__form" action="#" method="post">
+            <div class="modal__form-item" data-validate-type="text" data-message-base="The field must be filled in"
+              data-message-extra="The field should have text format" data-required>
+              <label class="modal__form-label" for="name">Name</label>
+              <div class="modal__form-input-wrapper">
+                <input class="modal__form-input input" type="text" id="name" name="name" placeholder="Enter your name"
+                  required>
+                <button class="modal__button-reset" type="button">
+                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                      fill="#1C1C1C" />
+                  </svg>
+                  <span class="visually-hidden">Сбросить значение</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal__form-item" data-on-input-validate data-validate-type="phone"
+              data-message-base="The field must be filled in" data-message-extra="The field should have phone format"
+              data-required>
+              <label class="modal__form-label" for="phone">Phone</label>
+              <div class="modal__form-input-wrapper">
+                <input class="modal__form-input input" type="tel" id="phone" name="phone"
+                  placeholder="Enter your phone number" required>
+                <button class="modal__button-reset" type="button">
+                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                      fill="#1C1C1C" />
+                  </svg>
+                  <span class="visually-hidden">Сбросить значение</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal__form-item" data-validate-type="email" data-message-base="The field must be filled in"
+              data-message-extra="The field should have email format" data-required>
+              <label class="modal__form-label" for="mail">E-mail</label>
+              <div class="modal__form-input-wrapper">
+                <input class="modal__form-input input" type="email" id="mail" name="mail"
+                  placeholder="Enter your E-mail">
+                <button class="modal__button-reset" type="button">
+                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                      fill="#1C1C1C" />
+                  </svg>
+                  <span class="visually-hidden">Сбросить значение</span>
+                </button>
+              </div>
+            </div>
+            <button class="modal__button button button--accent" type="submit">Subscribe</button>
+            <button class="modal__close-btn" type="button" data-close-modal>
+              <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                  fill="#1C1C1C" />
+              </svg>
+              <span class="visually-hidden">Close the modal</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="modal modal--preload" data-modal="modal-success">
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
-        <div class="modal__content">
-          <h2 class="modal__title">Thank you!</h2>
-          <p class="modal__text">We'll get back to you within three days</p>
-          <button class="modal__button button button--accent" type="button" data-close-modal>Ok, thanks</button>
-          <button class="modal__close-btn" type="button" data-close-modal>
-            <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-            <span class="visually-hidden">Close the modal</span>
-          </button>
-        </div>
+      <div class="modal__content">
+        <h2 class="modal__title">Thank you!</h2>
+        <p class="modal__text">We'll get back to you within three days</p>
+        <button class="modal__button button button--accent" type="button" data-close-modal>Ok, thanks</button>
+        <button class="modal__close-btn" type="button" data-close-modal>
+          <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+            fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
+          </svg>
+          <span class="visually-hidden">Close the modal</span>
+        </button>
+      </div>
     </div>
   </div>
   <div class="modal modal--preload" data-modal="modal-img">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__img-content">
-          <div class="modal__img"></div>
-        </div>
+      <div class="modal__img-content">
+        <div class="modal__img"></div>
+      </div>
     </div>
   </div>
 
- <div class="modal modal--preload" data-modal="modal-product">
+  <div class="modal modal--preload" data-modal="modal-product">
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
-        <div class="modal__content modal__product">
-          
-          <div class="modal__product-container">
-            <div class="modal__product-slider">
-              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper cardSlider-main">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="img/l1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/l2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/l3.png" />
-                  </div>
+      <div class="modal__content modal__product">
+
+        <div class="modal__product-container">
+          <div class="modal__product-slider">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+              class="swiper cardSlider-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide f-panzoom" id="myPanzoom1">
+                  <img src="img/l1.png" class="f-panzoom__content" />
                 </div>
-              </div>
-              <div thumbsSlider="" class="swiper cardSlider-left">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="img/l1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/l2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/l3.png" />
-                  </div>
+                <div class="swiper-slide f-panzoom" id="myPanzoom2">
+                  <img src="img/l2.png" class="f-panzoom__content" />
+                </div>
+                <div class="swiper-slide f-panzoom" id="myPanzoom3">
+                  <img src="img/l3.png" class="f-panzoom__content" />
                 </div>
               </div>
             </div>
-            <div class="modal__product-content">
-              <h2 class="modal__title modal__product-title">Tiger collection</h2>
-              <div class="modal__product-props">
-                <div class="product-props__name">
-                  состав:
+            <div thumbsSlider="" class="swiper cardSlider-left">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/l1.png" />
                 </div>
-                <div class="product-props__value">
-                  100% хлопок
+                <div class="swiper-slide">
+                  <img src="img/l2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/l3.png" />
                 </div>
               </div>
-              <div class="modal__product-size">
-                <div class="product-size__title">
-                  Размер:
-                </div>
-                <div class="product-size__list">
+            </div>
+          </div>
+          <div class="modal__product-content">
+            <h2 class="modal__title modal__product-title">Tiger collection</h2>
+            <div class="modal__product-props">
+              <div class="product-props__name">
+                состав:
+              </div>
+              <div class="product-props__value">
+                100% хлопок
+              </div>
+            </div>
+            <div class="modal__product-size">
+              <div class="product-size__title">
+                Размер:
+              </div>
+              <div class="product-size__list">
                 <form action="#">
                   <div class="product__size">
-                  <label for="s3">
-                    <input id="s3" type="radio" name="size" checked>
-                    <span>S</span>
-                  </label>
-                  <label for="m3">
-                    <input id="m3" type="radio" name="size">
-                    <span>M</span>
-                  </label>
-                  <label for="l3">
-                    <input id="l3" type="radio" name="size">
-                    <span>L</span>
-                  </label>
-                  <label for="xl3">
-                    <input id="xl3" type="radio" name="size">
-                    <span>XL</span>
-                  </label>
-                  <label for="xxl3">
-                    <input id="xxl3" type="radio" name="size">
-                    <span>XXL</span>
-                  </label>
-                   </div>
+                    <label for="s3">
+                      <input id="s3" type="radio" name="size" checked>
+                      <span>S</span>
+                    </label>
+                    <label for="m3">
+                      <input id="m3" type="radio" name="size">
+                      <span>M</span>
+                    </label>
+                    <label for="l3">
+                      <input id="l3" type="radio" name="size">
+                      <span>L</span>
+                    </label>
+                    <label for="xl3">
+                      <input id="xl3" type="radio" name="size">
+                      <span>XL</span>
+                    </label>
+                    <label for="xxl3">
+                      <input id="xxl3" type="radio" name="size">
+                      <span>XXL</span>
+                    </label>
+                  </div>
                 </form>
               </div>
-              </div>
-              
+            </div>
+
             <div class="product__size-chart">
               <a href="#" data-open-modal="modal-tables__sub">размерная сетка
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                    <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
+                    <path
+                      d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                      fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
                   </svg>
-                </span> 
+                </span>
               </a>
             </div>
             <div class="modal__product-price">
               1250 <img src="img/rub-pop.svg" alt="alt">
             </div>
             <div class="shop__buttons modals__button">
-                <a class="shop__button modal__button button button--accent" href="#">купить</a>
-                <div class="shop__product-number">
-                    <span class="shop__product-minus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <rect x="0.5" y="0.5" width="39" height="39" fill="white" stroke="#1C1C1C"/>
-                    <rect x="14.6172" y="20.4489" width="0.897436" height="10.7692" transform="rotate(-90 14.6172 20.4489)" fill="#1C1C1C"/>
-                    </svg>
-                    </span>
-                    <input type="text" value="1"/>
-                    <span class="shop__product-plus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                      <rect x="0.5" y="0.5" width="39" height="39" fill="white" stroke="#1C1C1C"/>
-                      <rect x="19.5547" y="14.6154" width="0.897436" height="10.7692" fill="#1C1C1C"/>
-                      <rect x="14.6172" y="20.4487" width="0.897436" height="10.7692" transform="rotate(-90 14.6172 20.4487)" fill="#1C1C1C"/>
-                      </svg>
-                    </span>
-                  </div>
+              <a class="shop__button modal__button button button--accent" href="#">купить</a>
+              <div class="shop__product-number">
+                <span class="shop__product-minus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect x="0.5" y="0.5" width="39" height="39" fill="white" stroke="#1C1C1C" />
+                    <rect x="14.6172" y="20.4489" width="0.897436" height="10.7692"
+                      transform="rotate(-90 14.6172 20.4489)" fill="#1C1C1C" />
+                  </svg>
+                </span>
+                <input type="text" value="1" />
+                <span class="shop__product-plus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect x="0.5" y="0.5" width="39" height="39" fill="white" stroke="#1C1C1C" />
+                    <rect x="19.5547" y="14.6154" width="0.897436" height="10.7692" fill="#1C1C1C" />
+                    <rect x="14.6172" y="20.4487" width="0.897436" height="10.7692"
+                      transform="rotate(-90 14.6172 20.4487)" fill="#1C1C1C" />
+                  </svg>
+                </span>
               </div>
+            </div>
             <div class="button-delivery">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M26.6667 28H5.33333V13.3333H8V25.3333H24V13.3333H26.6667V28ZM4 4H28V12H4V4ZM12.6667 14.6667H19.3333C19.7067 14.6667 20 14.96 20 15.3333V17.3333H12V15.3333C12 14.96 12.2933 14.6667 12.6667 14.6667ZM6.66667 6.66667V9.33333H25.3333V6.66667H6.66667Z" fill="#1C1C1C" stroke="white" stroke-width="1.7"/>
+                <path
+                  d="M26.6667 28H5.33333V13.3333H8V25.3333H24V13.3333H26.6667V28ZM4 4H28V12H4V4ZM12.6667 14.6667H19.3333C19.7067 14.6667 20 14.96 20 15.3333V17.3333H12V15.3333C12 14.96 12.2933 14.6667 12.6667 14.6667ZM6.66667 6.66667V9.33333H25.3333V6.66667H6.66667Z"
+                  fill="#1C1C1C" stroke="white" stroke-width="1.7" />
               </svg><a href="#" class="modal__button-delivery">Доставка</a>
             </div>
-            </div>
-            
-            
           </div>
-          <button class="modal__close-btn" type="button" data-close-modal>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-             </svg>
-            <span class="visually-hidden">Close the modal</span>
-          </button>
+
+
         </div>
+        <button class="modal__close-btn" type="button" data-close-modal>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
+          </svg>
+          <span class="visually-hidden">Close the modal</span>
+        </button>
+      </div>
     </div>
   </div>
-<div class="modal modal--preload" data-modal="modal-tables__sub">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
+  <div class="modal modal--preload" data-modal="modal-tables__sub">
+    <div class="modal__wrapper">
+      <div class="modal__overlay"></div>
       <div class="modal__content modal__table">
         <h2 class="modal__title">размерная сетка</h2>
         <div class="tables__list">
@@ -1096,19 +1151,21 @@
             </div>
           </div>
         </div>
-        
+
         <button class="modal__close-btn" type="button" data-modal-close>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
           </svg>
           <span class="visually-hidden">Close the modal</span>
         </button>
       </div>
+    </div>
   </div>
-</div>
-<div class="modal modal--preload" data-modal="modal-tables">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
+  <div class="modal modal--preload" data-modal="modal-tables">
+    <div class="modal__wrapper">
+      <div class="modal__overlay"></div>
       <div class="modal__content modal__table">
         <h2 class="modal__title">размерная сетка</h2>
         <div class="tables__list">
@@ -1219,42 +1276,47 @@
           </div>
         </div>
         <button href="#" class="modal-back" data-open-modal="modal-subcrube">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-            <path d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z" fill="#1C1C1C" stroke="white"/>
-          </svg>
-        </span> 
-      </button>
-        <button class="modal__close-btn" type="button" data-open-modal="modal-subcrube"l>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+              <path
+                d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z"
+                fill="#1C1C1C" stroke="white" />
+            </svg>
+          </span>
+        </button>
+        <button class="modal__close-btn" type="button" data-open-modal="modal-subcrube" l>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
           </svg>
           <span class="visually-hidden">Close the modal</span>
         </button>
       </div>
+    </div>
   </div>
-</div>
-<div id="cookie_note" class="massega__block">
-  <div class="container">
-    <div class="massega-cookie">
-      <div class="massega-cookie__container">
-        <div class="massega-cookie__text">
-        Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы соглашаетесь на работу с этими файлами 
-      </div>
-      <div class="massega-cookie__btn">
-        <button class="cookie--btn cookie_accept button ">принять и закрыть</button>
-      </div>
+  <div id="cookie_note" class="massega__block">
+    <div class="container">
+      <div class="massega-cookie">
+        <div class="massega-cookie__container">
+          <div class="massega-cookie__text">
+            Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы соглашаетесь на работу с
+            этими файлами
+          </div>
+          <div class="massega-cookie__btn">
+            <button class="cookie--btn cookie_accept button ">принять и закрыть</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="modal modal--preload modal-size" data-modal="modal-size">
+  <div class="modal modal--preload modal-size" data-modal="modal-size">
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
-        <div class="modal__content modal__size">
-          <p class="modal__text">Размер:</p>
-          <form action="#">
-            <div class="product__size">
+      <div class="modal__content modal__size">
+        <p class="modal__text">Размер:</p>
+        <form action="#">
+          <div class="product__size">
             <label for="s1">
               <input id="s1" type="radio" name="size" checked>
               <span>S</span>
@@ -1275,51 +1337,62 @@
               <input id="xxl1" type="radio" name="size">
               <span>XXL</span>
             </label>
-             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
+    </div>
   </div>
   <div class="modal modal--preload" data-modal="modal-control__close">
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
-        <div class="modal__content">
-           <h2 class="modal__title">закрыть оформление подписки?</h2>
-          <p class="modal__text">Введенные данные не будут сохранены</p>
-          <button class="modal__button button button--accent" type="button" data-close-modal>закрыть без сохранения</button>
-          <button class="modal__button button button--border" type="button" data-open-modal="modal-subcrube">продолжить оформление</button>
-          <button class="modal__close-btn" type="button" data-close-modal>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Close the modal</span>
-          </button>
-        </div>
+      <div class="modal__content">
+        <h2 class="modal__title">закрыть оформление подписки?</h2>
+        <p class="modal__text">Введенные данные не будут сохранены</p>
+        <button class="modal__button button button--accent" type="button" data-close-modal>закрыть без
+          сохранения</button>
+        <button class="modal__button button button--border" type="button" data-open-modal="modal-subcrube">продолжить
+          оформление</button>
+        <button class="modal__close-btn" type="button" data-close-modal>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
+          </svg>
+          <span class="visually-hidden">Close the modal</span>
+        </button>
+      </div>
     </div>
   </div>
   <div class="modal modal--preload" data-modal="modal-sucesess__close">
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
-        <div class="modal__content modal__subcrube">
-           <h2 class="modal__title">Спасибо за подписку!</h2>
-          <p class="modal__text">Мы отправили вам на E-mail подтверждение оформления подписки. Также мы добавили в письмо ссылку, по которой необходимо перейти для завершения регистрации на сайте и пароль для входа в Личный кабинет.</p>
-          <p class="modal__text">В Личном кабинете вы сможете управлять подпиской, получать информацию по ежемесячным платежам, а ещё там хранится история заказов в нашем магазине.</p>
-          <button class="modal__close-btn" type="button" data-close-modal>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Close the modal</span>
-          </button>
-        </div>
+      <div class="modal__content modal__subcrube">
+        <h2 class="modal__title">Спасибо за подписку!</h2>
+        <p class="modal__text spec">Мы отправили вам на E-mail подтверждение оформления подписки. Также мы добавили в письмо
+          ссылку, по которой необходимо перейти для завершения регистрации на сайте и пароль для входа в Личный кабинет.
+        </p>
+        <p class="modal__text spec">В Личном кабинете вы сможете управлять подпиской, получать информацию по ежемесячным
+          платежам, а ещё там хранится история заказов в нашем магазине.</p>
+        <button class="modal__close-btn" type="button" data-close-modal>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
+          </svg>
+          <span class="visually-hidden">Close the modal</span>
+        </button>
+      </div>
     </div>
   </div>
-<div class="modal modal--preload" data-modal="modal-subcrube">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
+  <div class="modal modal--preload" data-modal="modal-subcrube">
+    <div class="modal__wrapper" style="padding: 0;">
+      <div class="modal__overlay"></div>
       <div class="modal__content modal__subcrube">
         <button class="modal__close-btn" type="button" data-open-modal="modal-control__close">
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+              fill="#1C1C1C" />
           </svg>
           <span class="visually-hidden">Close the modal</span>
         </button>
@@ -1354,18 +1427,24 @@
                 <li class="modal-subscription__item">
                   <div class="modal-subscription__wrapper">
                     <input type="radio" id="Design" name="tab-p" checked>
-                    <label for="Design"> <h3 class="modal-subscription__item-title subscription__item-title--design">Design</h3></label>
+                    <label for="Design">
+                      <h3 class="modal-subscription__item-title subscription__item-title--design">Design</h3>
+                    </label>
                     <p class="modal-subscription__description">Боксеры с уникальным дизайнерским принтом</p>
-                    <p class="modal-subscription__proposal">445 <img src="img/rub-bg.svg" alt="alt">/первый месяц <span>далее 990 <img src="img/rub-pol.svg" alt="alt">/каждый месяц</span>        
+                    <p class="modal-subscription__proposal">445 <img src="img/rub-bg.svg" alt="alt">/первый месяц
+                      <span>далее 990 <img src="img/rub-pol.svg" alt="alt">/каждый месяц</span>
                     </p>
                   </div>
                 </li>
                 <li class="modal-subscription__item">
                   <div class="modal-subscription__wrapper">
                     <input type="radio" id="Black" name="tab-p" checked>
-                    <label for="Black"> <h3 class="modal-subscription__item-title">Black</h3></label>
+                    <label for="Black">
+                      <h3 class="modal-subscription__item-title">Black</h3>
+                    </label>
                     <p class="modal-subscription__description">Однотонные боксеры с брендированной резинкой</p>
-                    <p class="modal-subscription__proposal">445 <img src="img/rub-bg.svg" alt="alt">/первый месяц  <span>далее 990 <img src="img/rub-pol.svg" alt="alt">/каждый месяц</span>        
+                    <p class="modal-subscription__proposal">445 <img src="img/rub-bg.svg" alt="alt">/первый месяц
+                      <span>далее 990 <img src="img/rub-pol.svg" alt="alt">/каждый месяц</span>
                     </p>
                   </div>
                 </li>
@@ -1398,14 +1477,16 @@
                     <span>XXL</span>
                   </label>
                 </div>
-                
+
                 <div class="product__size-chart">
                   <a href="#" data-modal-close data-open-modal="modal-tables">размерная сетка
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                        <path d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z" fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8"/>
+                        <path
+                          d="M9.83463 12.5L8.5513 11.1708L11.8055 7.91667H0.667969V6.08333H11.8055L8.5513 2.82917L9.83463 1.5L15.3346 7L9.83463 12.5Z"
+                          fill="#1C1C1C" stroke="#F4F4F4" stroke-width="0.8" />
                       </svg>
-                    </span> 
+                    </span>
                   </a>
                 </div>
               </div>
@@ -1414,605 +1495,684 @@
               </div>
               <div class="step__form-group">
                 <div class="step__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-                data-message-extra="Поле должно иметь текстовый формат" data-required>
-                <label class="order__form-label" for="name">Вы можете придумать название вашей подписки для упрощения взаимодействия с подписками после оформления (это поле является не обязательным для заполнения)</label>
-                <div class="order__form-input-wrapper">
-                  <input class="order__form-input input" type="text" id="nameSubs" name="nameSubs" placeholder="Придумайте название вашей подписки"
-                  required>
-                  <button class="order__button-reset" type="reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
+                  data-message-extra="Поле должно иметь текстовый формат" data-required>
+                  <label class="order__form-label" for="name">Вы можете придумать название вашей подписки для упрощения
+                    взаимодействия с подписками после оформления (это поле является не обязательным для
+                    заполнения)</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="text" id="nameSubs" name="nameSubs"
+                      placeholder="Придумайте название вашей подписки" required>
+                    <button class="order__button-reset" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                          fill="#1C1C1C" />
+                      </svg>
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-next button button--accent btn-for-progress">Далее</a>
+              </div>
+            </div>
+            <div class="form-step validate__form">
+              <div class="form-step__title">
+                введите личные данные:
+              </div>
+              <div class="order__step-info">
+                <div class="order__step-info-icon">
+                  <img src="img/info-icon.svg" alt="alt">
+                </div>
+                <div class="order__step-info-text">
+                  <p>Пожалуйста, указывайте <b>актуальные данные</b> — это поможет избежать проблем при получении заказа
+                    и автоматически создать ваш личный кабинет на сайте</p>
+                </div>
+              </div>
+              <div class="subcribe__form-group">
+                <div class="subcribe__form-item" data-validate-type="text"
+                  data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь текстовый формат"
+                  data-required>
+                  <label class="order__form-label" for="name">Имя*</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите имя"
+                      required>
+                    <button class="order__button-reset btn-subscribe" type="button">
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="subcribe__form-item" data-validate-type="number"
+                  data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь формат телефона"
+                  data-required>
+                  <label class="order__form-label" for="name">Телефон*</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="tel" id="phone-pop" name="phone-pop"
+                      placeholder="+7 (___) ___-__-__" required>
+                    <button class="order__button-reset btn-subscribe" type="button">
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="subcribe__form-item" data-validate-type="text"
+                  data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь текстовый формат"
+                  data-required>
+                  <label class="order__form-label" for="name">Фамилия*</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="text" id="family" name="family"
+                      placeholder="Введите фамилию" required>
+                    <button class="order__button-reset btn-subscribe" type="button">
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="subcribe__form-item" data-validate-type="text"
+                  data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь текстовый формат"
+                  data-message-extra="The field should have text format" data-required>
+                  <label class="order__form-label" for="name">E-mail*</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="text" id="email" name="email"
+                      placeholder="Введите адрес электронной почты" required>
+                    <button class="order__button-reset btn-subscribe" type="button">
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="subcribe__form-item" data-validate-type="text"
+                  data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь текстовый формат"
+                  data-required>
+                  <label class="order__form-label" for="name">Отчество*</label>
+                  <div class="order__form-input-wrapper">
+                    <input class="order__form-input input" type="text" id="surname" name="surname"
+                      placeholder="Введите отчество" required>
+                    <button class="order__button-reset btn-subscribe" type="button">
+                      <span class="visually-hidden">Сбросить значение</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev btn-for-progress-prev">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                      <path
+                        d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z"
+                        fill="#1C1C1C" stroke="white" />
                     </svg>
-                    <span class="visually-hidden">Сбросить значение</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="btns-group">
-              <a href="#" class="btn btn-next button button--accent">Далее</a>
-            </div>
-          </div>
-          <div class="form-step">
-            <div class="form-step__title">
-              введите личные данные:
-            </div>
-            <div class="order__step-info">
-              <div class="order__step-info-icon">
-                <img src="img/info-icon.svg" alt="alt">
-              </div>
-              <div class="order__step-info-text">
-                <p>Пожалуйста, указывайте <b>актуальные данные</b> — это поможет избежать проблем при получении заказа и автоматически создать ваш личный кабинет на сайте</p>
-              </div>
-            </div>
-            <div class="subcribe__form-group">
-              <div class="subcribe__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-              data-message-extra="Поле должно иметь текстовый формат" data-required>
-              <label class="order__form-label" for="name">Имя*</label>
-              <div class="order__form-input-wrapper">
-                <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите имя"
-                required>
-                <button class="order__button-reset" type="reset">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                  <span class="visually-hidden">Сбросить значение</span>
+                  </span>
+                </a>
+                <button class="btn btn-next button button--accent btn-for-progress btn-save" type="button" disabled>
+                  Далее
                 </button>
               </div>
             </div>
-            <div class="subcribe__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-            data-message-extra="Поле должно иметь формат телефона" data-required>
-            <label class="order__form-label" for="name">Телефон*</label>
-            <div class="order__form-input-wrapper">
-              <input class="order__form-input input" type="tel" id="phone-pop" name="phone-pop" placeholder="+7 (___) ___-__-__"
-              required>
-              <button class="order__button-reset" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                </svg>
-                <span class="visually-hidden">Сбросить значение</span>
-              </button>
-            </div>
-          </div>
-          <div class="subcribe__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-          data-message-extra="Поле должно иметь текстовый формат" data-required>
-          <label class="order__form-label" for="name">Фамилия*</label>
-          <div class="order__form-input-wrapper">
-            <input class="order__form-input input" type="text" id="family" name="family" placeholder="Введите фамилию"
-            required>
-            <button class="order__button-reset" type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-              </svg>
-              <span class="visually-hidden">Сбросить значение</span>
-            </button>
-          </div>
-        </div>
-        <div class="subcribe__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-        data-message-extra="Поле должно иметь текстовый формат"
-        data-message-extra="The field should have text format" data-required>
-        <label class="order__form-label" for="name">E-mail*</label>
-        <div class="order__form-input-wrapper">
-          <input class="order__form-input input" type="text" id="email" name="email" placeholder="Введите адрес электронной почты"
-          required>
-          <button class="order__button-reset" type="reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Сбросить значение</span>
-          </button>
-        </div>
-      </div>
-      <div class="subcribe__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено" data-message-extra="Поле должно иметь текстовый формат" data-required>
-        <label class="order__form-label" for="name">Отчество*</label>
-        <div class="order__form-input-wrapper">
-          <input class="order__form-input input" type="text" id="surname" name="surname" placeholder="Введите отчество"
-          required>
-          <button class="order__button-reset" type="reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Сбросить значение</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="btns-group">
-      <a href="#" class="btn btn-prev">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-            <path d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z" fill="#1C1C1C" stroke="white"/>
-          </svg>
-        </span> 
-      </a>
-      <a href="#" class="btn btn-next button button--accent">Далее</a>
-    </div>
-  </div>
-  <div class="form-step">
-    <div class="group-three__container">
-      <div class="form-step__title">
-        Доставка:
-      </div>
-      <div class="order__step-info">
-        <div class="order__step-info-icon">
-          <img src="img/info-icon.svg" alt="alt">
-        </div>
-        <div class="order__step-info-text">
-          <p><b>О сроках доставки:</b> Мы отправляем заказы в течение недели после оформления заказа. Как только мы передадим ваш заказ <br> в курьерскую службу, на вашу электронную почту придёт трек-номер <br> и в Личном кабинете станет доступна информация о дате доставки</p>
-        </div>
-      </div>
-      <div class="order__form-item" >
-        <label class="order__form-label" for="name">Ваш город*</label>
-        <div class="order__form-input-wrapper">
-          <select id="normal-select-2" placeholder-text="Москва">
-            <option value="1" class="select-dropdown__list-item">Москва</option>
-            <option value="2" class="select-dropdown__list-item">Город 2</option>
-            <option value="3" class="select-dropdown__list-item">Город 3</option>
-            <option value="4" class="select-dropdown__list-item">Город 4</option>
-          </select>
-        </div>
-      </div>
-      <div class="delivery__tab">
-        <input type="radio" id="delivery__tab-p1" name="tab-dp" checked>
-        <label for="delivery__tab-p1">Самовывоз <p>Доставка СДЭК до ПВЗ — <span>бесплатно</span></p></label>
-        <input type="radio" id="delivery__tab-p2" name="tab-dp">
-        <label for="delivery__tab-p2">Курьером до двери <p>Оплата доставки отдельно по тарифам СДЭК</p></label>
-      </div>
-      <div class="contact-tabs">
-        <div class="delivery__containers">
-          
-          <div class="order__form-block">
-            <div class="order__form-group">
-              <div class="order__punkt">
-                <div class="order__punkt-title">
-                  Пункты выдачи
+            <div class="form-step">
+              <div class="group-three__container">
+                <div class="form-step__title">
+                  Доставка:
                 </div>
-                <div class="order__punkt-list">
-                  <div class="order__punkt-item">
-                    <div class="punkt-item__adres">
-                      ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
-                    </div>
-                    <a href="#" class="punkt-item__more">Подробнее</a>
-                    <div class="punkt-item__price">
-                      Стоимость доставки: <span>Бесплатно</span>
-                    </div>
-                    <button class="punkt-item__add button">доставить сюда <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z" fill="white"/>
-                    </svg></button>
+                <div class="order__step-info sub">
+                  <div class="order__step-info-icon">
+                    <img src="img/info-icon.svg" alt="alt">
                   </div>
-                  <div class="order__punkt-item">
-                    <div class="punkt-item__adres">
-                      ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10,<br> м Белорусская
-                    </div>
-                    <a href="#" class="punkt-item__more">Подробнее</a>
-                    <div class="punkt-item__price">
-                      Стоимость доставки: <span>Бесплатно</span>
-                    </div>
-                    <button class="punkt-item__add button">доставить сюда <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z" fill="white"/>
-                    </svg></button>
-                  </div>
-                  <div class="order__punkt-item">
-                    <div class="punkt-item__adres">
-                      ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
-                    </div>
-                    <a href="#" class="punkt-item__more">Подробнее</a>
-                    <div class="punkt-item__price">
-                      Стоимость доставки: <span>Бесплатно</span>
-                    </div>
-                    <button class="punkt-item__add button">доставить сюда<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z" fill="white"/>
-                    </svg></button>
-                  </div>
-                  <div class="order__punkt-item">
-                    <div class="punkt-item__adres">
-                      ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, м Белорусская
-                    </div>
-                    <a href="#" class="punkt-item__more">Подробнее</a>
-                    <div class="punkt-item__price">
-                      Стоимость доставки: <span>Бесплатно</span>
-                    </div>
-                    <button class="punkt-item__add button">доставить сюда<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z" fill="white"/>
-                    </svg></button>
-                  </div>
-                  <div class="order__punkt-item">
-                    <div class="punkt-item__adres">
-                      ПВЗ СДЭК, Москва, ул. Генерала Кузнецова, 19 корп. 1, м Сокольники
-                    </div>
-                    <a href="#" class="punkt-item__more">Подробнее</a>
-                    <div class="punkt-item__price">
-                      Стоимость доставки: <span>Бесплатно</span>
-                    </div>
-                    <button class="punkt-item__add button">доставить сюда<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z" fill="white"/>
-                    </svg></button>
+                  <div class="order__step-info-text">
+                    <p><b>О сроках доставки:</b> Мы отправляем заказы в течение недели после оформления заказа. Как
+                      только мы передадим ваш заказ <br> в курьерскую службу, на вашу электронную почту придёт
+                      трек-номер <br> и в Личном кабинете станет доступна информация о дате доставки</p>
                   </div>
                 </div>
-              </div>  
-            </div>
-            <div class="order__form-group">
-              <div class="order__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-              data-message-extra="Поле должно иметь текстовый формат" data-required>
-              <label class="order__form-label" for="name">Найти пункты выдачи поблизости</label>
-              <div class="order__form-input-wrapper">
-                <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите ваш адрес"
-                >
-                <button class="order__button-reset" type="reset">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
-                  <span class="visually-hidden">Сбросить значение</span>
-                </button>
-              </div>
-            </div>
-            <div class="order__form-maps">
-              <img src="img/map-popup.png" alt="alt">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="delivery__containers">
-        <div class="order__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-        data-message-extra="Поле должно иметь текстовый формат" data-required>
-        <label class="order__form-label" for="name">Адрес*</label>
-        <div class="order__form-input-wrapper">
-          <input class="order__form-input input" type="text" id="name" name="name" placeholder="Город, улица, дом, корпус"
-          required>
-          <button class="order__button-reset" type="reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Сбросить значение</span>
-          </button>
-        </div>
-      </div>
-      <div class="form-item--30">
-        <div class="order__form-item--30" data-message-base="Поле должно быть заполнено"
-        data-message-extra="Поле должно иметь текстовый формат" data-required>
-        <label class="order__form-label" for="name">Подъезд*</label>
-        <div class="order__form-input-wrapper">
-          <input class="order__form-input input" type="text" id="name" name="name" placeholder="№ подъезда"
-          required>
-          <button class="order__button-reset" type="reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-            </svg>
-            <span class="visually-hidden">Сбросить значение</span>
-          </button>
-        </div>
-      </div>
-      <div class="order__form-item--30" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-      data-message-extra="Поле должно иметь текстовый формат" data-required>
-      <label class="order__form-label" for="name">Этаж*</label>
-      <div class="order__form-input-wrapper">
-        <input class="order__form-input input" type="text" id="name" name="name" placeholder="Этаж"
-        required>
-        <button class="order__button-reset" type="reset">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-          </svg>
-          <span class="visually-hidden">Сбросить значение</span>
-        </button>
-      </div>
-    </div>
-    <div class="order__form-item--30" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-    data-message-extra="Поле должно иметь текстовый формат" data-required>
-    <label class="order__form-label" for="name">Квартира*</label>
-    <div class="order__form-input-wrapper">
-      <input class="order__form-input input" type="text" id="name" name="name" placeholder="№ квартиры"
-      required>
-      <button class="order__button-reset" type="reset">
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-        </svg>
-        <span class="visually-hidden">Сбросить значение</span>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="order__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
-data-message-extra="Поле должно иметь текстовый формат" data-required>
-<label class="order__form-label" for="name">Комментарий для курьера</label>
-<div class="order__form-input-wrapper">
-  <textarea class="order__form-textarea textarea" type="text" id="name" name="name" placeholder="Код домофона, наличие шлагбаума и т.д."
-  required></textarea>
-  <button class="order__button-reset" type="reset">
-    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-    </svg>
-    <span class="visually-hidden">Сбросить значение</span>
-  </button>
-</div>
-</div>
-<div class="pay__delivery">
-  <div class="pay__delivery-label">
-    Стоимость доставки:
-  </div>
-  <span class="separator"></span>
-  <div class="pay__delivery-value">
-    300 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
-                                <path d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z" fill="#1C1C1C"/>
-                                </svg>
-  </div>
-</div>
-</div>
-</div>
-<div class="order__step-info">
-  <div class="order__step-info-icon">
-    <img src="img/info-icon.svg" alt="alt">
-  </div>
-  <div class="order__step-info-text">
-    <p>Заказ в ПВЗ СДЭК хранится <b>14 дней</b>. Как только мы отправим ваш заказ, ему будет присвоен трек-номер, следите за процессом доставки в Личном кабинете или на сайте СДЭК, и не забудьте забирать ваш заказ из ПВЗ вовремя</p>
-  </div>
-</div>
-<div class="btns-group">
-  <a href="#" class="btn btn-prev">
-    <span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-        <path d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z" fill="#1C1C1C" stroke="white"/>
-      </svg>
-    </span> 
-  </a>
-  <a href="#" class="btn btn-next button button--accent">Далее</a>
-</div>
-</div>
-</div>
-<div class="form-step">
-  <div class="group__container">
-    <div class="form-step__title">
-      Данные заказа:
-    </div>
-    <div class="myorder">
-      <div class="myorder-list">
-        <div class="myorder-item">
-          <div class="myorder-item__container">
-            <div class="myorder-item__products">
-              <div class="myorder-products__title">
-                состав заказа
-              </div>
-              <div class="myorder__product-list">
-                <div class="myorder__product-item">
-                  <div class="myorder__product-image">
-                    <img class="mysubcribe__img" src="img/subscription-design-mobile@1x.png" alt="Design boxers in a package.">
-                  </div>
-                  <div class="myorder__product-content">
-                    <div class="myorder__product-title">
-                      <h3 class="mysubcribe__item-title mysubcribe__item-title--design">Design</h3>
-                      <a href="#" class="product-title">Боксеры с уникальным дизайнерским принтом, <span class="myorder__product-collection">Tiger Collection</span></a>
-                    </div>
-                    
+                <div class="order__form-item">
+                  <label class="order__form-label" for="name">Ваш город*</label>
+                  <div class="order__form-input-wrapper">
+                    <select id="normal-select-2" placeholder-text="Москва">
+                      <option value="1" class="select-dropdown__list-item">Москва</option>
+                      <option value="2" class="select-dropdown__list-item">Город 2</option>
+                      <option value="3" class="select-dropdown__list-item">Город 3</option>
+                      <option value="4" class="select-dropdown__list-item">Город 4</option>
+                    </select>
                   </div>
                 </div>
-				                <div class="myorder__product-size">
-                    <div class="myorder__product-size--label">
-                      Размер
-                    </div>
-                    <div class="myorder__product-size--value">
-                      L
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="myorder-item__contacts">
-              <div class="myorder-item__contacts--block">
-                <div class="myorder-contacts__title">
-                  контактная информация
+                <div class="delivery__tab">
+                  <input type="radio" id="delivery__tab-p1" name="tab-dp" checked>
+                  <label for="delivery__tab-p1">Самовывоз <p>Доставка СДЭК до ПВЗ — <span>бесплатно</span></p></label>
+                  <input type="radio" id="delivery__tab-p2" name="tab-dp">
+                  <label for="delivery__tab-p2">Курьером до двери <p>Оплата доставки отдельно по тарифам СДЭК</p>
+                  </label>
                 </div>
-                <div class="myorder-contacts__list">
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      ФИО
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      Иванов Александр Аркадьевич
-                    </div>
-                  </div>
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      Телефон
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      +7 (999) 999 99 99
-                    </div>
-                  </div>
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      E-mail
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      mail@mail.ru
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="myorder-item__contacts--block">
-                <div class="myorder-contacts__title">
-                  способ и адрес доставки
-                </div>
-                <div class="myorder-contacts__list">
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      Способ доставки
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      Курьером до двери
-                    </div>
-                  </div>
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      Адрес
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      г. Москва, ул. Тверская, д. 20, кв. 40
-                    </div>
-                  </div>
-                  <div class="myorder-contacts__item">
-                    <div class="myorder-contacts__item-label">
-                      Комментарий для курьера
-                    </div>
-                    <div class="myorder-contacts__item-value">
-                      код домофона: 1276
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="order__step">
-      <div class="order__step-title">
-        Оплата:
-      </div>
-      <div class="pay__tab-title">
-        Способ оплаты*
-      </div>
-      <div class="pay__tab">
-        <input type="radio" id="pay__tab-popup1" name="tab-ppopup" checked>
-        <label for="pay__tab-popup1">Картой онлайн</label>
-        <input type="radio" id="pay__tab-popup2" name="tab-ppopup">
-        <label for="pay__tab-popup2">При получении </label>
-      </div>
-      <div class="contact-tabs">
-        <div class="pay-content__popup">
-          <div class="pay-block">
-            <div class="pay__delivery">
-              <div class="pay__delivery-label">
-                Доставка СДЭК до ПВЗ
-              </div>
-              <span class="separator"></span>
-              <div class="pay__delivery-value">
-                300 <img src="img/rub.svg" alt="alt">
-              </div>
-            </div>
-            <div class="pay__delivery">
-              <div class="pay__delivery-label">
-                Первый месяц*
-                <p>*далее 990 <img src="img/rub-pol.svg" alt="alt">/мес.</p>
-              </div>
-              <span class="separator"></span>
-              <div class="pay__delivery-value">
-                445 <img src="img/rub.svg" alt="alt">
-              </div>
-            </div>
-            <div class="order__full-prices">
-              <div class="order__full-label">
-                Итого к оплате:
-              </div>
-              <div class="order__full-price">
-                445 <img src="img/rub-big.svg" alt="alt">
-              </div>
-            </div>
-          </div>
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a href="#">персональных данных</a>
-            </label>
-          </div>
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg" alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
-            </label>
-          </div>
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка) платежей</a>
-            </label>
-          </div>
+                <div class="contact-tabs">
+                  <div class="delivery__containers">
 
-      <a href="#" class="btn btn-prev">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-            <path d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z" fill="#1C1C1C" stroke="white"/>
-          </svg>
-        </span> 
-      </a>
+                    <div class="order__form-block">
+                      <div class="order__form-group">
+                        <div class="order__punkt">
+                          <div class="order__punkt-title">
+                            Пункты выдачи
+                          </div>
+                          <div class="order__punkt-list">
+                            <div class="order__punkt-item">
+                              <div class="punkt-item__adres">
+                                ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
+                              </div>
+                              <a href="#" class="punkt-item__more">Подробнее</a>
+                              <div class="punkt-item__price">
+                                Стоимость доставки: <span>Бесплатно</span>
+                              </div>
+                              <button class="punkt-item__add button">доставить сюда <svg
+                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                  fill="none">
+                                  <path
+                                    d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z"
+                                    fill="white" />
+                                </svg></button>
+                            </div>
+                            <div class="order__punkt-item">
+                              <div class="punkt-item__adres">
+                                ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10,<br> м Белорусская
+                              </div>
+                              <a href="#" class="punkt-item__more">Подробнее</a>
+                              <div class="punkt-item__price">
+                                Стоимость доставки: <span>Бесплатно</span>
+                              </div>
+                              <button class="punkt-item__add button">доставить сюда <svg
+                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                  fill="none">
+                                  <path
+                                    d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z"
+                                    fill="white" />
+                                </svg></button>
+                            </div>
+                            <div class="order__punkt-item">
+                              <div class="punkt-item__adres">
+                                ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
+                              </div>
+                              <a href="#" class="punkt-item__more">Подробнее</a>
+                              <div class="punkt-item__price">
+                                Стоимость доставки: <span>Бесплатно</span>
+                              </div>
+                              <button class="punkt-item__add button">доставить сюда<svg
+                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                  fill="none">
+                                  <path
+                                    d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z"
+                                    fill="white" />
+                                </svg></button>
+                            </div>
+                            <div class="order__punkt-item">
+                              <div class="punkt-item__adres">
+                                ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, м Белорусская
+                              </div>
+                              <a href="#" class="punkt-item__more">Подробнее</a>
+                              <div class="punkt-item__price">
+                                Стоимость доставки: <span>Бесплатно</span>
+                              </div>
+                              <button class="punkt-item__add button">доставить сюда<svg
+                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                  fill="none">
+                                  <path
+                                    d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z"
+                                    fill="white" />
+                                </svg></button>
+                            </div>
+                            <div class="order__punkt-item">
+                              <div class="punkt-item__adres">
+                                ПВЗ СДЭК, Москва, ул. Генерала Кузнецова, 19 корп. 1, м Сокольники
+                              </div>
+                              <a href="#" class="punkt-item__more">Подробнее</a>
+                              <div class="punkt-item__price">
+                                Стоимость доставки: <span>Бесплатно</span>
+                              </div>
+                              <button class="punkt-item__add button">доставить сюда<svg
+                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                  fill="none">
+                                  <path
+                                    d="M6.0001 10.78L3.2201 8L2.27344 8.94L6.0001 12.6667L14.0001 4.66667L13.0601 3.72667L6.0001 10.78Z"
+                                    fill="white" />
+                                </svg></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order__form-group">
+                        <div class="order__form-item" data-validate-type="text"
+                          data-message-base="Поле должно быть заполнено"
+                          data-message-extra="Поле должно иметь текстовый формат" data-required>
+                          <label class="order__form-label" for="name">Найти пункты выдачи поблизости</label>
+                          <div class="order__form-input-wrapper">
+                            <input class="order__form-input input" type="text" id="name" name="name"
+                              placeholder="Введите ваш адрес">
+                            <button class="order__button-reset" type="button">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                                  fill="#1C1C1C" />
+                              </svg>
+                              <span class="visually-hidden">Сбросить значение</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="order__form-maps">
+                          <img src="img/map-popup.png" alt="alt">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery__containers">
+                    <div class="order__form-item" data-validate-type="text"
+                      data-message-base="Поле должно быть заполнено"
+                      data-message-extra="Поле должно иметь текстовый формат" data-required>
+                      <label class="order__form-label" for="name">Адрес*</label>
+                      <div class="order__form-input-wrapper">
+                        <input class="order__form-input input" type="text" id="name" name="name"
+                          placeholder="Город, улица, дом, корпус" required>
+                        <button class="order__button-reset" type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                              fill="#1C1C1C" />
+                          </svg>
+                          <span class="visually-hidden">Сбросить значение</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="form-item--30">
+                      <div class="order__form-item--30" data-message-base="Поле должно быть заполнено"
+                        data-message-extra="Поле должно иметь текстовый формат" data-required>
+                        <label class="order__form-label" for="name">Подъезд*</label>
+                        <div class="order__form-input-wrapper">
+                          <input class="order__form-input input" type="text" id="name" name="name"
+                            placeholder="№ подъезда" required>
+                          <button class="order__button-reset" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                                fill="#1C1C1C" />
+                            </svg>
+                            <span class="visually-hidden">Сбросить значение</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="order__form-item--30" data-validate-type="text"
+                        data-message-base="Поле должно быть заполнено"
+                        data-message-extra="Поле должно иметь текстовый формат" data-required>
+                        <label class="order__form-label" for="name">Этаж*</label>
+                        <div class="order__form-input-wrapper">
+                          <input class="order__form-input input" type="text" id="name" name="name" placeholder="Этаж"
+                            required>
+                          <button class="order__button-reset" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                                fill="#1C1C1C" />
+                            </svg>
+                            <span class="visually-hidden">Сбросить значение</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="order__form-item--30" data-validate-type="text"
+                        data-message-base="Поле должно быть заполнено"
+                        data-message-extra="Поле должно иметь текстовый формат" data-required>
+                        <label class="order__form-label" for="name">Квартира*</label>
+                        <div class="order__form-input-wrapper">
+                          <input class="order__form-input input" type="text" id="name" name="name"
+                            placeholder="№ квартиры" required>
+                          <button class="order__button-reset" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                                fill="#1C1C1C" />
+                            </svg>
+                            <span class="visually-hidden">Сбросить значение</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__form-item" data-validate-type="text"
+                      data-message-base="Поле должно быть заполнено"
+                      data-message-extra="Поле должно иметь текстовый формат" data-required>
+                      <label class="order__form-label" for="name">Комментарий для курьера</label>
+                      <div class="order__form-input-wrapper">
+                        <textarea class="order__form-textarea textarea" type="text" id="name" name="name"
+                          placeholder="Код домофона, наличие шлагбаума и т.д." required></textarea>
+                        <button class="order__button-reset" type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                              fill="#1C1C1C" />
+                          </svg>
+                          <span class="visually-hidden">Сбросить значение</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="pay__delivery">
+                      <div class="pay__delivery-label">
+                        Стоимость доставки:
+                      </div>
+                      <span class="separator"></span>
+                      <div class="pay__delivery-value">
+                        300 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15"
+                          fill="none">
+                          <path
+                            d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z"
+                            fill="#1C1C1C" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__step-info">
+                  <div class="order__step-info-icon">
+                    <img src="img/info-icon.svg" alt="alt">
+                  </div>
+                  <div class="order__step-info-text">
+                    <p>Заказ в ПВЗ СДЭК хранится <b>14 дней</b>. Как только мы отправим ваш заказ, ему будет присвоен
+                      трек-номер, следите за процессом доставки в Личном кабинете или на сайте СДЭК, и не забудьте
+                      забирать ваш заказ из ПВЗ вовремя</p>
+                  </div>
+                </div>
+                <div class="btns-group">
+                  <a href="#" class="btn btn-prev btn-for-progress-prev">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                        <path
+                          d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z"
+                          fill="#1C1C1C" stroke="white" />
+                      </svg>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-next button button--accent">Далее</a>
+                </div>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="group__container">
+                <div class="form-step__title">
+                  Данные заказа:
+                </div>
+                <div class="myorder">
+                  <div class="myorder-list">
+                    <div class="myorder-item">
+                      <div class="myorder-item__container">
+                        <div class="myorder-item__products">
+                          <div class="myorder-products__title">
+                            состав заказа
+                          </div>
+                          <div class="myorder__product-list">
+                            <div class="myorder__product-item">
+                              <div class="myorder__product-image">
+                                <img class="mysubcribe__img" src="img/subscription-design-mobile@1x.png"
+                                  alt="Design boxers in a package.">
+                              </div>
+                              <div class="myorder__product-content">
+                                <div class="myorder__product-title">
+                                  <h3 class="mysubcribe__item-title mysubcribe__item-title--design">Design</h3>
+                                  <a href="#" class="product-title">Боксеры с уникальным дизайнерским принтом, <span
+                                      class="myorder__product-collection">Tiger Collection</span></a>
+                                </div>
 
-          <button class="order__button button button--accent">оплатить <span>1 745 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 13 15" fill="none">
-                                <path d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z" fill="#1C1C1C"/>
-                                </svg></span></button>
-        </div>
-        <div class="pay-content__popup">
-          <div class="pay-block">
-            <div class="pay__delivery">
-              <div class="pay__delivery-label">
-                Доставка СДЭК до ПВЗ
-              </div>
-              <span class="separator"></span>
-              <div class="pay__delivery-value">
-                Бесплатно
-              </div>
-            </div>
-            <div class="pay__delivery">
-              <div class="pay__delivery-label">
-                Первый месяц*
-                <p>*далее 990 <img src="img/rub-pol.svg" alt="alt">/мес.</p>
-              </div>
-              <span class="separator"></span>
-              <div class="pay__delivery-value">
-                445 <img src="img/rub.svg" alt="alt">
-              </div>
-            </div>
-            <div class="order__full-prices">
-              <div class="order__full-label">
-                Итого к оплате:
-              </div>
-              <div class="order__full-price">
-                1 445 <img src="img/rub-big.svg" alt="alt">
-              </div>
-            </div>
-          </div>
+                              </div>
+                            </div>
+                            <div class="myorder__product-size">
+                              <div class="myorder__product-size--label">
+                                Размер
+                              </div>
+                              <div class="myorder__product-size--value">
+                                L
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="myorder-item__contacts">
+                          <div class="myorder-item__contacts--block">
+                            <div class="myorder-contacts__title">
+                              контактная информация
+                            </div>
+                            <div class="myorder-contacts__list">
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  ФИО
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  Иванов Александр Аркадьевич
+                                </div>
+                              </div>
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  Телефон
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  +7 (999) 999 99 99
+                                </div>
+                              </div>
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  E-mail
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  mail@mail.ru
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="myorder-item__contacts--block">
+                            <div class="myorder-contacts__title">
+                              способ и адрес доставки
+                            </div>
+                            <div class="myorder-contacts__list">
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  Способ доставки
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  Курьером до двери
+                                </div>
+                              </div>
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  Адрес
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  г. Москва, ул. Тверская, д. 20, кв. 40
+                                </div>
+                              </div>
+                              <div class="myorder-contacts__item">
+                                <div class="myorder-contacts__item-label">
+                                  Комментарий для курьера
+                                </div>
+                                <div class="myorder-contacts__item-value">
+                                  код домофона: 1276
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__step">
+                  <div class="order__step-title">
+                    Оплата:
+                  </div>
+                  <div class="pay__tab-title">
+                    Способ оплаты*
+                  </div>
+                  <div class="pay__tab">
+                    <input type="radio" id="pay__tab-popup1" name="tab-ppopup" checked>
+                    <label for="pay__tab-popup1">Картой онлайн</label>
+                    <input type="radio" id="pay__tab-popup2" name="tab-ppopup">
+                    <label for="pay__tab-popup2">При получении </label>
+                  </div>
+                  <div class="contact-tabs">
+                    <div class="pay-content__popup">
+                      <div class="pay-block">
+                        <div class="pay__delivery">
+                          <div class="pay__delivery-label">
+                            Доставка СДЭК до ПВЗ
+                          </div>
+                          <span class="separator"></span>
+                          <div class="pay__delivery-value">
+                            300 <img src="img/rub.svg" alt="alt">
+                          </div>
+                        </div>
+                        <div class="pay__delivery">
+                          <div class="pay__delivery-label">
+                            Первый месяц*
+                            <p>*далее 990 <img src="img/rub-pol.svg" alt="alt">/мес.</p>
+                          </div>
+                          <span class="separator"></span>
+                          <div class="pay__delivery-value">
+                            445 <img src="img/rub.svg" alt="alt">
+                          </div>
+                        </div>
+                        <div class="order__full-prices">
+                          <div class="order__full-label">
+                            Итого к оплате:
+                          </div>
+                          <div class="order__full-price">
+                            445 <img src="img/rub-big.svg" alt="alt">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a
+                            href="#">персональных данных</a>
+                        </label>
+                      </div>
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg"
+                            alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
+                        </label>
+                      </div>
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка)
+                          платежей</a>
+                        </label>
+                      </div>
 
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a href="#">персональных данных</a>
-            </label>
-          </div>
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg" alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
-            </label>
-          </div>
-          <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
-            <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка) платежей</a>
-            </label>
-          </div>
-          <button class="order__button button button--accent" data-open-modal="modal-sucesess__close">оплатить <span>1 445 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 13 15" fill="none">
-                                <path d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z" fill="#1C1C1C"/>
-                                </svg></span></button>
-          <a href="#" class="btn btn-prev">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-                <path d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z" fill="#1C1C1C" stroke="white"/>
-              </svg>
-            </span> 
-          </a>
-        </div>
+                      <a href="#" class="btn btn-prev">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14"
+                            fill="none">
+                            <path
+                              d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z"
+                              fill="#1C1C1C" stroke="white" />
+                          </svg>
+                        </span>
+                      </a>
+
+                      <button class="order__button button button--accent"
+                        data-open-modal="modal-sucesess__close">оплатить <span>1 745 <svg
+                            xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 13 15" fill="none">
+                            <path
+                              d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z"
+                              fill="#1C1C1C" />
+                          </svg></span></button>
+                    </div>
+                    <div class="pay-content__popup">
+                      <div class="pay-block">
+                        <div class="pay__delivery">
+                          <div class="pay__delivery-label">
+                            Доставка СДЭК до ПВЗ
+                          </div>
+                          <span class="separator"></span>
+                          <div class="pay__delivery-value">
+                            Бесплатно
+                          </div>
+                        </div>
+                        <div class="pay__delivery">
+                          <div class="pay__delivery-label">
+                            Первый месяц*
+                            <p>*далее 990 <img src="img/rub-pol.svg" alt="alt">/мес.</p>
+                          </div>
+                          <span class="separator"></span>
+                          <div class="pay__delivery-value">
+                            445 <img src="img/rub.svg" alt="alt">
+                          </div>
+                        </div>
+                        <div class="order__full-prices">
+                          <div class="order__full-label">
+                            Итого к оплате:
+                          </div>
+                          <div class="order__full-price">
+                            1 445 <img src="img/rub-big.svg" alt="alt">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a
+                            href="#">персональных данных</a>
+                        </label>
+                      </div>
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg"
+                            alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
+                        </label>
+                      </div>
+                      <div class="order__politik">
+                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка)
+                          платежей</a>
+                        </label>
+                      </div>
+                      <button class="order__button button button--accent"
+                        data-open-modal="modal-sucesess__close">оплатить <span>1 445 <svg
+                            xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 13 15" fill="none">
+                            <path
+                              d="M2.02668 0.380005H5.70668C7.68668 0.380005 9.14668 0.460004 10.2067 1.06C11.5267 1.8 12.2467 3.16 12.2467 4.96C12.2467 6.76 11.5267 8.14 10.2067 8.88C9.16668 9.46001 7.68668 9.56001 5.70668 9.56001H5.26668V10.8H8.90668V12.1H5.26668V15H2.02668V12.1H0.34668V10.8H2.02668V9.56001H0.34668V7.08H2.02668V0.380005ZM5.26668 2.86V7.08H6.16668C8.20668 7.08 8.96668 6.64 8.96668 4.98C8.96668 3.3 8.20668 2.86 6.16668 2.86H5.26668Z"
+                              fill="#1C1C1C" />
+                          </svg></span></button>
+                      <a href="#" class="btn btn-prev">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14"
+                            fill="none">
+                            <path
+                              d="M7.16927 12.5L8.4526 11.1708L5.19844 7.91667H16.3359V6.08333H5.19844L8.4526 2.82917L7.16927 1.5L1.66927 7L7.16927 12.5Z"
+                              fill="#1C1C1C" stroke="white" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
       </div>
     </div>
   </div>
-</div>
-</form>
-</div>
-</div>
-</div>
 
-   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script>
     let swiperPopup = new Swiper(".cardSlider-left", {
-      spaceBetween: 10,
+      spaceBetween: 0,
       slidesPerView: 3,
       freeMode: true,
+      grabCursor: false,
+      allowTouchMove: false,
       watchSlidesProgress: true,
     });
     let swiper2 = new Swiper(".cardSlider-main", {
-      spaceBetween: 10,
+      spaceBetween: 0,
+      grabCursor: false,
+      allowTouchMove: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -2021,6 +2181,11 @@ data-message-extra="Поле должно иметь текстовый форм
         swiper: swiperPopup,
       },
     });
+
+    new Panzoom(document.getElementById("myPanzoom1"), options_zoom);
+    new Panzoom(document.getElementById("myPanzoom2"), options_zoom);
+    new Panzoom(document.getElementById("myPanzoom3"), options_zoom);
   </script>
 </body>
+
 </html>
