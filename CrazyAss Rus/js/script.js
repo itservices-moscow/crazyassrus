@@ -1670,6 +1670,16 @@ zoomify__loop.forEach((item) => {
     })
 })
 
+// footer 
+
+const footer_mail = document.querySelector('.main-footer__contacts-link.button.button--primary');
+
+if (window.innerWidth <= 375) {
+    footer_mail.innerHTML = "HELLO@CRAZYASS.RU"
+} else {
+    footer_mail.innerHTML = "Написать Нам"
+}
+
 // charity btn 
 
 const charity_btn = document.querySelector('.charity-btn');
@@ -1687,7 +1697,7 @@ if (charity) {
         charity.classList.remove('active');
     })
 
-    let pos = (window.innerWidth - container.width) / 2
+    let pos = (((window.innerWidth - 17) - container.width) / 2);
 
     for (let i = 0; i < 1; i++) {
         charity_btn.style.right = `${pos}px`;
@@ -1697,14 +1707,4 @@ if (charity) {
         charity_btn.style.right = `${pos}px`;
         charity_btn.style.maxWidth = `${container.width}px`
     }
-}
-
-// footer 
-
-const footer_mail = document.querySelector('.main-footer__contacts-link.button.button--primary');
-
-if (window.innerWidth <= 375) {
-    footer_mail.innerHTML = "HELLO@CRAZYASS.RU"
-} else {
-    footer_mail.innerHTML = "Написать Нам"
 }
