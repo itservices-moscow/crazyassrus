@@ -1564,13 +1564,12 @@
       </div>
     </div>
   </div>
-
-  <div class="modal modal--preload" data-modal="modal-supp">
+  <div class="modal modal--preload validate__form" data-modal="modal-supp">
     <div class="modal__wrapper">
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">обращение в службу поддержки</h2>
-          <p class="modal__text">Заполните форму ниже и мы сможем ответить на ваш запрос в течение 24 часов на указанную
+          <p class="modal__text spec">Заполните форму ниже и мы сможем ответить на ваш запрос в течение 24 часов на указанную
             электронную почту</p>
           <div class="order__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
             data-message-extra="Поле должно иметь текстовый формат" data-required>
@@ -1578,12 +1577,7 @@
             <div class="order__form-input-wrapper">
               <input class="order__form-input input" type="text" id="name" name="name" placeholder="mail@mail.ru"
                 required>
-              <button class="order__button-reset btn-subscribe" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
-                    fill="#1C1C1C" />
-                </svg>
+              <button class="order__button-reset btn-subscribe" type="button">
                 <span class="visually-hidden">Сбросить значение</span>
               </button>
             </div>
@@ -1596,12 +1590,7 @@
             <div class="order__form-input-wrapper">
               <textarea class="order__form-textarea textarea" type="text" id="name" name="name"
                 placeholder="Криво пришита резинка" required> </textarea>
-              <button class="order__button-reset btn-subscribe" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
-                    fill="#1C1C1C" />
-                </svg>
+              <button class="order__button-reset btn-subscribe" type="button">
                 <span class="visually-hidden">Сбросить значение</span>
               </button>
             </div>
@@ -1611,7 +1600,7 @@
             <label for="checkobox">Я согласен(а) <a href="#">с правилами замены товара по браку</a></a>
             </label>
           </div>
-          <button class="modal__button button button--accent" type="button" data-close-modal>отправить</button>
+          <button class="modal__button button button--accent btn-save" type="button" disabled data-close-modal>отправить</button>
           <button class="modal__close-btn" type="button" data-close-modal>
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1629,8 +1618,8 @@
       <div class="modal__overlay">
         <div class="modal__content request__form validate__form">
           <h2 class="modal__title" style="margin-bottom: 12px;">обращение в службу поддержки по заказу №2718-097</h2>
-          <p class="modal__text" style="margin-bottom: 24px;">от 14.10.2023</p>
-          <p class="modal__text">Заполните форму ниже и мы сможем ответить на&nbsp;ваш запрос в течение 24 часов
+          <p class="modal__text spec" style="margin-bottom: 24px;">от 14.10.2023</p>
+          <p class="modal__text spec">Заполните форму ниже и мы сможем ответить на&nbsp;ваш запрос в течение 24 часов
             на&nbsp;указанную
             электронную почту</p>
           <div class="order__form-item" style="margin-bottom: 24px;" data-validate-type="text"
@@ -1717,7 +1706,7 @@
           </div>
           <div class="contact-tabs">
             <div class="freezing__container">
-              <p class="modal__text tabs-title">Выберите или введите количество месяцев заморозки:</p>
+              <p class="modal__text spec tabs-title">Выберите или введите количество месяцев заморозки:</p>
               <select id="normal-select-1 spec-select" placeholder-text="1">
                 <option value="1" class="select-dropdown__list-item">1</option>
                 <option value="2" class="select-dropdown__list-item">2</option>
@@ -1734,7 +1723,7 @@
                 disabled>заморозить подписку</button>
             </div>
             <div class="freezing__container">
-              <p class="modal__text">Нам очень жаль, что вы хотите отменить подписку. Выберите, пожалуйста, причину:</p>
+              <p class="modal__text spec">Нам очень жаль, что вы хотите отменить подписку. Выберите, пожалуйста, причину:</p>
               <select id="normal-select-2" placeholder-text="Не понравилось качество трусов">
                 <option value="1" class="select-dropdown__list-item">Вариант 1</option>
                 <option value="2" class="select-dropdown__list-item">Вариант 2</option>
@@ -1967,6 +1956,195 @@
       </div>
     </div>
   </div>
+
+
+
+  <div class="modal modal--preload" data-modal="modal-control__save2">
+    <div class="modal__wrapper">
+      <div class="modal__overlay">
+
+        <div class="modal__content modal__save">
+          <h2 class="modal__title">изменения в подписке <br> успешно сохранены</h2>
+          <div class="myorder-popup">
+            <div class="myorder-list">
+              <div class="save-item__popup">
+                <div class="myorder-item__container">
+                  <div class="save-item__contacts">
+                    <div class="save-item__contacts--grey">
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Следующий платеж:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p style="margin-bottom: 0;"><b>1 апреля 2023</b></p>
+                            </div>
+                          </div>
+                          <div class="save-contacts__item" style="margin-bottom: 0px;">
+                            <div class="save-contacts__item-label">
+                              Сумма списания:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p style="margin-bottom: 0px;"><b>1 290 ₽</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Cостав подписки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Design/black
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p>Боксеры с уникальным дизайнерским принтом</p>
+
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Размер
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>L</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        контактная информация
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Имя
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Александр
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Фамилия
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Иванов
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Отчество
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Аркадьевич
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Телефон
+                            </div>
+                            <div class="save-contacts__item-value">
+                              +7 (999) 999 99 99
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              E-mail
+                            </div>
+                            <div class="save-contacts__item-value">
+                              mail@mail.ru
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        способ и адрес доставки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Способ доставки
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>Курьером до двери</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Адрес
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>г. Москва, ул. Тверская, д. 20, подъезд 2, этаж 10, кв. 40</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Комментарий для курьера
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>код домофона: 3768</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Способ оплаты
+                      </div>
+                      <div class="save-contacts__list">
+                        <div class="save-contacts__item">
+                          <div class="save-contacts__item-label">
+                            Cпособ оплаты
+                          </div>
+                          <div class="save-contacts__item-value">
+                            <p>Картой онлайн</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button class="modal__button button button--accent" type="button" data-close-modal>в личный кабинет</button>
+          <button class="modal__close-btn" type="button" data-close-modal>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                fill="#1C1C1C" />
+            </svg>
+            <span class="visually-hidden">Close the modal</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="modal modal--preload" data-modal="modal-control__punktBrak">
     <div class="modal__wrapper">
       <div class="modal__overlay">
@@ -2067,12 +2245,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name"
                     placeholder="Введите ваш адрес" required>
-                  <button class="order__button-reset" type="reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
-                        fill="#1C1C1C" />
-                    </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -2193,12 +2366,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name"
                     placeholder="Введите ваш адрес" required>
-                  <button class="order__button-reset" type="reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
-                        fill="#1C1C1C" />
-                    </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -2261,13 +2429,11 @@
                     </div>
                   </li>
                 </ul>
-                <div class="form-step__size">
-                  <div class="form-step__title">
+                <div class="form-step__size" style="display: flex; flex-direction: row; align-items: center; gap: 16px; margin-bottom: 0;">
+                  <div class="form-step__title" style="margin: 0;">
                     Размер:
-                    <p class="form-step__descr">Выберите ваш размер*</p>
                   </div>
-
-                  <div class="product__size">
+                  <div class="product__size" style="flex: 1">
                     <label for="s">
                       <input id="s" type="radio" name="size" checked>
                       <span>S</span>
@@ -2290,7 +2456,7 @@
                     </label>
                   </div>
 
-                  <div class="product__size-chart">
+                  <div class="product__size-chart" style="margin: 0;">
                     <a href="#" data-open-modal="modal-tables">размерная сетка
                       <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
@@ -2395,6 +2561,15 @@
                 </span>
               </div>
               <div class="acc-content">
+                <div style="width: 100%; margin-bottom: 16px;">
+                  <label for="" class="order__form-label">Ваш город</label>
+                  <select id="normal-select-4" placeholder-text="Москва">
+                    <option value="1" class="select-dropdown__list-item">Вариант 1</option>
+                    <option value="2" class="select-dropdown__list-item">Вариант 2</option>
+                    <option value="3" class="select-dropdown__list-item">Вариант 3</option>
+                    <option value="4" class="select-dropdown__list-item">Вариант 4</option>
+                  </select>
+                </div>
                 <div class="delivery__tab">
                   <input type="radio" id="delivery__tab-p1" name="tab-dp" checked>
                   <label for="delivery__tab-p1">Самовывоз <p>Доставка СДЭК до ПВЗ — <span>бесплатно</span></p></label>
@@ -2511,15 +2686,18 @@
               <div class="acc-content">
                 <div class="pay__tab">
                   <input type="radio" id="pay__tab-popup1" name="tab-ppopup" checked>
-                  <label for="pay__tab-popup1">Картой онлайн</label>
+                  <label for="pay__tab-popup1" class="pay__tab-popup1">
+                    <span>Картой онлайн</span>
+                    <a href="#edit_card" class="pay__tab-popup1-link">изменить карту</a>
+                  </label>
                   <input type="radio" id="pay__tab-popup2" name="tab-ppopup">
-                  <label for="pay__tab-popup2">При получении</label>
+                  <label for="pay__tab-popup2">При получении в ПВЗ СДЭК</label>
                 </div>
               </div>
             </div>
           </div>
           <button class="modal__button button button--accent btn-save" type="button"
-            data-open-modal="modal-control__save" disabled>сохранить изменения</button>
+            data-open-modal="modal-control__save2" disabled>сохранить изменения</button>
           <button class="modal__button button button--border" type="button" data-close-modal>отменить изменения</button>
 
 
@@ -2559,11 +2737,11 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">Нужна помощь? <br>мы уже здесь</h2>
-          <p class="modal__text">Мы собрали самые частые вопросы в разделе FAQ. Рекомендуем сначала заглянуть туда,
+          <p class="modal__text spec">Мы собрали самые частые вопросы в разделе FAQ. Рекомендуем сначала заглянуть туда,
             чтобы попробовать найти ответ на ваш вопрос</p>
           <a href="faq.html" class="modal__button button button--accent modal__button-bottom" data-close-modal>перейти в
             FAQ</a>
-          <p class="modal__text">Если среди частых вопросов нет вашего, не расстраивайтесь. Вы можете заполнить
+          <p class="modal__text spec">Если среди частых вопросов нет вашего, не расстраивайтесь. Вы можете заполнить
             обращение на сайте или написать нам на электронную почту. Мы обязательно поможем!</p>
           <button class="modal__button button button--accent" type="button" data-open-modal="modal-supp">заполнить форму
             обращения</button>
@@ -2631,7 +2809,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">пароль успешно обновлён</h2>
-          <p class="modal__text">Для авторизации на сайте теперь следует использовать новый пароль</p>
+          <p class="modal__text spec">Для авторизации на сайте теперь следует использовать новый пароль</p>
           <button class="modal__button button button--accent modal__button-bottom" type="button"
             data-open-modal="modal-auth">войти в личный кабинет</button>
           <button class="modal__close-btn" type="button" data-close-modal>
@@ -2676,7 +2854,7 @@
           <div class="tab-content">
 
             <div id="home" data-tab-content class="active">
-              <form action="#">
+              <form action="#" class="validate__form">
                 <div class="order__form-item" data-validate-type="text" data-message-base="The field must be filled in"
                   data-message-extra="The field should have text format" data-required>
                   <label class="order__form-label" for="name">E-mail</label>
@@ -2700,13 +2878,13 @@
                   </div>
                 </div>
                 <a href="#" class="link-forgetpass" data-open-modal="modal-recovery">забыли пароль?</a>
-                <button id="login" class="modal__button button button--accent btn-save" type="button"
+                <button id="login" class="modal__button button button--accent btn-save" type="button" disabled
                   data-close-modal>Войти</button>
 
               </form>
             </div>
             <div id="pricing" data-tab-content>
-              <form action="#">
+              <form action="#" class="validate__form">
                 <div class="order__form-item" data-validate-type="text" data-message-base="The field must be filled in"
                   data-message-extra="The field should have text format" data-required>
                   <label class="order__form-label" for="name">Имя*</label>
@@ -2757,7 +2935,7 @@
                       href="#">персональных данных</a>
                   </label>
                 </div>
-                <button class="modal__button button button--accent btn-save" type="button"
+                <button class="modal__button button button--accent btn-save" type="button" disabled
                   data-close-modal>зарегистрироваться</button>
 
               </form>

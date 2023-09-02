@@ -641,7 +641,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name" placeholder="mail@mail.ru"
                   required>
-                  <button class="order__button-reset" type="button">
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -665,7 +665,7 @@
                 <div class="order__form-input-wrapper">
                   <textarea class="order__form-textarea textarea" type="text" id="name" name="name" placeholder="Криво пришита резинка"
                   required> </textarea>
-                  <button class="order__button-reset" type="button">
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -831,10 +831,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите имя"
                   required>
-                  <button class="order__button-reset" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                   </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -845,10 +842,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-               </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -859,10 +853,7 @@
             <div class="order__form-input-wrapper">
               <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите фамилию"
               required>
-              <button class="order__button-reset" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-               </svg>
+              <button class="order__button-reset btn-subscribe" type="button">
                 <span class="visually-hidden">Сбросить значение</span>
               </button>
             </div>
@@ -880,6 +871,15 @@
                 </span>
               </div>
               <div class="acc-content">
+                <div style="width: 100%; margin-bottom: 16px;">
+                  <label for="" class="order__form-label">Ваш город</label>
+                  <select id="normal-select-4" placeholder-text="Москва">
+                    <option value="1" class="select-dropdown__list-item">Вариант 1</option>
+                    <option value="2" class="select-dropdown__list-item">Вариант 2</option>
+                    <option value="3" class="select-dropdown__list-item">Вариант 3</option>
+                    <option value="4" class="select-dropdown__list-item">Вариант 4</option>
+                  </select>
+                </div>
                 <div class="delivery__tab">
                   <input type="radio" id="delivery__tab-p1" name="tab-dp" checked>
                   <label for="delivery__tab-p1">Самовывоз <p>Доставка СДЭК до ПВЗ — <span>бесплатно</span></p></label>
@@ -888,18 +888,22 @@
                 </div>
                 <div class="contact-tabs">
                    <div class="delivery__containers">
-                  <div class="order__punkt-list">
-                    <div class="order__punkt-item">
-                      <div class="punkt-item__adres">
-                        ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
+                    <div class="order__punkt-list">
+                      <div class="order__punkt-item">
+                        <div class="punkt-item__adres">
+                          ПВЗ СДЭК, г. Москва, ул. Тверская, д. 10, <br> м Белорусская
+                        </div>
+                        <a class="mysubcribe-item__edit order__punkt-item-edit button--border" data-open-modal="modal-control__punkt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path d="M0.9375 12.1875H14.0625V13.125H0.9375V12.1875ZM11.9062 4.21875C12.2812 3.84375 12.2812 3.28125 11.9062 2.90625L10.2188 1.21875C9.84375 0.84375 9.28125 0.84375 8.90625 1.21875L1.875 8.25V11.25H4.875L11.9062 4.21875ZM9.5625 1.875L11.25 3.5625L9.84375 4.96875L8.15625 3.28125L9.5625 1.875ZM2.8125 10.3125V8.625L7.5 3.9375L9.1875 5.625L4.5 10.3125H2.8125Z" fill="#1C1C1C"></path>
+                          </svg>
+                          </a><a href="#" class="punkt-item__more">Подробнее</a>
+                          <div class="punkt-item__price">
+                            Стоимость доставки: <span>Бесплатно</span>
+                          </div>
+
                       </div>
-                      <a href="#" class="punkt-item__more">Подробнее</a>
-                      <div class="punkt-item__price">
-                        Стоимость доставки: <span>Бесплатно</span>
-                      </div>
-                      
                     </div>
-                  </div>
                 </div>
                 <div class="delivery__containers">
             <div class="order__form-item" data-validate-type="text" data-message-base="Поле должно быть заполнено"
@@ -908,10 +912,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Город, улица, дом, корпус"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                       </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -923,10 +924,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name" placeholder="№ подъезда"
                   required>
-                  <button class="order__button-reset" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                         </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -937,10 +935,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name" placeholder="Этаж"
                   required>
-                  <button class="order__button-reset" type="button">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                         </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -951,10 +946,7 @@
                 <div class="order__form-input-wrapper">
                   <input class="order__form-input input" type="text" id="name" name="name" placeholder="№ квартиры"
                   required>
-                  <button class="order__button-reset" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                         </svg>
+                  <button class="order__button-reset btn-subscribe" type="button">
                     <span class="visually-hidden">Сбросить значение</span>
                   </button>
                 </div>
@@ -966,10 +958,7 @@
               <div class="order__form-input-wrapper">
                 <textarea class="order__form-textarea textarea" type="text" id="name" name="name" placeholder="Код домофона, наличие шлагбаума и т.д."
                 required></textarea>
-                <button class="order__button-reset" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                       </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -999,7 +988,10 @@
               <div class="acc-content">
                 <div class="pay__tab">
                   <input type="radio" id="pay__tab-popup1" name="tab-ppopup" checked>
-                  <label for="pay__tab-popup1">Картой онлайн</label>
+                  <label for="pay__tab-popup1" class="pay__tab-popup1">
+                    <span>Картой онлайн</span>
+                    <a href="#edit_card" class="pay__tab-popup1-link">изменить карту</a>
+                  </label>
                   <input type="radio" id="pay__tab-popup2" name="tab-ppopup">
                   <label for="pay__tab-popup2">При получении в ПВЗ СДЭК</label>
                 </div>
@@ -1127,10 +1119,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите E-mail"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -1141,10 +1130,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите пароль"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -1162,10 +1148,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите фамилию"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -1176,10 +1159,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите фамилию"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -1190,10 +1170,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите телефон"
                 required>
-                <button class="order__button-reset" type="button">
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>
@@ -1204,10 +1181,7 @@
               <div class="order__form-input-wrapper">
                 <input class="order__form-input input" type="text" id="name" name="name" placeholder="Введите адрес электронной почты"
                 required>
-                <button class="order__button-reset" type="button">           
-                  <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z" fill="#1C1C1C"/>
-                  </svg>
+                <button class="order__button-reset btn-subscribe" type="button">           
                   <span class="visually-hidden">Сбросить значение</span>
                 </button>
               </div>

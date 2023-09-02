@@ -1488,7 +1488,11 @@ const btn_clear = document.querySelectorAll('.btn-subscribe');
 
 btn_clear.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        e.target.parentNode.querySelector('.input').value = ""
+        if (e.target.parentNode.querySelector('.input')) {
+            e.target.parentNode.querySelector('.input').value = "";
+        } else if (e.target.parentNode.querySelector('.textarea')) {
+            e.target.parentNode.querySelector('.textarea').value = "";
+        }
         if (validate_form) {
             checkForm(e.target.closest('.validate__form'));
         }
@@ -1697,7 +1701,7 @@ if (charity) {
         charity.classList.remove('active');
     })
 
-    let pos = (((window.innerWidth - 17) - container.width) / 2);
+    let pos = ((document.documentElement.clientWidth - container.width) / 2);
 
     for (let i = 0; i < 1; i++) {
         charity_btn.style.right = `${pos}px`;
@@ -1707,4 +1711,20 @@ if (charity) {
         charity_btn.style.right = `${pos}px`;
         charity_btn.style.maxWidth = `${container.width}px`
     }
+}
+
+// plate chooser
+
+const filter_one_plate = document.querySelector('#filter-one-plate');
+const filter_two_plate = document.querySelector('#filter-two-plate');
+const products_container = document.querySelector('.list-group.shop__list');
+
+if (filter_one_plate) {
+    filter_one_plate.addEventListener('click', (e) => {
+        products_container.classList.remove('active');
+    })
+    
+    filter_two_plate.addEventListener('click', (e) => {
+        products_container.classList.add('active');
+    })
 }
