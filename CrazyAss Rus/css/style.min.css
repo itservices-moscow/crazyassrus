@@ -9682,6 +9682,16 @@ div.image-overlay-line {
         justify-content: center;
         align-items: center;
     }
+    .pay__tab-popup1 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .modal[data-modal="modal-control"] > .modal__wrapper {
+        padding: 0;
+    }
 }
 
 @media (max-width: 468px) {
@@ -9754,7 +9764,7 @@ div.image-overlay-line {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .product__size {
         gap: 0;
         justify-content: space-between;

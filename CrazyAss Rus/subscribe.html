@@ -1084,7 +1084,7 @@
               </div>
             </div>
           </div>
-          <button class="modal__button button button--accent" type="button" data-close-modal>сохранить
+          <button class="modal__button button button--accent" type="button" data-open-modal="modal-control__save2">сохранить
             изменения</button>
           <button class="modal__button button button--border" type="button" data-close-modal>отменить изменения</button>
 
@@ -1431,6 +1431,377 @@
             </div>
           </div>
 
+          <button class="modal__close-btn" type="button" data-close-modal>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                fill="#1C1C1C" />
+            </svg>
+            <span class="visually-hidden">Close the modal</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal--preload" data-modal="modal-control__save">
+    <div class="modal__wrapper">
+      <div class="modal__overlay">
+
+        <div class="modal__content modal__save">
+          <h2 class="modal__title">изменения в подписке <br> успешно сохранены</h2>
+          <div class="myorder-popup">
+            <div class="myorder-list">
+              <div class="save-item__popup">
+                <div class="myorder-item__container">
+                  <div class="save-item__contacts">
+                    <div class="save-item__contacts--grey">
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Следующий платеж:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>1 апреля 2023</b></p>
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Сумма списания:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p>990 ₽ (подписка)</p>
+                              <p>300 ₽ (доставка)</p>
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label text-right">
+                              <b>ИТОГО:</b>
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>1 290 ₽</b></p>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Cостав подписки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Design/black
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p>Боксеры с уникальным дизайнерским принтом</p>
+
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Размер
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>L</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        контактная информация
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Имя
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Александр
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Фамилия
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Иванов
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Отчество
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Аркадьевич
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Телефон
+                            </div>
+                            <div class="save-contacts__item-value">
+                              +7 (999) 999 99 99
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              E-mail
+                            </div>
+                            <div class="save-contacts__item-value">
+                              mail@mail.ru
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        способ и адрес доставки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Способ доставки
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>Самовывоз</b></p>
+                              <p>Доставка СДЭК — 300 ₽</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Адрес
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>ПВЗ СДЭК, г. Тольятти, ул. Тверская, подъезд 4, этаж 2, кв. 37</b></p>
+                              <p><a href="#">подробнее</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Способ оплаты
+                      </div>
+                      <div class="save-contacts__list">
+                        <div class="save-contacts__item">
+                          <div class="save-contacts__item-label">
+                            Cпособ оплаты
+                          </div>
+                          <div class="save-contacts__item-value">
+                            <p><b>При получении</b></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button class="modal__button button button--accent" type="button" data-close-modal>в личный кабинет</button>
+          <button class="modal__close-btn" type="button" data-close-modal>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
+                fill="#1C1C1C" />
+            </svg>
+            <span class="visually-hidden">Close the modal</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal modal--preload" data-modal="modal-control__save2">
+    <div class="modal__wrapper">
+      <div class="modal__overlay">
+
+        <div class="modal__content modal__save">
+          <h2 class="modal__title">изменения в подписке <br> успешно сохранены</h2>
+          <div class="myorder-popup">
+            <div class="myorder-list">
+              <div class="save-item__popup">
+                <div class="myorder-item__container">
+                  <div class="save-item__contacts">
+                    <div class="save-item__contacts--grey">
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Следующий платеж:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p style="margin-bottom: 0;"><b>1 апреля 2023</b></p>
+                            </div>
+                          </div>
+                          <div class="save-contacts__item" style="margin-bottom: 0px;">
+                            <div class="save-contacts__item-label">
+                              Сумма списания:
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p style="margin-bottom: 0px;"><b>1 290 ₽</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Cостав подписки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Design/black
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p>Боксеры с уникальным дизайнерским принтом</p>
+
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Размер
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>L</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        контактная информация
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Имя
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Александр
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Фамилия
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Иванов
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Отчество
+                            </div>
+                            <div class="save-contacts__item-value">
+                              Аркадьевич
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Телефон
+                            </div>
+                            <div class="save-contacts__item-value">
+                              +7 (999) 999 99 99
+                            </div>
+                          </div>
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              E-mail
+                            </div>
+                            <div class="save-contacts__item-value">
+                              mail@mail.ru
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        способ и адрес доставки
+                      </div>
+                      <div class="save-contacts__container">
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Способ доставки
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>Курьером до двери</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Адрес
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>г. Москва, ул. Тверская, д. 20, подъезд 2, этаж 10, кв. 40</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="save-contacts__list">
+                          <div class="save-contacts__item">
+                            <div class="save-contacts__item-label">
+                              Комментарий для курьера
+                            </div>
+                            <div class="save-contacts__item-value">
+                              <p><b>код домофона: 3768</b></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-item__contacts--block">
+                      <div class="myorder-contacts__title">
+                        Способ оплаты
+                      </div>
+                      <div class="save-contacts__list">
+                        <div class="save-contacts__item">
+                          <div class="save-contacts__item-label">
+                            Cпособ оплаты
+                          </div>
+                          <div class="save-contacts__item-value">
+                            <p>Картой онлайн</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button class="modal__button button button--accent" type="button" data-close-modal>в личный кабинет</button>
           <button class="modal__close-btn" type="button" data-close-modal>
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
