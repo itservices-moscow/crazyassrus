@@ -533,7 +533,7 @@
               </div>
               <div class="product-size__list">
                 <form action="#">
-                  <div class="product__size modal__product-spec">
+                  <div class="product__size">
                     <label for="s3">
                       <input id="s3" type="radio" name="size" checked>
                       <span>S</span>
@@ -557,11 +557,10 @@
                   </div>
                 </form>
               </div>
-              
             </div>
 
             <div class="product__size-chart">
-              <a href="#" data-open-modal="modal-tables">размерная сетка
+              <a href="#" data-open-modal="modal-tables__sub">размерная сетка
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                     <path
@@ -578,11 +577,11 @@
               <a class="shop__button modal__button button button--accent" href="#">купить</a>
               <div class="shop__product-number">
                 <span class="shop__product-minus">
-                  <img src="img/minus-icon.svg" alt="minus">
+                  <img src="img/minus-icon.svg" alt="">
                 </span>
                 <input type="text" value="1" />
                 <span class="shop__product-plus">
-                  <img src="img/add.svg" alt="add">
+                  <img src="img/add.svg" alt="">
                 </span>
               </div>
             </div>
@@ -612,7 +611,7 @@
     <div class="modal__wrapper">
       <div class="modal__overlay">
         <div class="modal__content modal__size" style="padding: 24px; width: auto;">
-          <p class="modal__text" style="margin-bottom: 8px;">выберите Размер:</p>
+          <p class="modal__text spec" style="margin-bottom: 8px;">выберите Размер:</p>
           <form action="#">
             <div class="product__size" style="gap: 14px;">
               <label for="s1">
@@ -790,7 +789,7 @@
     <div class="modal__wrapper">
       <div class="modal__overlay">
         <div class="modal__content modal__size">
-          <p class="modal__text">Размер:</p>
+          <p class="modal__text spec">Размер:</p>
           <form action="#">
             <div class="product__size">
               <label for="s">
@@ -1498,7 +1497,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">Thanks for choosing to&nbsp;subscribe!</h2>
-          <p class="modal__text">Please leave us your<br> information and we'll get in<br> touch with you</p>
+          <p class="modal__text spec">Please leave us your<br> information and we'll get in<br> touch with you</p>
           <div class="modal__form-wrapper" data-form-validate data-callback="base">
             <form class="modal__form" action="#" method="post">
               <div class="modal__form-item" data-validate-type="text" data-message-base="The field must be filled in"
@@ -1558,7 +1557,8 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
   <script src="swiper/swiper-bundle.min.js"></script>
@@ -1584,6 +1584,15 @@
         swiper: swiperPopup,
       },
     });
+
+    const options_zoom = {
+      click: "zoomToMax",
+      Toolbar: {
+        display: ["zoomIn", "zoomOut"],
+      },
+      maxScale: 4,
+      mouseMoveFactor: true,
+    };
 
     new Panzoom(document.getElementById("myPanzoom1"), options_zoom);
     new Panzoom(document.getElementById("myPanzoom2"), options_zoom);

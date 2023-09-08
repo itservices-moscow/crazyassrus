@@ -40,7 +40,7 @@
     <div class="main-header__wrapper">
       <div class="main-header__wrapper-top">
         <span class="main-header__logo">
-          <a href="index-2.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg"
+          <a href="index.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg"
               alt="Логотип Crazy Ass."></a>
         </span>
         <button class="main-header__toggle" type="button">
@@ -714,7 +714,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__nav">
           <span class="main-footer__logo">
-            <a href="index-2.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg"
+            <a href="index.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg"
                 alt="Логотип Crazy Ass."></a>
           </span>
           <ul class="main-footer__list">
@@ -789,7 +789,7 @@
       <div class="modal__overlay"></div>
       <div class="modal__content">
         <h2 class="modal__title">Thanks for choosing to &nbsp; subscribe!</h2>
-        <p class="modal__text">Please leave us your<br> information and we'll get in<br> touch with you</p>
+        <p class="modal__text spec">Please leave us your<br> information and we'll get in<br> touch with you</p>
         <div class="modal__form-wrapper" data-form-validate data-callback="base">
           <form class="modal__form" action="#" method="post">
             <div class="modal__form-item" data-validate-type="text" data-message-base="The field must be filled in"
@@ -865,7 +865,7 @@
       <div class="modal__overlay"></div>
       <div class="modal__content">
         <h2 class="modal__title">Thank you!</h2>
-        <p class="modal__text">We'll get back to you within three days</p>
+        <p class="modal__text spec">We'll get back to you within three days</p>
         <button class="modal__button button button--accent" type="button" data-close-modal>Ok, thanks</button>
         <button class="modal__close-btn" type="button" data-close-modal>
           <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
@@ -1288,7 +1288,7 @@
     <div class="modal__wrapper">
       <div class="modal__overlay"></div>
       <div class="modal__content modal__size">
-        <p class="modal__text">Размер:</p>
+        <p class="modal__text spec">Размер:</p>
         <form action="#">
           <div class="product__size">
             <label for="s1">
@@ -1324,7 +1324,8 @@
         <p class="modal__text spec">Введенные данные не будут сохранены</p>
         <button class="modal__button button button--accent close-sub" type="button" data-close-modal>закрыть без
           сохранения</button>
-        <button class="modal__button button button--border close-sub" type="button" data-open-modal="modal-subcrube">продолжить
+        <button class="modal__button button button--border close-sub" type="button"
+          data-open-modal="modal-subcrube">продолжить
           оформление</button>
         <button class="modal__close-btn" type="button" data-close-modal>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -2013,19 +2014,19 @@
                         </div>
                       </div>
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox1" name="checkobox" type="checkbox" value="yes">
                         <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a
                             href="#">персональных данных</a>
                         </label>
                       </div>
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox2" name="checkobox" type="checkbox" value="yes1">
                         <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg"
                             alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
                         </label>
                       </div>
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox3" name="checkobox" type="checkbox" value="yes2">
                         <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка)
                           платежей</a>
                         </label>
@@ -2082,19 +2083,19 @@
                       </div>
 
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox1" name="checkobox" type="checkbox" value="yes1">
                         <label for="checkobox">Я согласен(а) с <a href="#">офертой</a> и <a href="#">обработкой</a> <a
                             href="#">персональных данных</a>
                         </label>
                       </div>
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox2" name="checkobox" type="checkbox" value="yes2">
                         <label for="checkobox">Я согласен(а) на подписку, первый месяц — 445 <img src="img/rub-pol.svg"
                             alt="alt">, все последующие — 990 <img src="img/rub-pol.svg" alt="alt"></a>
                         </label>
                       </div>
                       <div class="order__politik">
-                        <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                        <input id="checkobox3" name="checkobox" type="checkbox" value="yes3">
                         <label for="checkobox">Я согласен(а) с тарифом и проведением рекуррентных (подписка)
                           платежей</a>
                         </label>
@@ -2133,12 +2134,12 @@
   <script src="js/script.js"></script>
   <script>
     let swiperPopup = new Swiper(".cardSlider-left", {
-      spaceBetween: 0,
+      spaceBetween: 10,
       slidesPerView: 3,
       freeMode: true,
+      watchSlidesProgress: true,
       grabCursor: false,
       allowTouchMove: false,
-      watchSlidesProgress: true,
     });
     let swiper2 = new Swiper(".cardSlider-main", {
       spaceBetween: 0,
@@ -2152,6 +2153,15 @@
         swiper: swiperPopup,
       },
     });
+
+    const options_zoom = {
+      click: "zoomToMax",
+      Toolbar: {
+        display: ["zoomIn", "zoomOut"],
+      },
+      maxScale: 4,
+      mouseMoveFactor: true,
+    };
 
     new Panzoom(document.getElementById("myPanzoom1"), options_zoom);
     new Panzoom(document.getElementById("myPanzoom2"), options_zoom);

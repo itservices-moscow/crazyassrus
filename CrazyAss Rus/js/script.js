@@ -1516,30 +1516,6 @@ document.addEventListener('click', (e) => {
 const btn_freeze = document.querySelector('.btn-freeze');
 const select_items = document.querySelectorAll('.select-dropdown__list-item');
 
-if (document.querySelector('#normal-select-2')) {
-    // document.querySelector('.select-dropdown__list.select-dropdown__list--1.active').addEventListener('click', (e) => {
-    //     console.log(1);
-    // })
-
-    document.addEventListener('click', (e) => {
-        if (e.target.closest('.select-dropdown__list')) {
-            e.target.parentNode.parentNode.parentNode.querySelector('.btn-freeze').classList.add('active')
-            e.target.parentNode.parentNode.parentNode.querySelector('.btn-freeze').removeAttribute('disabled')
-        }
-
-        let btn = null;
-
-        if (e.target.closest('.select-dropdown__button')) {
-            btn = e.target.closest('.select-dropdown__button');
-            btn.classList.add('active')
-        } else {
-            if (document.querySelector('.select-dropdown__button.active')) {
-                document.querySelector('.select-dropdown__button.active').classList.remove('active')
-            }
-        }
-    })
-}
-
 
 // Active/INactive button
 
@@ -1594,15 +1570,6 @@ if (document.querySelector('.delivery__tab1')) {
 
 // pitch and zoom image 
 
-const options_zoom = {
-    click: "toggleZoom",
-    Toolbar: {
-        display: ["zoomIn", "zoomOut"],
-    },
-    maxScale: 4,
-    mouseMoveFactor: true,
-};
-
 // filter shop
 
 const size_filter_btn = document.querySelector('.shop__filter-btn');
@@ -1639,7 +1606,7 @@ if (window.innerWidth <= 578) {
     const progressbar_btn_prev = document.querySelectorAll('.btn-for-progress-prev');
 
     let progress_count = 0;
-    let progress_step = 200;
+    let progress_step = 220;
 
     progressbar_btn_next.forEach((btn) => {
         btn.addEventListener('click', (e) => {

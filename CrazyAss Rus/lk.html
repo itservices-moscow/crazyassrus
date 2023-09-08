@@ -36,7 +36,7 @@
     <div class="main-header__wrapper">
       <div class="main-header__wrapper-top">
         <span class="main-header__logo">
-          <a href="index-2.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg"
+          <a href="index.html"><img class="main-header__logo-img" width="159" height="26" src="img/logo.svg"
               alt="Логотип Crazy Ass."></a>
         </span>
         <button class="main-header__toggle" type="button">
@@ -1263,7 +1263,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__nav">
           <span class="main-footer__logo">
-            <a href="index-2.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg"
+            <a href="index.html"><img class="main-footer__logo-img" width="327" height="45" src="img/logo.svg"
                 alt="Логотип Crazy Ass."></a>
           </span>
           <ul class="main-footer__list">
@@ -1331,7 +1331,7 @@
     <div class="modal__wrapper">
       <div class="modal__overlay">
         <div class="modal__content modal__table">
-          <a href="#" class="btn btn-prev" data-close-modal>
+          <a href="#" class="btn btn-prev" data-open-modal="modal-control">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
                 <path
@@ -1489,7 +1489,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">Восстановление пароля</h2>
-          <p class="modal__text">Укажите ваш e-mail и мы направим туда ссылку для обновления пароля</p>
+          <p class="modal__text spec">Укажите ваш e-mail и мы направим туда ссылку для обновления пароля</p>
           <div class="modal__form-wrapper" data-form-validate data-callback="base">
             <form class="modal__form" action="#" method="post">
               <div class="modal__form-item" data-validate-type="text" data-message-base="The field must be filled in"
@@ -1648,7 +1648,7 @@
             <div class="form-attach__label">Добавьте, пожалуйста, фото брака. Это поможет нам быстрее принять решение об
               отправке вам нового товара</div>
             <div class="form-attach__wrapper">
-              <input type="file" name="attach[]" multiple required>
+              <input type="file" name="attach[]" multiple>
               <div class="form-attach__description">
                 <div>Нажмите для загрузки файлов или перетащите их</div>
                 <div class="text-sm">PNG, JPG, GIF (до 512 Кбайт)</div>
@@ -1669,7 +1669,7 @@
             </div>
           </div>
           <div class="order__politik" style="margin-bottom: 32px;">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+            <input id="checkobox" name="checkobox" type="checkbox" value="yes" required>
             <label for="checkobox" style="margin-bottom: 0px;">Я согласен(а) <a href="#">с правилами замены товара
                 по&nbsp;браку</a></a>
             </label>
@@ -1705,21 +1705,21 @@
                 необходимо будет оформить новую подписку.</p></label>
           </div>
           <div class="contact-tabs">
-            <div class="freezing__container">
+            <div class="freezing__container validate__form">
               <p class="modal__text spec tabs-title">Выберите или введите количество месяцев заморозки:</p>
-              <select id="normal-select-1 spec-select" placeholder-text="1">
+              <select id="normal-select-1 spec-select" placeholder-text="1" required>
                 <option value="1" class="select-dropdown__list-item">1</option>
                 <option value="2" class="select-dropdown__list-item">2</option>
                 <option value="3" class="select-dropdown__list-item">3</option>
                 <option value="4" class="select-dropdown__list-item">4</option>
               </select>
               <div class="order__politik freezing">
-                <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+                <input id="checkobox" name="checkobox" type="checkbox" value="yes" required>
                 <label for="checkobox">Я согласен(а) с <a href="#freezing-politics">условиями заморозки подписки</a></a>
                 </label>
               </div>
 
-              <button class="modal__button button btn-freeze" type="button" data-open-modal="modal-chek-freezing"
+              <button class="modal__button button btn-save" type="button" data-open-modal="modal-chek-freezing"
                 disabled>заморозить подписку</button>
             </div>
             <div class="freezing__container">
@@ -1754,7 +1754,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">закрыть оформление подписки?</h2>
-          <p class="modal__text">Введенные данные не будут сохранены</p>
+          <p class="modal__text spec">Введенные данные не будут сохранены</p>
           <button class="modal__button button button--accent" type="button" data-close-modal>закрыть без
             сохранения</button>
           <button class="modal__button button button--border" type="button" data-close-modal>продолжить
@@ -2150,7 +2150,7 @@
       <div class="modal__overlay">
         <div class="modal__content modal__punktBrak">
           <h2 class="modal__title">Выбор пункта выдачи для замены бракованного изделия</h2>
-          <p class="modal__text">Мы отправляем изделия взамен бракованных <b>бесплатно только до ПВЗ</b>. Выберите,
+          <p class="modal__text spec">Мы отправляем изделия взамен бракованных <b>бесплатно только до ПВЗ</b>. Выберите,
             пожалуйста, удобный для вас пункт выдачи заказа. Данный способ доставки будет актуален только для замены
             товара, остальные доставки по подписке будут доставлены курьером, как обычно)</p>
           <div class="order__form-block">
@@ -2607,7 +2607,7 @@
                       <label class="order__form-label" for="name">Адрес*</label>
                       <div class="order__form-input-wrapper">
                         <input class="order__form-input input" type="text" id="name" name="name"
-                          placeholder="Город, улица, дом, корпус" required>
+                          placeholder="Город, улица, дом, корпус">
                         <button class="order__button-reset btn-subscribe" type="button">
                           <span class="visually-hidden">Сбросить значение</span>
                         </button>
@@ -2620,7 +2620,7 @@
                         <label class="order__form-label" for="name">Подъезд*</label>
                         <div class="order__form-input-wrapper">
                           <input class="order__form-input input" type="text" id="name" name="name"
-                            placeholder="№ подъезда" required>
+                            placeholder="№ подъезда">
                           <button class="order__button-reset btn-subscribe" type="button">
                             <span class="visually-hidden">Сбросить значение</span>
                           </button>
@@ -2632,7 +2632,7 @@
                         <label class="order__form-label" for="name">Этаж*</label>
                         <div class="order__form-input-wrapper">
                           <input class="order__form-input input" type="text" id="name" name="name" placeholder="Этаж"
-                            required>
+                            >
                           <button class="order__button-reset btn-subscribe" type="button">
                             <span class="visually-hidden">Сбросить значение</span>
                           </button>
@@ -2644,7 +2644,7 @@
                         <label class="order__form-label" for="name">Квартира*</label>
                         <div class="order__form-input-wrapper">
                           <input class="order__form-input input" type="text" id="name" name="name"
-                            placeholder="№ квартиры" required>
+                            placeholder="№ квартиры" >
                           <button class="order__button-reset btn-subscribe" type="button">
                             <span class="visually-hidden">Сбросить значение</span>
                           </button>
@@ -2657,7 +2657,7 @@
                       <label class="order__form-label" for="name">Комментарий для курьера</label>
                       <div class="order__form-input-wrapper">
                         <textarea class="order__form-textarea textarea" type="text" id="name" name="name"
-                          placeholder="Код домофона, наличие шлагбаума и т.д." required></textarea>
+                          placeholder="Код домофона, наличие шлагбаума и т.д." ></textarea>
                       </div>
                     </div>
                     <div class="pay__delivery">
@@ -2764,7 +2764,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">Ваша подписка временно заморожена</h2>
-          <p class="modal__text">Вы заморозили подписку на <b>4 месяца.</b> Платежи и доставки автоматически
+          <p class="modal__text spec">Вы заморозили подписку на <b>4 месяца.</b> Платежи и доставки автоматически
             возобновятся с <b>августа 2023.</b></p>
           <a class="modal__button button button--accent modal__button-bottom" type="button" data-close-modal>в личный
             кабинет</a>
@@ -2785,10 +2785,10 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">Ваша подписка успешно отменена</h2>
-          <p class="modal__text">Списания в следующем месяце не будет. Доставка по последней оплате будет осуществлена в
+          <p class="modal__text spec">Списания в следующем месяце не будет. Доставка по последней оплате будет осуществлена в
             <b>апреле 2023</b>. Следите за информацией в Личном кабинете и на E-mail.
           </p>
-          <p class="modal__text">Мы постоянно работаем над улучшением сервиса и разнообразием принтов. Поэтому будем
+          <p class="modal__text spec">Мы постоянно работаем над улучшением сервиса и разнообразием принтов. Поэтому будем
             ждать вашего скорейшего возвращения!</p>
           <a class="modal__button button button--accent modal__button-bottom" type="button" data-close-modal>в личный
             кабинет</a>
@@ -2829,7 +2829,7 @@
       <div class="modal__overlay">
         <div class="modal__content">
           <h2 class="modal__title">подтвердите ваш E-mail </h2>
-          <p class="modal__text">Для завершения регистрации перейдите, по ссылке, которую мы направили вам на указанный
+          <p class="modal__text spec">Для завершения регистрации перейдите, по ссылке, которую мы направили вам на указанный
             E-mail. Также в письме вы найдете пароль для входа в Личный кабинет.</p>
           <button class="modal__close-btn" type="button" data-close-modal>
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
