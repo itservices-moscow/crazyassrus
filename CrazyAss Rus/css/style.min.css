@@ -4293,7 +4293,6 @@ a {
 
 .cart__product-minus:hover,
 .cart__product-plus:hover {
-    background: #1C1C1C;
     border: 1px solid #1C1C1C;
     color: #FFFFFF;
 }
