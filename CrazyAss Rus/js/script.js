@@ -1695,3 +1695,11 @@ if (filter_one_plate) {
         products_container.classList.add('active');
     })
 }
+
+// cookie btn adaptive
+
+const cookie_btn = document.querySelector('.cookie--btn.cookie_accept.button');
+
+if (document.documentElement.clientWidth <= 548) {
+    cookie_btn.innerHTML = "ОК"
+}
