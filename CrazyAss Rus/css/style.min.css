@@ -4293,7 +4293,7 @@ a {
     text-align: center;
 }
 
-.cart__product-number input{
+.cart__product-number input {
     height: 40px;
     width: 30px;
     font-style: normal;
@@ -7008,12 +7008,13 @@ article.on {
     .massega-cookie__container {
         gap: 24px;
     }
+
     .massega-cookie__text {
         font-family: Gotham Pro;
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
-        letter-spacing: 0em;    
+        letter-spacing: 0em;
     }
 }
 
@@ -7219,6 +7220,7 @@ article.on {
     float: left;
     position: relative;
     z-index: 0;
+    height: auto !important;
 }
 
 .fixed-zooms {
@@ -7435,13 +7437,13 @@ article.on {
         margin-right: 0 !important;
     }
 
-    .modal[data-modal="modal-product"] > .modal__wrapper {
+    .modal[data-modal="modal-product"]>.modal__wrapper {
         padding: 20px 10px;
     }
 }
 
 @media (max-width: 375px) {
-    .modal[data-modal="modal-product"] > .modal__wrapper {
+    .modal[data-modal="modal-product"]>.modal__wrapper {
         padding: 0px;
     }
 }
@@ -8561,7 +8563,7 @@ article.on {
     .modal__subcrube {
         max-width: 700px;
     }
-    
+
     .shop__button.button.button--accent {
         padding: 16px 8px 15px;
     }
@@ -9707,25 +9709,31 @@ div.image-overlay-line {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+
     .cart__product-content {
         gap: 12px;
     }
+
     .cart__product-image {
         width: 100%;
         height: 100%;
     }
+
     .cart__product-content--row {
         gap: 0;
         justify-content: space-between;
     }
+
     .cart__product-number {
         gap: 12px;
     }
-    .cart__product-image > a {
+
+    .cart__product-image>a {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .pay__tab-popup1 {
         display: flex !important;
         flex-direction: column !important;
@@ -9733,7 +9741,8 @@ div.image-overlay-line {
         justify-content: space-between;
         align-items: start;
     }
-    .modal[data-modal="modal-control"] > .modal__wrapper {
+
+    .modal[data-modal="modal-control"]>.modal__wrapper {
         padding: 0;
     }
 }
@@ -9743,18 +9752,22 @@ div.image-overlay-line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .tables__row {
         flex-direction: column;
     }
+
     .tables__row-name {
         margin: 0 0 12px 0;
         width: 100%;
         text-align: center;
         font-size: 14px;
     }
+
     .tables__row-list {
         width: 100%;
     }
+
     .tables__row-item {
         width: 100%;
         font-family: Gotham Pro;
@@ -9767,6 +9780,7 @@ div.image-overlay-line {
         padding: 12px 0;
         height: auto;
     }
+
     .modal__tables {
         padding: 40px 20px;
     }
@@ -9783,17 +9797,21 @@ div.image-overlay-line {
         display: flex;
         flex-direction: column;
     }
+
     .save-contacts__item {
         display: flex;
         align-items: center;
         gap: 8px;
     }
+
     .save-contacts__item-value {
         width: 100%;
     }
+
     .save-contacts__item-label {
         width: 100%;
     }
+
     .save-contacts__list {
         width: 100%;
     }
@@ -9814,13 +9832,16 @@ div.image-overlay-line {
         justify-content: space-between;
         width: 100%;
     }
-    .product__size > label {
+
+    .product__size>label {
         margin-right: 0px !important;
     }
+
     .modal__product-size {
         justify-content: start;
         gap: 16px;
     }
+
     .product-size__list {
         width: 100%;
     }
@@ -9830,13 +9851,16 @@ div.image-overlay-line {
     .shop__buttons.shop__button-rows {
         flex-direction: column-reverse !important;
     }
+
     .shop__button.button.button--accent {
         width: 100%;
     }
+
     .shop__product-number {
         margin-left: 0 !important;
     }
-    .shop__product-number > input {
+
+    .shop__product-number>input {
         flex: 1;
         margin: 0;
     }
@@ -9851,25 +9875,25 @@ div.image-overlay-line {
 @media (max-width: 1113px) {
     .charity-btn {
         top: 148px;
-    } 
+    }
 }
 
 @media (max-width: 1077px) {
     .charity-btn {
         top: 134px;
-    } 
+    }
 }
 
 @media (max-width: 940px) {
     .charity-btn {
         top: 148px;
-    } 
+    }
 }
 
 @media (max-width: 767px) {
     .charity-btn {
         top: 96px;
-    } 
+    }
 }
 
 .f-panzoom__content {
