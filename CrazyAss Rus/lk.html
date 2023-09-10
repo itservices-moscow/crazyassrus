@@ -1564,10 +1564,10 @@
       </div>
     </div>
   </div>
-  <div class="modal modal--preload validate__form" data-modal="modal-supp">
+  <div class="modal modal--preload" data-modal="modal-supp">
     <div class="modal__wrapper">
       <div class="modal__overlay">
-        <div class="modal__content">
+        <div class="modal__content validate__form">
           <h2 class="modal__title">обращение в службу поддержки</h2>
           <p class="modal__text spec">Заполните форму ниже и мы сможем ответить на ваш запрос в течение 24 часов на указанную
             электронную почту</p>
@@ -1596,7 +1596,7 @@
             </div>
           </div>
           <div class="order__politik">
-            <input id="checkobox" name="checkobox" type="checkbox" value="yes">
+            <input id="checkobox" name="checkobox" type="checkbox" value="yes" required>
             <label for="checkobox">Я согласен(а) <a href="#">с правилами замены товара по браку</a></a>
             </label>
           </div>
@@ -2257,7 +2257,7 @@
           </div>
           <button class="modal__button button button--accent" type="button" data-open-modal="modal-control">сохранить
             изменения</button>
-          <button class="modal__close-btn" type="button" data-close-modal>
+          <button class="modal__close-btn" type="button" data-open-modal="modal-control">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
@@ -2378,7 +2378,7 @@
           </div>
           <button class="modal__button button button--accent" type="button" data-open-modal="modal-control">сохранить
             изменения</button>
-          <button class="modal__close-btn" type="button" data-close-modal>
+          <button class="modal__close-btn" type="button" data-open-modal="modal-control">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M5.00003 5.79519L9.10178 9.89806L9.89828 9.10269L5.7954 4.99981L9.89828 0.898063L9.10291 0.101562L5.00003 4.20444L0.89828 0.101562L0.102905 0.898063L4.20466 4.99981L0.102905 9.10156L0.89828 9.89806L5.00003 5.79519Z"
@@ -2691,7 +2691,7 @@
                     <a href="#edit_card" class="pay__tab-popup1-link">изменить карту</a>
                   </label>
                   <input type="radio" id="pay__tab-popup2" name="tab-ppopup">
-                  <label for="pay__tab-popup2">При получении в ПВЗ СДЭК</label>
+                  <label for="pay__tab-popup2" id="pay__tab-popup2-label">При получении в ПВЗ СДЭК</label>
                 </div>
               </div>
             </div>

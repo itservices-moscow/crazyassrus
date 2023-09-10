@@ -29,6 +29,7 @@
   <link rel="preload" href="fonts/gothampro/gothampro-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/getvoipgrotesque/getvoipgrotesque.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.css" />
 </head>
 
 <body class="page-body">
@@ -492,13 +493,13 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
               class="swiper cardSlider-main">
               <div class="swiper-wrapper">
-                <div class="swiper-slide f-panzoom" id="myPanzoom1">
+                <div class="swiper-slide f-panzoom" id="myPanzoom4">
                   <img src="img/l1.png" class="f-panzoom__content" />
                 </div>
-                <div class="swiper-slide f-panzoom" id="myPanzoom2">
+                <div class="swiper-slide f-panzoom" id="myPanzoom5">
                   <img src="img/l2.png" class="f-panzoom__content" />
                 </div>
-                <div class="swiper-slide f-panzoom" id="myPanzoom3">
+                <div class="swiper-slide f-panzoom" id="myPanzoom6">
                   <img src="img/l3.png" class="f-panzoom__content" />
                 </div>
               </div>
@@ -651,7 +652,7 @@
       </div>
     </div>
   </div>
-  <div class="modal modal--preload" data-modal="modal-tables">
+  <div class="modal modal--preload" data-modal="modal-tables__sub">
     <div class="modal__wrapper">
       <div class="modal__overlay">
         <div class="modal__content modal__table">
@@ -1564,9 +1565,10 @@
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    let swiperPopup = new Swiper(".cardSlider-left", {
+    let swiperPopup1 = new Swiper(".cardSlider-left", {
       spaceBetween: 10,
       slidesPerView: 3,
+      freeMode: true,
       watchSlidesProgress: true,
       grabCursor: false,
       allowTouchMove: false,
@@ -1580,7 +1582,7 @@
         clickable: true,
       },
       thumbs: {
-        swiper: swiperPopup,
+        swiper: swiperPopup1,
       },
     });
 
@@ -1593,9 +1595,9 @@
       mouseMoveFactor: true,
     };
 
-    new Panzoom(document.getElementById("myPanzoom1"), options_zoom);
-    new Panzoom(document.getElementById("myPanzoom2"), options_zoom);
-    new Panzoom(document.getElementById("myPanzoom3"), options_zoom);
+    new Panzoom(document.getElementById("myPanzoom4"), options_zoom);
+    new Panzoom(document.getElementById("myPanzoom5"), options_zoom);
+    new Panzoom(document.getElementById("myPanzoom6"), options_zoom);
   </script>
 </body>
 

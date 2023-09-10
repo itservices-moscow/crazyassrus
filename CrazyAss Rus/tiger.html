@@ -264,11 +264,12 @@
     });
 
     const options_zoom2 = {
-      click: "toogleZoom",
+      click: "zoomToMax",
       Toolbar: {
         display: ["zoomIn", "zoomOut"],
       },
       maxScale: 4,
+      mouseMoveFactor: true,
     };
 
     new Panzoom(document.getElementById("myPanzoom4"), options_zoom2);

@@ -1520,7 +1520,6 @@ const select_items = document.querySelectorAll('.select-dropdown__list-item');
 // Active/INactive button
 
 let validate_form = document.querySelectorAll('.validate__form');
-console.log(validate_form);
 
 if (validate_form) {
     
@@ -1529,29 +1528,47 @@ if (validate_form) {
         let allInputsFilled = true;
     
         formItems.forEach(input => {
-            if (input.value == "") {
-                allInputsFilled = false;
+            if (input.type === 'checkbox') {
+                if (!input.checked) {
+                    allInputsFilled = false;
+                }
+            } else if (input.tagName === 'TEXTAREA') {
+                if (input.value.trim() === '') {
+                    allInputsFilled = false;
+                }
+            } else {
+                if (input.value.trim() === '') {
+                    allInputsFilled = false;
+                }
             }
         });
     
+        const btnSave = form.querySelector('.btn-save');
         if (allInputsFilled) {
-            form.querySelector('.btn-save').classList.add('active');
-            form.querySelector('.btn-save').removeAttribute('disabled', '')
+            btnSave.classList.add('active');
+            btnSave.removeAttribute('disabled');
         } else {
-            form.querySelector('.btn-save').classList.remove('active');
-            form.querySelector('.btn-save').setAttribute('disabled', 'disabled')
+            btnSave.classList.remove('active');
+            btnSave.setAttribute('disabled', 'disabled');
         }
     }
     
     validate_form.forEach((form) => {
         form.querySelectorAll('[required]').forEach((item) => {
-            console.log(item);
             item.addEventListener('input', (e) => {
                 checkForm(form);
-            })
-        })
-    })
+            });
+        });
+
+        // Добавьте следующий блок кода, чтобы проверять textarea и чекбоксы.
+        form.querySelectorAll('textarea[required], input[type="checkbox"]').forEach((item) => {
+            item.addEventListener('change', (e) => {
+                checkForm(form);
+            });
+        });
+    });
 }
+
 
 // remove Заказ в ПВЗ СДЭК
 
@@ -1703,3 +1720,23 @@ const cookie_btn = document.querySelector('.cookie--btn.cookie_accept.button');
 if (document.documentElement.clientWidth <= 548) {
     cookie_btn.innerHTML = "ОК"
 }
+
+// delivery__tabs
+
+const delivery__tab1 = document.querySelector('#delivery__tab-p1');
+const delivery__tab2 = document.querySelector('#delivery__tab-p2');
+
+const pay__tab_label = document.querySelector('#pay__tab-popup2-label');
+
+if (delivery__tab1) {
+    delivery__tab1.addEventListener('click', (e) => {
+        pay__tab_label.innerHTML = "При получении в ПВЗ СДЭК";
+        console.log(1);
+    })
+
+    delivery__tab2.addEventListener('click', (e) => {
+        pay__tab_label.innerHTML = "При получении";
+        console.log(2);
+    })
+}
+

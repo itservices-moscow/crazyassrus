@@ -4275,7 +4275,39 @@ a {
     flex-direction: row;
     align-items: center;
     position: relative;
-    gap: 22px;
+    gap: 12px;
+}
+
+.cart__product-number-input {
+    display: flex;
+    align-items: center;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    outline: none;
+    text-align: center;
+}
+
+.cart__product-number input{
+    height: 40px;
+    width: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #1C1C1C;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    text-align: center;
 }
 
 .cart__product-minus,
@@ -6733,7 +6765,7 @@ article.on {
     align-items: center;
     position: relative;
     margin-bottom: 4px;
-    margin-right: 200px;
+    margin-right: 195px;
     color: #1C1C1C;
     font-size: 16px;
     line-height: 20px;
@@ -8647,12 +8679,12 @@ article.on {
         text-align: right;
     }
 
-    .main-nav {
+    /* .main-nav {
         display: flex;
         flex-direction: column;
         min-height: 682px;
         padding: 52px 24px 48px;
-    }
+    } */
 
     .order__form-label {
         line-height: 18px;
@@ -9812,6 +9844,36 @@ div.image-overlay-line {
         flex: 1;
         margin: 0;
     }
+}
+
+@media (max-width: 1440px) {
+    .charity-btn {
+        top: 134px;
+    }
+}
+
+@media (max-width: 1113px) {
+    .charity-btn {
+        top: 148px;
+    } 
+}
+
+@media (max-width: 1077px) {
+    .charity-btn {
+        top: 134px;
+    } 
+}
+
+@media (max-width: 940px) {
+    .charity-btn {
+        top: 148px;
+    } 
+}
+
+@media (max-width: 767px) {
+    .charity-btn {
+        top: 96px;
+    } 
 }
 
 /* 760px */
