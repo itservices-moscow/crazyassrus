@@ -9473,13 +9473,6 @@ div.image-overlay-line {
     cursor: pointer;
 }
 
-.f-panzoom__content.zoomify {
-    position: relative;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
 .f-panzoom.zoomify::after {
     content: "";
     position: absolute;
@@ -9877,6 +9870,19 @@ div.image-overlay-line {
     .charity-btn {
         top: 96px;
     } 
+}
+
+.f-panzoom__content {
+    display: block !important;
+    margin: auto !important;
+    position: relative !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    transform-origin: center center !important;
+    transition: none !important;
+    user-select: none !important;
 }
 
 /* 760px */
