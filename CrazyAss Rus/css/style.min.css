@@ -9475,6 +9475,9 @@ div.image-overlay-line {
 
 .f-panzoom__content.zoomify {
     position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .f-panzoom.zoomify::after {
