@@ -632,7 +632,6 @@ a {
     display: block;
     width: 100%;
     margin: 0 0 44px;
-    object-fit: contain;
     max-height: 340px;
     object-position: right 0 top 50%;
     image-rendering: -webkit-optimize-contrast
