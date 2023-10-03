@@ -3185,13 +3185,13 @@ a {
     margin: 0 32px
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     .advantages__icon {
         width: 26px;
         height: 42px;
         margin: 0 65px 0px 45px;
     }
-}
+} */
 
 .advantages__line {
     position: absolute;
@@ -3199,7 +3199,7 @@ a {
     align-items: center;
     width: 200%;
     height: 80px;
-    margin: 0-30px;
+    /* margin: 0 0 30px; */
     background-color: #1c1c1c;
     background-image: url(../img/pattern.png);
     background-repeat: repeat-x;
@@ -3274,6 +3274,13 @@ a {
     .advantages__text {
         font-size: 32px;
         line-height: 32px
+    }
+}
+
+@media (max-width: 425px) {
+    .advantages__text {
+        font-size: 18px;
+        margin: 0 5px;
     }
 }
 
